@@ -128,12 +128,7 @@ const audience = [
   { title: 'ผู้พร้อมเริ่มธุรกิจใหม่', desc: 'มีไอเดีย มีทุน และอยากใช้ AI / การตลาดให้เริ่มได้ไว ไม่เสียเวลาลองผิดลองถูก' },
 ];
 
-const faqs = [
-  { q: 'ต้องมีพื้นฐานการตลาดหรือ AI ไหม', a: 'ไม่จำเป็น ผู้เรียนเริ่มได้ทั้งคนทำธุรกิจและคนที่เพิ่งเริ่มต้น เพราะคอร์สออกแบบให้ค่อย ๆ ปูความเข้าใจและลงมือทำจริง' },
-  { q: 'เรียนแล้วได้อะไรกลับไป', a: 'ได้ framework, template, ไอเดีย และงานที่ทำในคลาส เพื่อเอาไปใช้กับแบรนด์หรือธุรกิจได้ทันที' },
-  { q: 'เหมาะกับทีมงานไหม', a: 'เหมาะมาก โดยเฉพาะเจ้าของกิจการ ผู้จัดการการตลาด ทีมคอนเทนต์ และคนที่อยากยกระดับการขายด้วย AI' },
-  { q: 'มี workshop จริงไหม', a: 'มี ผู้เรียนได้ลงมือทำในแต่ละวัน ทำให้เห็นผลลัพธ์ชัดและเอากลับไปต่อยอดได้ทันที' },
-];
+
 
 const testimonials = [
   { name: 'ผู้บริหารแบรนด์อาหาร', role: 'SME Owner', quote: 'ได้มุมใหม่ในการเล่าเรื่องแบรนด์ และเอาไปปรับใช้กับคอนเทนต์ได้ทันที' },
@@ -353,17 +348,7 @@ export default function App() {
         </div>
       </section>
 
-      <section id="faq" className="py-20">
-        <SectionTitle eyebrow="FAQ" title="คำถามที่พบบ่อย" subtitle="ช่วยลดความกังวลก่อนสมัคร และทำให้ภาพคอร์สชัดเจนขึ้น" />
-        <div className="mx-auto mt-12 max-w-4xl space-y-4 px-6">
-          {faqs.map((item) => (
-            <details key={item.q} className="group rounded-3xl border border-slate-200 bg-white p-5 shadow-sm transition open:shadow-lg sm:p-6">
-              <summary className="cursor-pointer list-none text-base font-semibold text-slate-900 sm:text-lg">{item.q}</summary>
-              <p className="mt-4 text-sm leading-6 text-slate-600 sm:text-base sm:leading-7">{item.a}</p>
-            </details>
-          ))}
-        </div>
-      </section>
+
 
       <section id="apply" className="pb-24 pt-6">
         <div className="mx-auto max-w-5xl px-6">
