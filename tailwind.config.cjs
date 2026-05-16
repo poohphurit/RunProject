@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        sans: ['IBM Plex Sans Thai', 'Roboto', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
         glow: '0 0 40px rgba(34, 211, 238, 0.18)',

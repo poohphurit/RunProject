@@ -151,6 +151,22 @@ function SectionTitle({ eyebrow, title, subtitle }) {
   );
 }
 
+function SpeakerPortrait({ name, title, accent }) {
+  return (
+    <div className={`relative h-64 overflow-hidden rounded-[2rem] bg-gradient-to-br ${accent} p-5`}>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.35),transparent_36%),radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.12),transparent_22%)]" />
+      <div className="absolute -right-10 -top-8 h-28 w-28 rounded-full bg-white/15 blur-2xl" />
+      <div className="relative flex h-full items-end">
+        <div className="w-full rounded-[1.5rem] border border-white/25 bg-white/15 p-4 text-white backdrop-blur-sm">
+          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-white/80">วิทยากร</p>
+          <h3 className="mt-2 text-xl font-black leading-tight sm:text-2xl">{name}</h3>
+          <p className="mt-1 text-sm text-white/90">{title}</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function App() {
   return (
     <main className="min-h-screen bg-[#f4f7ff] text-slate-800">
@@ -178,27 +194,34 @@ export default function App() {
       </header>
 
       <section id="hero" className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.95),transparent_42%),radial-gradient(circle_at_right,rgba(233,243,255,0.9),transparent_30%)]" />
-        <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:py-16">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.96),transparent_45%),radial-gradient(circle_at_right,rgba(254,242,242,0.95),transparent_26%),linear-gradient(180deg,#fdfdff_0%,#f4f7ff_100%)]" />
+        <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:py-16">
           <div className="text-center lg:text-left">
-            <span className="inline-flex rounded-full border border-rose-200 bg-white px-4 py-2 text-xs font-semibold text-rose-500 shadow-sm sm:text-sm">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-rose-200 bg-white px-4 py-2 text-xs font-semibold text-rose-500 shadow-sm sm:text-sm">
+              <span className="h-2 w-2 rounded-full bg-rose-500" />
               ขณะนี้คุณยังเดินอยู่ โลกกำลังวิ่ง
-            </span>
-            <h1 className="mt-6 text-4xl font-black leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-7xl">
-              คอร์สที่พาแบรนด์ <span className="bg-gradient-to-r from-rose-500 to-orange-400 bg-clip-text text-transparent">โตด้วย AI</span> และพลังของมนุษย์
+            </div>
+            <p className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-400">R.U.N. by SPU</p>
+            <h1 className="mt-4 max-w-3xl text-4xl font-black leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-7xl">
+              คอร์สที่พาแบรนด์ <span className="bg-gradient-to-r from-rose-500 via-orange-400 to-amber-400 bg-clip-text text-transparent">โตด้วย AI</span> และพลังของมนุษย์
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg lg:mx-0">
-              หน้า landing page โทนสว่างแบบโปสเตอร์ ดูน่าเชื่อถือ สวยสะอาด และช่วยพาคนเลื่อนไปสมัครง่ายขึ้น
+              เราออกแบบหน้าเว็บนี้ให้เหมือนโปสเตอร์ที่มีจังหวะการหายใจ มีพื้นที่โล่ง มีอารมณ์ และมีเหตุผลที่คนอยากเลื่อนลงต่อ
             </p>
             <div className="mt-8 flex flex-col items-stretch justify-center gap-4 sm:flex-row lg:justify-start">
-              <a href="#syllabus" className="rounded-full bg-slate-900 px-6 py-3 text-center font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-800">ดูตารางเรียน</a>
-              <a href="#speakers" className="rounded-full border border-rose-200 bg-white px-6 py-3 text-center font-semibold text-rose-500 transition hover:-translate-y-0.5 hover:bg-rose-50">ดูวิทยากร</a>
+              <a href="#syllabus" className="rounded-full bg-slate-900 px-6 py-3 text-center font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-slate-800 hover:shadow-[0_20px_50px_rgba(15,23,42,0.18)]">ดูตารางเรียน</a>
+              <a href="#speakers" className="rounded-full border border-rose-200 bg-white px-6 py-3 text-center font-semibold text-rose-500 transition duration-300 hover:-translate-y-0.5 hover:bg-rose-50 hover:shadow-[0_20px_50px_rgba(244,63,94,0.12)]">ดูวิทยากร</a>
+            </div>
+            <div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">
+              {['Human-first', 'AI-powered', 'Workshop จริง'].map((pill) => (
+                <span key={pill} className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-600 shadow-sm">{pill}</span>
+              ))}
             </div>
           </div>
 
           <div className="relative mx-auto w-full max-w-2xl">
-            <div className="absolute inset-0 -translate-y-2 rounded-[2.5rem] bg-gradient-to-br from-rose-200/60 via-white to-sky-100 blur-2xl" />
-            <div className="relative overflow-hidden rounded-[2.5rem] border border-white bg-white/85 p-6 shadow-[0_30px_80px_rgba(148,163,184,0.25)]">
+            <div className="absolute inset-0 -translate-y-2 rounded-[2.5rem] bg-gradient-to-br from-rose-200/50 via-white to-sky-100 blur-2xl" />
+            <div className="relative overflow-hidden rounded-[2.5rem] border border-white/80 bg-white/85 p-6 shadow-[0_30px_80px_rgba(148,163,184,0.2)] backdrop-blur-sm">
               <div className="grid gap-4 sm:grid-cols-2">
                 {[
                   ['4', 'วันเข้มข้น'],
@@ -206,13 +229,13 @@ export default function App() {
                   ['3', 'วิทยากรหลัก'],
                   ['Workshop', 'ลงมือทำจริง'],
                 ].map(([value, label]) => (
-                  <div key={label} className="rounded-3xl border border-slate-200 bg-[#f8faff] p-5 transition hover:-translate-y-1 hover:shadow-lg">
+                  <div key={label} className="rounded-3xl border border-slate-200 bg-[#f8faff] p-5 transition duration-300 hover:-translate-y-1 hover:shadow-lg">
                     <div className="text-3xl font-black text-rose-500">{value}</div>
                     <div className="mt-1 text-sm text-slate-500">{label}</div>
                   </div>
                 ))}
               </div>
-              <div className="mt-6 rounded-3xl bg-gradient-to-br from-rose-500 to-orange-400 p-6 text-white shadow-xl">
+              <div className="mt-6 rounded-3xl bg-gradient-to-br from-rose-500 via-orange-400 to-amber-400 p-6 text-white shadow-xl">
                 <p className="text-xs uppercase tracking-[0.35em] text-white/80">Core message</p>
                 <p className="mt-2 text-lg font-semibold leading-7 sm:text-xl">สอนให้ผู้เรียนกลายเป็นมนุษย์พันธุ์ใหม่ ที่ใช้ AI เป็นตัวขยายผล ไม่ใช่แค่เครื่องมือ</p>
               </div>
@@ -222,6 +245,12 @@ export default function App() {
       </section>
 
       <section id="problem" className="py-20">
+        <div className="mx-auto mb-8 max-w-5xl px-6">
+          <div className="inline-flex items-center gap-2 rounded-full border border-rose-200 bg-white px-4 py-2 text-sm font-semibold text-rose-500 shadow-sm">
+            <span className="h-2 w-2 rounded-full bg-rose-500" />
+            ทำไมคอร์สนี้ต้องเกิดขึ้นตอนนี้
+          </div>
+        </div>
         <SectionTitle eyebrow="Problem" title="ทำไมต้องลงทะเบียนตอนนี้" subtitle="เพราะตลาดเปลี่ยนเร็ว ลูกค้าเปลี่ยนวิธีตัดสินใจ และการแข่งขันใหม่ไม่ได้วัดกันที่ความรู้เพียงอย่างเดียว" />
         <div className="mx-auto mt-12 grid max-w-5xl gap-6 px-6 md:grid-cols-2 lg:grid-cols-4">
           {[
@@ -267,21 +296,17 @@ export default function App() {
       </section>
 
       <section id="speakers" className="py-20">
-        <SectionTitle eyebrow="Speakers" title="หน้าแนะนำวิทยากร" subtitle="เพิ่มหน้าวิทยากรแบบชัดเจน เพื่อให้หน้าคอร์สดูน่าเชื่อถือเหมือนโปสเตอร์" />
+        <SectionTitle eyebrow="Speakers" title="หน้าแนะนำวิทยากร" subtitle="ทำให้หน้าคอร์สดูน่าเชื่อถือขึ้นด้วยการให้บุคลิกแต่ละคนชัดขึ้น ไม่ใช่แค่กล่องข้อมูลแบน ๆ" />
         <div className="mx-auto mt-12 grid max-w-6xl gap-6 px-6 lg:grid-cols-3">
-          {speakers.map((speaker) => (
-            <article key={speaker.name} className="overflow-hidden rounded-[2.25rem] border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
-              <div className={`h-64 bg-gradient-to-br ${speaker.accent} p-6`}>
-                <div className="flex h-full items-end rounded-[1.75rem] bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.75),transparent_45%)] p-4 text-white">
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.35em] text-white/75">วิทยากร</p>
-                    <h3 className="mt-2 text-2xl font-black leading-tight">{speaker.name}</h3>
-                  </div>
+          {speakers.map((speaker, index) => (
+            <article key={speaker.name} className="group overflow-hidden rounded-[2.25rem] border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(244,63,94,0.16)]">
+              <SpeakerPortrait name={speaker.name} title={speaker.role} accent={speaker.accent} />
+              <div className="p-6">
+                <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-rose-50 px-3 py-1 text-xs font-semibold text-rose-500">
+                  <span className="h-2 w-2 rounded-full bg-rose-500" />
+                  Speaker 0{index + 1}
                 </div>
-              </div>
-              <div className="border-t border-slate-100 p-6">
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-rose-500">{speaker.role}</p>
-                <p className="mt-3 text-slate-600">{speaker.bio}</p>
+                <p className="text-slate-600 leading-7">{speaker.bio}</p>
               </div>
             </article>
           ))}
