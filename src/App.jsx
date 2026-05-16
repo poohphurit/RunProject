@@ -130,12 +130,6 @@ const audience = [
 
 
 
-const testimonials = [
-  { name: 'ผู้บริหารแบรนด์อาหาร', role: 'SME Owner', quote: 'ได้มุมใหม่ในการเล่าเรื่องแบรนด์ และเอาไปปรับใช้กับคอนเทนต์ได้ทันที' },
-  { name: 'Founder สาย Growth', role: 'Startup', quote: 'เข้าใจ funnel ใหม่ชัดขึ้นมาก และรู้ว่าควรเอา AI ไปช่วยตรงไหน' },
-  { name: 'หัวหน้าทีมการตลาด', role: 'Marketing Lead', quote: 'เวิร์กช็อปทำให้ทีมเห็นภาพเดียวกันและเริ่มทำงานได้เร็วขึ้นจริง' },
-];
-
 function SectionTitle({ eyebrow, title, subtitle }) {
   return (
     <div className="mx-auto max-w-5xl px-6 text-center">
@@ -246,7 +240,7 @@ export default function App() {
             ทำไมคอร์สนี้ต้องเกิดขึ้นตอนนี้
           </div>
         </div>
-        <SectionTitle eyebrow="Problem" title="ทำไมต้องลงทะเบียนตอนนี้" subtitle="เพราะตลาดเปลี่ยนเร็ว ลูกค้าเปลี่ยนวิธีตัดสินใจ และการแข่งขันใหม่ไม่ได้วัดกันที่ความรู้เพียงอย่างเดียว" />
+        <SectionTitle eyebrow="Problem" title="ทำไมต้องเรียนคอร์สนี้" subtitle="เพราะตลาดเปลี่ยนเร็ว ลูกค้าเปลี่ยนวิธีตัดสินใจ และการแข่งขันใหม่ไม่ได้วัดกันที่ความรู้เพียงอย่างเดียว" />
         <div className="mx-auto mt-12 grid max-w-5xl gap-6 px-6 md:grid-cols-2 lg:grid-cols-4">
           {[
             ['Social', 'พฤติกรรมซื้อจาก Social Commerce สูงขึ้น ต้องสร้างความน่าเชื่อถือก่อนปิดการขาย'],
@@ -333,20 +327,6 @@ export default function App() {
         </div>
       </section>
 
-      <section id="testimonials" className="py-20">
-        <SectionTitle eyebrow="Testimonials" title="เสียงสะท้อนจากผู้เรียน" subtitle="ใช้เป็นส่วนเสริมความน่าเชื่อถือ และช่วยเพิ่มแรงจูงใจให้ผู้สนใจตัดสินใจง่ายขึ้น" />
-        <div className="mx-auto mt-12 grid max-w-6xl gap-6 px-6 lg:grid-cols-3">
-          {testimonials.map((item) => (
-            <article key={item.name} className="rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm">
-              <p className="text-lg leading-8 text-slate-700">“{item.quote}”</p>
-              <div className="mt-6">
-                <p className="font-semibold text-slate-900">{item.name}</p>
-                <p className="text-sm text-rose-500">{item.role}</p>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
 
 
 
