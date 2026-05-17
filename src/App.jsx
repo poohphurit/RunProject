@@ -1,25 +1,32 @@
 import React from 'react';
+import speakerAn from './assets/speaker-an.png';
+import speakerSaran from './assets/speaker-saran.png';
+import speakerKriengkrai from './assets/speaker-kriengkrai.png';
 
 const syllabus = [
   {
     day: 'DAY 1',
     date: '3 ก.ค. 2569',
     theme: 'Brand + Marketing + Personal Branding',
+    subTheme: 'ลุกขึ้นยืน – เปิดตาเห็นสนามรบใหม่ สร้างตัวตนให้ทรงพลัง',
     topics: [
       {
         title: 'AI Strategy Revolution',
         speaker: 'คุณอัน ปฤณ (AEIOU)',
         detail: 'ถอดรหัส Master Marketing Canvas & New Marketing Funnel ยุคปัจจุบัน',
+        extra: 'ปรับมายด์เซ็ตการตลาดใหม่ให้ทันโลก! วิเคราะห์และวางแผนกลยุทธ์ตั้งแต่ต้นน้ำยันปลายน้ำเพื่อหาช่องโหว่ทางธุรกิจ',
       },
       {
         title: 'CEO Branding - The Power of Personal Authority',
         speaker: 'คุณแอ๊ม ศรัณย์ (Uppercuz)',
         detail: 'วาง Positioning ผู้นำในยุคที่ลูกค้าไว้ใจ “คน” มากกว่า “ร้าน”',
+        extra: 'ดึงศักยภาพของคุณออกมาเป็นจุดขาย! เรียนรู้วิธีการสื่อสารให้ทรงพลัง เพื่อก้าวขึ้นเป็นผู้นำทางความคิด',
       },
       {
         title: 'Guest Speaker Theme',
         speaker: 'BearHouse & Merge',
         detail: 'ทำไมตัวตนผู้นำสำคัญกว่าสินค้า',
+        extra: 'เจาะลึกเบื้องหลังว่าคาแรกเตอร์ของเจ้าของธุรกิจ ช่วยขับเคลื่อนยอดขายและสร้างแฟนคลับที่เหนียวแน่นได้อย่างไร',
       },
     ],
   },
@@ -27,21 +34,25 @@ const syllabus = [
     day: 'DAY 2',
     date: '10 ก.ค. 2569',
     theme: 'Storytelling + Short form video + Live Commerce',
+    subTheme: 'สื่อสารสะกดใจ – ปลดล็อกยอดขายผ่านคลิปสั้นและการขายสดที่ทรงพลัง',
     topics: [
       {
         title: 'Practical Storytelling & Conversion Copywriting',
         speaker: 'คุณก๊อป สุพศล (เด็กสมบูรณ์)',
         detail: 'สร้างเรื่องเล่าสะกดใจ เปลี่ยนคนอ่านเป็นคนจ่ายเงิน',
+        extra: 'เจาะลึกจิตวิทยาการเขียนคำโฆษณาที่เปลี่ยนยอดวิวเป็นยอดขายจริง ด้วยโครงสร้างเรื่องเล่าที่ใช้ได้ทันที',
       },
       {
         title: 'Short Video + TikTok Marketing',
         speaker: 'ทีมงาน Uppercuz',
         detail: 'สูตรคลิปสั้นปิดการขาย อัลกอริทึม TikTok ระบบ Affiliate',
+        extra: 'ติดปีกยอดขายด้วยคลิปสั้นยุคใหม่! เข้าใจพฤติกรรมการดูของลูกค้าและวิธีการทำคลิปให้ติดกระแสเพื่อเปิดช่องทางรายได้',
       },
       {
         title: 'Live Commerce Mastery',
         speaker: 'คุณแอ๊ม ศรัณย์ (Uppercuz)',
         detail: 'จิตวิทยาขายผ่านจอ สคริปต์ 3 จังหวะ Hook-Pitch-Close',
+        extra: 'เผยเคล็ดลับการสะกดใจผู้ชมผ่านกล้อง! เทคนิคการพูดและแก้ปัญหาเฉพาะหน้าในการไลฟ์สดที่ดึงคนดูไม่ให้เปลี่ยนช่อง',
       },
     ],
   },
@@ -49,21 +60,25 @@ const syllabus = [
     day: 'DAY 3',
     date: '17 ก.ค. 2569',
     theme: 'AI Visual + AI Video + Agentic AI',
+    subTheme: 'ติดปีกด้วย AI – ใช้เทคโนโลยีขยายไอเดียและสร้างผลงานระดับโปร',
     topics: [
       {
         title: 'AI Graphic Design Mastery',
         speaker: 'คุณปอง นักฆ่า (Enkay Studio)',
         detail: 'สร้าง Visual Identity และภาพโฆษณาระดับสตูดิโอด้วย Midjourney, Nano Banana',
+        extra: 'ยกระดับงานดีไซน์ของธุรกิจด้วย AI! สร้างสรรค์ภาพโปรโมตแบรนด์ที่มีเอกลักษณ์โดดเด่นสะดุดตาภายในไม่กี่วินาที',
       },
       {
         title: 'AI Video Production',
         speaker: 'คุณกฤษ โอสถเลิศ (Bigbrain & Marketmind)',
         detail: 'ผลิตคลิป Short-form ครบวงจรด้วย AI ลงทั้ง TikTok, Reels, Shorts',
+        extra: 'สร้างวิดีโอระดับมืออาชีพอย่างรวดเร็ว! เรียนรู้ขั้นตอนการใช้ AI ช่วยตัดต่อ ใส่ซับไตเติล และเพิ่มลูกเล่นน่าสนใจ',
       },
       {
         title: 'Agentic AI for Marketing',
         speaker: 'คุณอัน ปฤณ (AEIOU)',
         detail: 'ใช้ AI ช่วยทำงานจริง ตั้งแต่คอนเทนต์จนถึง workflow',
+        extra: 'เปลี่ยน AI ให้เป็นผู้ร่วมงานที่รู้ใจ! ออกแบบระบบการทำงานอัตโนมัติเพื่อลดเวลาทำงานซ้ำซากและเพิ่มเวลาคิดสร้างสรรค์',
       },
     ],
   },
@@ -71,21 +86,25 @@ const syllabus = [
     day: 'DAY 4',
     date: '24 ก.ค. 2569',
     theme: 'New Product + AI Search + Sustain Marketing',
+    subTheme: 'ก้าวสู่ความยั่งยืน – สร้างมูลค่าสินค้าใหม่และทำให้แบรนด์อยู่ในทุกการค้นหา',
     topics: [
       {
         title: 'New Product Creation for New Market',
         speaker: 'คุณป๊อป พลภัทร (Whale Ground)',
         detail: 'ออกแบบ Product-Market Fit ปรับ Packaging ให้ตรงกลุ่มเป้าหมาย',
+        extra: 'ค้นหาโอกาสใหม่ในตลาดดั้งเดิม! เรียนรู้วิธีพัฒนาผลิตภัณฑ์ให้ตอบโจทย์ผู้บริโภคยุคใหม่ด้วยการดีไซน์และฟังก์ชัน',
       },
       {
         title: 'กลยุทธ์ให้แบรนด์ติดคำแนะนำของ AI Search (GEO)',
         speaker: 'คุณไอซ์ ศิริพงษ์ (Nerd Optimize)',
         detail: 'ทำให้แบรนด์ถูกหยิบไปแนะนำโดย AI Search ได้จริง',
+        extra: 'เตรียมพร้อมรับยุค AI Search! วิธีการปรับแต่งข้อมูลแบรนด์เพื่อให้ AI เลือกไปแนะนำเมื่อลูกค้าถามหาแนวทางแก้ไข',
       },
       {
         title: 'Makoto Marketing + New Human Value',
         speaker: 'ดร.กฤตินี (อ.เกศ เกตุวดี Marumura)',
         detail: 'การตลาดเชิงคุณค่าที่มนุษย์และความไว้วางใจอยู่ตรงกลาง',
+        extra: 'สร้างธุรกิจที่เติบโตอย่างสง่างามและยั่งยืน! การตลาดแบบจริงใจที่ผสานความเป็นมนุษย์เพื่อสร้างความรักและความผูกพันระยะยาว',
       },
     ],
   },
@@ -93,21 +112,24 @@ const syllabus = [
 
 const speakers = [
   {
-    name: 'คุณอัน ปฤณ (AEIOU)',
-    role: 'Founder & CEO AEIOU',
+    name: 'คุณอั้น ปฤณ (AEIOU)',
+    role: 'FOUNDER & CEO AEIOU',
     bio: 'กลยุทธ์การตลาดและ AI ที่ใช้ได้จริงสำหรับธุรกิจยุคใหม่',
+    image: speakerAn,
     accent: 'from-rose-500 to-orange-400',
   },
   {
     name: 'คุณศรัณย์ แบ่งกุลจิต',
-    role: 'CEO Uppercuz',
+    role: 'CEO UPPERCUZ',
     bio: 'สาย TikTok การตลาดคอนเทนต์ และระบบปิดการขายที่โตไว',
+    image: speakerSaran,
     accent: 'from-sky-500 to-cyan-400',
   },
   {
-    name: 'ดร.เกรียงไกร สัจจจะหฤทัย',
+    name: 'ดร.เกรียงไกร สัจจะหฤทัย',
     role: 'คณบดีคณะการสร้างเจ้าของธุรกิจ ม.ศรีปทุม',
     bio: 'ผสานมุมมองวิชาการกับการลงมือทำจริง ให้ธุรกิจขับเคลื่อนได้ต่อเนื่อง',
+    image: speakerKriengkrai,
     accent: 'from-violet-500 to-fuchsia-400',
   },
 ];
@@ -123,9 +145,21 @@ const sections = [
 ];
 
 const audience = [
-  { title: 'เจ้าของธุรกิจรายได้ 10 ล้านขึ้นไป', desc: 'มีทีม ยอดขายเริ่มชะลอ และต้องการมุมใหม่เพื่อเร่งการเติบโต' },
-  { title: 'Startup ที่ต้องการเร่ง Growth', desc: 'มีของดีแต่ขาดกลยุทธ์ตลาดยุคใหม่ และระบบคอนเทนต์ที่ทำเงินได้จริง' },
-  { title: 'ผู้พร้อมเริ่มธุรกิจใหม่', desc: 'มีไอเดีย มีทุน และอยากใช้ AI / การตลาดให้เริ่มได้ไว ไม่เสียเวลาลองผิดลองถูก' },
+  {
+    title: 'เจ้าของธุรกิจที่อยากเพิ่มยอดขาย',
+    desc: 'มีทีม ยอดขายเริ่มชะลอ และต้องการมุมใหม่เพื่อเร่งการเติบโต',
+    icon: 'chart',
+  },
+  {
+    title: 'Startup ที่อยากเติบโตให้ไวและยั่งยืน',
+    desc: 'มีของดีแต่ขาดกลยุทธ์ตลาดยุคใหม่ และระบบคอนเทนต์ที่ทำเงินได้จริง',
+    icon: 'rocket',
+  },
+  {
+    title: 'ผู้ที่กำลังเริ่มธุรกิจใหม่ต้องการคำแนะนำ',
+    desc: 'มีไอเดีย มีทุน และอยากใช้ AI / ไม่เสียเวลาลองผิดลองถูก',
+    icon: 'shop',
+  },
 ];
 
 
@@ -133,25 +167,48 @@ const audience = [
 function SectionTitle({ eyebrow, title, subtitle }) {
   return (
     <div className="mx-auto max-w-5xl px-6 text-center">
-      <p className="text-xs font-bold uppercase tracking-[0.45em] text-rose-500">{eyebrow}</p>
+      {eyebrow && <p className="text-xs font-bold uppercase tracking-[0.45em] text-rose-500">{eyebrow}</p>}
       <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-900 md:text-5xl">{title}</h2>
       {subtitle ? <p className="mx-auto mt-4 max-w-3xl text-base leading-7 text-slate-600 md:text-lg md:leading-8">{subtitle}</p> : null}
     </div>
   );
 }
 
-function SpeakerPortrait({ name, title, accent }) {
+function SpeakerPortrait({ name, title, accent, imageUrl }) {
+  const [imageError, setImageError] = React.useState(false);
+  
+  const getInitial = (fullName) => {
+    const cleanName = fullName.replace('คุณ', '').replace('ดร.', '').trim();
+    return cleanName.charAt(0) || 'S';
+  };
+
   return (
-    <div className={`relative h-64 overflow-hidden rounded-[2rem] bg-gradient-to-br ${accent} p-5`}>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.35),transparent_36%),radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.12),transparent_22%)]" />
-      <div className="absolute -right-10 -top-8 h-28 w-28 rounded-full bg-white/15 blur-2xl" />
-      <div className="relative flex h-full items-end">
-        <div className="w-full rounded-[1.5rem] border border-white/25 bg-white/15 p-4 text-white backdrop-blur-sm">
-          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-white/80">วิทยากร</p>
-          <h3 className="mt-2 text-xl font-black leading-tight sm:text-2xl">{name}</h3>
-          <p className="mt-1 text-sm text-white/90">{title}</p>
-        </div>
+    <div className="relative h-64 w-full overflow-visible mt-10">
+      {/* 1. Gradient Background Block with clipped light effects */}
+      <div className={`absolute inset-0 rounded-[1.75rem] bg-gradient-to-br ${accent} overflow-hidden shadow-inner`}>
+        {/* Light & Gradient Overlays */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.35),transparent_45%),radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.1),transparent_25%)]" />
+        <div className="absolute -right-10 -top-8 h-28 w-28 rounded-full bg-white/10 blur-2xl" />
       </div>
+      
+      {/* 2. Speaker Image (placed outside the overflow-hidden background to allow top overflow!) */}
+      {!imageError && imageUrl ? (
+        <img
+          src={imageUrl}
+          alt={name}
+          className="absolute inset-x-0 bottom-0 mx-auto h-[125%] w-auto object-contain object-bottom transition duration-500 group-hover:scale-[1.06] origin-bottom z-10"
+          onError={() => setImageError(true)}
+        />
+      ) : (
+        <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-white/90 z-20">
+          <div className="flex h-20 w-20 items-center justify-center rounded-full border border-white/20 bg-white/10 text-3xl font-black backdrop-blur-md shadow-inner transition duration-500 group-hover:scale-105">
+            {getInitial(name)}
+          </div>
+          <span className="mt-4 text-[10px] font-bold uppercase tracking-widest text-white/60 text-center">
+            วางไฟล์ภาพที่: {name}
+          </span>
+        </div>
+      )}
     </div>
   );
 }
@@ -161,9 +218,13 @@ export default function App() {
     <main className="min-h-screen bg-[#f4f7ff] text-slate-800">
       <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
-          <div>
-            <p className="text-sm font-bold text-slate-900">R.U.N. by SPU</p>
-            <p className="text-xs text-slate-500">Revenue. Unlock. Now.</p>
+          <div className="flex flex-col items-start">
+            <span className="text-xl font-black tracking-tight text-slate-900 leading-none">
+              R<span className="text-rose-500">.</span>U<span className="text-rose-500">.</span>N
+            </span>
+            <span className="text-[8px] font-bold uppercase tracking-[0.2em] text-slate-400 mt-1">
+              REVENUE. UNLOCK. NOW.
+            </span>
           </div>
           <nav className="hidden items-center gap-1 rounded-full border border-slate-200 bg-slate-50 p-1 md:flex">
             {sections.map((item) => (
@@ -182,74 +243,44 @@ export default function App() {
         </div>
       </header>
 
-      <section id="hero" className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.96),transparent_45%),radial-gradient(circle_at_right,rgba(254,242,242,0.95),transparent_26%),linear-gradient(180deg,#fdfdff_0%,#f4f7ff_100%)]" />
-        <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:py-16">
-          <div className="text-center lg:text-left">
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-rose-200 bg-white px-4 py-2 text-xs font-semibold text-rose-500 shadow-sm sm:text-sm">
-              <span className="h-2 w-2 rounded-full bg-rose-500" />
-              ขณะนี้คุณยังเดินอยู่ โลกกำลังวิ่ง
-            </div>
-            <p className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-400">R.U.N. by SPU</p>
-            <h1 className="mt-4 max-w-3xl text-4xl font-black leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-7xl">
-              คอร์สที่พาแบรนด์ <span className="bg-gradient-to-r from-rose-500 via-orange-400 to-amber-400 bg-clip-text text-transparent">โตด้วย AI</span> และพลังของมนุษย์
-            </h1>
-            <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg lg:mx-0">
-              เราออกแบบหน้าเว็บนี้ให้เหมือนโปสเตอร์ที่มีจังหวะการหายใจ มีพื้นที่โล่ง มีอารมณ์ และมีเหตุผลที่คนอยากเลื่อนลงต่อ
-            </p>
-            <div className="mt-8 flex flex-col items-stretch justify-center gap-4 sm:flex-row lg:justify-start">
-              <a href="#syllabus" className="rounded-full bg-slate-900 px-6 py-3 text-center font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-slate-800 hover:shadow-[0_20px_50px_rgba(15,23,42,0.18)]">ดูตารางเรียน</a>
-              <a href="#speakers" className="rounded-full border border-rose-200 bg-white px-6 py-3 text-center font-semibold text-rose-500 transition duration-300 hover:-translate-y-0.5 hover:bg-rose-50 hover:shadow-[0_20px_50px_rgba(244,63,94,0.12)]">ดูวิทยากร</a>
-            </div>
-            <div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">
-              {['Human-first', 'AI-powered', 'Workshop จริง'].map((pill) => (
-                <span key={pill} className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-600 shadow-sm">{pill}</span>
-              ))}
-            </div>
-          </div>
-
-          <div className="relative mx-auto w-full max-w-2xl">
-            <div className="absolute inset-0 -translate-y-2 rounded-[2.5rem] bg-gradient-to-br from-rose-200/50 via-white to-sky-100 blur-2xl" />
-            <div className="relative overflow-hidden rounded-[2.5rem] border border-white/80 bg-white/85 p-6 shadow-[0_30px_80px_rgba(148,163,184,0.2)] backdrop-blur-sm">
-              <div className="grid gap-4 sm:grid-cols-2">
-                {[
-                  ['4', 'วันเข้มข้น'],
-                  ['12+', 'หัวข้อเรียน'],
-                  ['3', 'วิทยากรหลัก'],
-                  ['Workshop', 'ลงมือทำจริง'],
-                ].map(([value, label]) => (
-                  <div key={label} className="rounded-3xl border border-slate-200 bg-[#f8faff] p-5 transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-                    <div className="text-3xl font-black text-rose-500">{value}</div>
-                    <div className="mt-1 text-sm text-slate-500">{label}</div>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-6 rounded-3xl bg-gradient-to-br from-rose-500 via-orange-400 to-amber-400 p-6 text-white shadow-xl">
-                <p className="text-xs uppercase tracking-[0.35em] text-white/80">Core message</p>
-                <p className="mt-2 text-lg font-semibold leading-7 sm:text-xl">สอนให้ผู้เรียนกลายเป็นมนุษย์พันธุ์ใหม่ ที่ใช้ AI เป็นตัวขยายผล ไม่ใช่แค่เครื่องมือ</p>
-              </div>
-            </div>
+      <section id="hero" className="relative w-full overflow-hidden bg-[#f4f7ff] py-0">
+        <div className="relative w-full">
+          <img
+            src="/hero-banner.jpg"
+            alt="R.U.N. by SPU - Revenue. Unlock. Now. รอด รวย เริ่ม เริศ"
+            className="w-full h-auto block select-none pointer-events-none"
+          />
+          
+          {/* Interactive Absolute-Positioned Overlay Buttons */}
+          <div className="absolute left-[15%] bottom-[8%] sm:left-[17%] sm:bottom-[10%] md:left-[19%] md:bottom-[12%] lg:left-[21%] lg:bottom-[14%] flex gap-2 sm:gap-4 z-20">
+            <a
+              href="#syllabus"
+              className="rounded-full bg-[#0f172a] px-3 py-1.5 text-[10px] sm:px-6 sm:py-3 md:px-8 md:py-3.5 text-xs sm:text-sm md:text-base font-bold text-white shadow-lg transition duration-300 hover:scale-105 hover:bg-slate-800"
+            >
+              ดูตารางเรียน
+            </a>
+            <a
+              href="#apply"
+              className="rounded-full bg-[#f43f5e] px-3 py-1.5 text-[10px] sm:px-6 sm:py-3 md:px-8 md:py-3.5 text-xs sm:text-sm md:text-base font-bold text-white shadow-lg transition duration-300 hover:scale-105 hover:bg-[#e11d48]"
+            >
+              สมัครเรียน
+            </a>
           </div>
         </div>
       </section>
 
       <section id="problem" className="py-20">
-        <div className="mx-auto mb-8 max-w-5xl px-6">
-          <div className="inline-flex items-center gap-2 rounded-full border border-rose-200 bg-white px-4 py-2 text-sm font-semibold text-rose-500 shadow-sm">
-            <span className="h-2 w-2 rounded-full bg-rose-500" />
-            ทำไมคอร์สนี้ต้องเกิดขึ้นตอนนี้
-          </div>
-        </div>
-        <SectionTitle eyebrow="Problem" title="ทำไมต้องเรียนคอร์สนี้" subtitle="เพราะตลาดเปลี่ยนเร็ว ลูกค้าเปลี่ยนวิธีตัดสินใจ และการแข่งขันใหม่ไม่ได้วัดกันที่ความรู้เพียงอย่างเดียว" />
-        <div className="mx-auto mt-12 grid max-w-5xl gap-6 px-6 md:grid-cols-2 lg:grid-cols-4">
+        <SectionTitle title="ทำไมต้องวิ่งตอนนี้?" subtitle="เพราะตลาดเปลี่ยนเร็ว ลูกค้าเปลี่ยนวิธีตัดสินใจ และการแข่งขันใหม่ไม่ได้วัดกันที่ความรู้เพียงอย่างเดียว" />
+        <div className="mx-auto mt-12 grid max-w-7xl gap-6 px-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           {[
-            ['Social', 'พฤติกรรมซื้อจาก Social Commerce สูงขึ้น ต้องสร้างความน่าเชื่อถือก่อนปิดการขาย'],
-            ['Tech', 'AI search และเครื่องมือใหม่เปลี่ยนวิธีค้นหา-เปรียบเทียบของลูกค้า'],
-            ['Economic', 'ตลาดแยกขั้วระหว่าง Premium vs Value ชัดขึ้น ธุรกิจต้องเลือกทางให้แม่น'],
-            ['Environment & Politics', 'ต้นทุนและนโยบายเปลี่ยนตลอดเวลา แบรนด์ต้องยืดหยุ่นกว่าเดิม'],
+            ['AI', 'เปลี่ยน AI เป็นผู้ช่วย ลดต้นทุน ทุ่นแรง ผลิตงานระดับโปร เพื่อให้คุณวิ่งเร็วกว่าคู่แข่ง'],
+            ['MARKETING', 'เจาะลึก New Marketing Funnel รับมือปี 2026 ปรับแผนทันทีไม่ให้แบรนด์ถูกทิ้งไว้ข้างหลัง'],
+            ['BRANDING', 'สร้างแบรนด์ผู้นำ (CEO Branding) มัดใจลูกค้าด้วย "Trust" สิ่งเดียวที่ AI เลียนแบบไม่ได้'],
+            ['SALE', 'มุ่งเป้าที่ REVENUE ด้วยสคริปต์ปิดการขายและจิตวิทยาไลฟ์สด เปลี่ยนคนดูเป็นคนจ่ายเงิน'],
+            ['CONTENT', 'สะกดลูกค้าด้วย Storytelling และคลิปสั้น เข้าใจทั้งใจมนุษย์และอัลกอริทึม ดึงดูดให้คนซื้อ'],
           ].map(([tag, text]) => (
             <article key={tag} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
-              <p className="text-sm font-bold uppercase tracking-[0.25em] text-rose-500">{tag}</p>
+              <p className="text-xl font-black uppercase tracking-wide text-rose-500">{tag}</p>
               <p className="mt-3 leading-7 text-slate-600">{text}</p>
             </article>
           ))}
@@ -257,25 +288,54 @@ export default function App() {
       </section>
 
       <section id="syllabus" className="py-20">
-        <SectionTitle eyebrow="Course syllabus" title="ตารางเรียน 4 วัน ที่ออกแบบให้เรียนแล้วใช้ได้จริง" subtitle="แต่ละวันผสมกลยุทธ์ คอนเทนต์ และ AI เพื่อให้ผู้เรียนเห็นภาพรวมครบวงจร" />
+        <SectionTitle 
+          title={
+            <>
+              หลักสูตร 4 วัน ลงมือทำจริง
+              <br />
+              เปลี่ยนจากเดินสู่การวิ่ง
+            </>
+          } 
+          subtitle="แต่ละวันผสมกลยุทธ์ คอนเทนต์ และ AI เพื่อให้ผู้เรียนเห็นภาพรวมครบวงจร" 
+        />
         <div className="mx-auto mt-12 max-w-5xl space-y-8 px-6">
           {syllabus.map((day) => (
-            <section key={day.day} className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl md:p-8">
-              <div className="flex flex-wrap items-end justify-between gap-3">
-                <div>
-                  <p className="text-sm font-bold uppercase tracking-[0.3em] text-rose-500">{day.day}</p>
-                  <h3 className="mt-2 text-2xl font-bold text-slate-900">{day.theme}</h3>
+            <section key={day.day} className="rounded-[2.5rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl md:p-10">
+              {/* Day Header */}
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between border-b border-slate-100 pb-6 mb-8">
+                <div className="flex items-center gap-5">
+                  {/* Day block */}
+                  <div className="flex flex-col items-center justify-center text-center min-w-[3.5rem]">
+                    <span className="text-xs font-bold uppercase tracking-[0.25em] text-rose-500 leading-none">DAY</span>
+                    <span className="text-5xl font-black text-rose-500 mt-1.5 leading-none">{day.day.replace('DAY ', '')}</span>
+                  </div>
+                  {/* Vertical Divider */}
+                  <div className="h-12 w-[1px] bg-slate-200" />
+                  {/* Theme & Sub-theme */}
+                  <div>
+                    <h3 className="text-xl font-black text-slate-900 sm:text-2xl leading-tight">{day.theme}</h3>
+                    {day.subTheme && (
+                      <p className="text-sm font-semibold text-slate-500 mt-1 sm:text-base">{day.subTheme}</p>
+                    )}
+                  </div>
                 </div>
-                <p className="text-slate-500">{day.date}</p>
+                {/* Date */}
+                <div className="text-sm font-semibold text-slate-400 self-end sm:self-center sm:text-base">
+                  {day.date}
+                </div>
               </div>
-              <div className="mt-6 grid gap-4">
+              <div className="space-y-4">
                 {day.topics.map((topic) => (
-                  <div key={topic.title} className="rounded-2xl border border-slate-200 bg-[#f8faff] p-5 transition hover:border-rose-200 hover:bg-white">
-                    <div className="flex flex-col gap-1 md:flex-row md:items-center md:justify-between">
-                      <h4 className="text-xl font-bold text-slate-900">{topic.title}</h4>
-                      <span className="text-sm font-semibold text-rose-500">{topic.speaker}</span>
+                  <div key={topic.title} className="rounded-2xl border border-slate-200 bg-[#f8faff] p-5 sm:p-6 transition duration-300 hover:border-rose-200 hover:bg-white hover:shadow-md">
+                    <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-lg font-bold sm:text-xl">
+                      <span className="text-slate-900">{topic.title}</span>
+                      <span className="text-slate-300 font-light hidden sm:inline">|</span>
+                      <span className="text-rose-500 text-base sm:text-lg font-semibold">{topic.speaker}</span>
                     </div>
-                    <p className="mt-3 leading-7 text-slate-600">{topic.detail}</p>
+                    <p className="mt-2 text-base font-bold text-slate-800 sm:text-lg leading-relaxed">{topic.detail}</p>
+                    {topic.extra && (
+                      <p className="mt-1.5 text-sm text-slate-500 leading-relaxed sm:text-base">{topic.extra}</p>
+                    )}
                   </div>
                 ))}
               </div>
@@ -285,17 +345,15 @@ export default function App() {
       </section>
 
       <section id="speakers" className="py-20">
-        <SectionTitle eyebrow="Speakers" title="หน้าแนะนำวิทยากร" subtitle="ทำให้หน้าคอร์สดูน่าเชื่อถือขึ้นด้วยการให้บุคลิกแต่ละคนชัดขึ้น ไม่ใช่แค่กล่องข้อมูลแบน ๆ" />
+        <SectionTitle title="วิทยากรตัวจริงผู้เชี่ยวชาญ" subtitle="วิทยากรตัวจริงที่ลงสนามทุกวัน" />
         <div className="mx-auto mt-12 grid max-w-6xl gap-6 px-6 lg:grid-cols-3">
-          {speakers.map((speaker, index) => (
-            <article key={speaker.name} className="group overflow-hidden rounded-[2.25rem] border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(244,63,94,0.16)]">
-              <SpeakerPortrait name={speaker.name} title={speaker.role} accent={speaker.accent} />
-              <div className="p-6">
-                <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-rose-50 px-3 py-1 text-xs font-semibold text-rose-500">
-                  <span className="h-2 w-2 rounded-full bg-rose-500" />
-                  Speaker 0{index + 1}
-                </div>
-                <p className="text-slate-600 leading-7">{speaker.bio}</p>
+          {speakers.map((speaker) => (
+            <article key={speaker.name} className="group rounded-[2rem] border border-slate-200 bg-white p-4 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(244,63,94,0.12)]">
+              <SpeakerPortrait name={speaker.name} title={speaker.role} accent={speaker.accent} imageUrl={speaker.image} />
+              <div className="p-4 pt-5">
+                <h3 className="text-xl font-black text-slate-900 leading-tight">{speaker.name}</h3>
+                <p className="mt-2 text-sm font-bold uppercase tracking-wide text-rose-500">{speaker.role}</p>
+                <p className="mt-3 text-base leading-relaxed text-slate-500">{speaker.bio}</p>
               </div>
             </article>
           ))}
@@ -303,27 +361,170 @@ export default function App() {
       </section>
 
       <section id="audience" className="py-20">
-        <SectionTitle eyebrow="Audience" title="คอร์สนี้เหมาะกับใคร" subtitle="ออกแบบสำหรับเจ้าของธุรกิจ ทีมการตลาด และคนที่อยากใช้ AI และคอนเทนต์ให้เกิดยอดขายจริง" />
+        <SectionTitle title="คอร์สนี้เหมาะกับใคร" subtitle="ออกแบบสำหรับเจ้าของธุรกิจ ทีมการตลาด และคนที่อยากใช้ AI และคอนเทนต์ให้เกิดยอดขายจริง" />
         <div className="mx-auto mt-12 grid max-w-5xl gap-6 px-6 lg:grid-cols-3">
-          {audience.map((item, index) => (
-            <article key={item.title} className="rounded-[2rem] border border-slate-200 bg-white p-6 transition hover:-translate-y-1 hover:shadow-xl sm:p-7">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-500/10 text-xl font-black text-rose-500">0{index + 1}</div>
-              <h3 className="mt-5 text-xl font-bold sm:text-2xl">{item.title}</h3>
-              <p className="mt-3 text-sm leading-6 text-slate-600 sm:text-base sm:leading-7">{item.desc}</p>
-            </article>
-          ))}
+          {audience.map((item) => {
+            const renderIcon = () => {
+              if (item.icon === 'chart') {
+                return (
+                  <svg className="w-16 h-16 text-rose-500 mb-6" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    {/* Pie chart */}
+                    <path d="M18 10C22.4183 10 26 13.5817 26 18C26 18.5 25.5 19 25 19H17C16.5 19 16 18.5 16 18V10C16 9.5 17.5 10 18 10Z" fill="#F43F5E" />
+                    <path d="M15 19C15 20.6569 13.6569 22 12 22C10.3431 22 9 20.6569 9 19C9 17.3431 10.3431 16 12 16C13.6569 16 15 17.3431 15 19Z" stroke="#F43F5E" strokeWidth="2.5" />
+                    {/* Percentage sign % */}
+                    <text x="29" y="19" fill="#F43F5E" fontSize="13" fontWeight="900" fontFamily="sans-serif">%</text>
+                    {/* Trending line with dots */}
+                    <path d="M10 40L24 28L36 34L54 16" stroke="#F43F5E" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                    <circle cx="10" cy="40" r="3.5" fill="#F43F5E" />
+                    <circle cx="24" cy="28" r="3.5" fill="#F43F5E" />
+                    <circle cx="36" cy="34" r="3.5" fill="#F43F5E" />
+                    <circle cx="54" cy="16" r="4.5" fill="#F43F5E" />
+                    {/* Three vertical bars */}
+                    <rect x="14" y="46" width="6" height="12" rx="1.5" fill="#F43F5E" />
+                    <rect x="28" y="43" width="6" height="15" rx="1.5" fill="#F43F5E" />
+                    <rect x="42" y="38" width="6" height="20" rx="1.5" fill="#F43F5E" />
+                  </svg>
+                );
+              }
+              if (item.icon === 'rocket') {
+                return (
+                  <svg className="w-16 h-16 text-rose-500 mb-6" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    {/* Clean modern rocket */}
+                    <path d="M42.5 16.5C45.5 19.5 49.5 26.5 46.5 33.5C44.5 38.5 39.5 42.5 33.5 44.5C26.5 47.5 19.5 43.5 16.5 40.5C14.5 38.5 14 36 15 33C17 27 21 22 26 17C31 12 36.5 11 40 12L42.5 16.5Z" fill="#F43F5E" />
+                    {/* Fins */}
+                    <path d="M16.5 40.5L8 47L10 39.5L16.5 40.5Z" fill="#F43F5E" />
+                    <path d="M22.5 43.5L16 52L20.5 45.5" stroke="#F43F5E" strokeWidth="2.5" strokeLinecap="round" />
+                    {/* Fins other side */}
+                    <path d="M40.5 16.5L47 8L39.5 10L40.5 16.5Z" fill="#F43F5E" />
+                    <path d="M43.5 22.5L52 16L45.5 20.5" stroke="#F43F5E" strokeWidth="2.5" strokeLinecap="round" />
+                    {/* Window */}
+                    <circle cx="32" cy="28" r="3.5" fill="white" />
+                    {/* Blast flames */}
+                    <path d="M11 49C9 52 5 57 9 59C11 61 16 57 18 55" stroke="#F43F5E" strokeWidth="3" strokeLinecap="round" />
+                    <path d="M6 44C4.5 46.5 1.5 50.5 4.5 52C6 53.5 10 50.5 11.5 49" stroke="#F43F5E" strokeWidth="2" strokeLinecap="round" />
+                    <path d="M19 57C17.5 58.5 14.5 61.5 16 63C17.5 64.5 21.5 61.5 23 60" stroke="#F43F5E" strokeWidth="2" strokeLinecap="round" />
+                  </svg>
+                );
+              }
+              if (item.icon === 'shop') {
+                return (
+                  <svg className="w-16 h-16 text-rose-500 mb-6" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    {/* Storefront roof/awning */}
+                    <path d="M30 28H56V32C56 34.2091 54.2091 36 52 36C49.7909 36 48 34.2091 48 32C48 34.2091 46.2091 36 44 36C41.7909 36 40 34.2091 40 32C40 34.2091 38.2091 36 36 36C33.7909 36 32 34.2091 32 32V28H30Z" fill="#F43F5E" />
+                    <path d="M34 18H54L58 28H30L34 18Z" fill="#F43F5E" fillOpacity="0.8" />
+                    {/* Store body */}
+                    <rect x="34" y="36" width="20" height="16" stroke="#F43F5E" strokeWidth="3" strokeLinecap="round" />
+                    {/* Key */}
+                    <path d="M8 32C8 28.6863 10.6863 26 14 26C17.3137 26 20 28.6863 20 32C20 35.3137 17.3137 38 14 38C10.6863 38 8 35.3137 8 32Z" stroke="#F43F5E" strokeWidth="3" />
+                    <circle cx="14" cy="32" r="2.5" fill="#F43F5E" />
+                    <path d="M20 32H30M27 32V36M23 32V36" stroke="#F43F5E" strokeWidth="3" strokeLinecap="round" />
+                  </svg>
+                );
+              }
+              return null;
+            };
+
+            return (
+              <article key={item.title} className="rounded-[2rem] border border-slate-100 bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.015)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(244,63,94,0.06)] flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-start">
+                    {renderIcon()}
+                  </div>
+                  <h3 className="text-2xl font-black text-slate-900 leading-tight tracking-tight mb-4">{item.title}</h3>
+                  <p className="text-base leading-relaxed text-slate-500 font-medium">{item.desc}</p>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </section>
 
       <section id="results" className="py-20">
-        <SectionTitle eyebrow="Key result" title="สิ่งที่ผู้เรียนจะได้รับ" subtitle="เมื่อจบคอร์ส ผู้เรียนจะไม่ใช่แค่คนที่มีความรู้ แต่เป็นคนที่พร้อมลงมือสร้างผลลัพธ์ได้จริง" />
+        <SectionTitle title="สิ่งที่ผู้เรียนจะได้รับ" subtitle="เมื่อจบคอร์ส ผู้เรียนจะไม่ใช่แค่คนที่มีความรู้ แต่เป็นคนที่พร้อมลงมือสร้างผลลัพธ์ได้จริง" />
         <div className="mx-auto mt-12 grid max-w-5xl gap-6 px-6 md:grid-cols-2 lg:grid-cols-4">
-          {['เข้าใจกลยุทธ์ใหม่', 'มีงานจริงกลับไปใช้', 'ใช้ AI ได้คล่องขึ้น', 'สื่อสารแบรนด์ได้ชัดกว่าเดิม'].map((item) => (
-            <div key={item} className="rounded-3xl border border-slate-200 bg-white p-6 text-center shadow-sm">
-              <div className="mx-auto mb-4 h-14 w-14 rounded-2xl bg-gradient-to-br from-rose-500/20 to-orange-400/20" />
-              <p className="text-lg font-semibold leading-7 text-slate-900">{item}</p>
-            </div>
-          ))}
+          {[
+            { title: 'เข้าใจกลยุทธ์ใหม่', icon: 'strategy' },
+            { title: 'มีงานจริงกลับไปใช้', icon: 'presenter' },
+            { title: 'ใช้ AI ได้คล่องขึ้น', icon: 'ai_mind' },
+            { title: 'สื่อสารแบรนด์ได้ชัดขึ้น', icon: 'communication' },
+          ].map((item) => {
+            const renderIcon = () => {
+              if (item.icon === 'strategy') {
+                return (
+                  <svg className="w-16 h-16 text-rose-500 mb-6 mx-auto" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    {/* Whiteboard outline */}
+                    <rect x="10" y="12" width="44" height="30" rx="3" stroke="#F43F5E" strokeWidth="3" />
+                    {/* Whiteboard header */}
+                    <line x1="8" y1="12" x2="56" y2="12" stroke="#F43F5E" strokeWidth="4" strokeLinecap="round" />
+                    {/* Tri-pod stand */}
+                    <path d="M22 42L16 56M42 42L48 56M32 42V56" stroke="#F43F5E" strokeWidth="3" strokeLinecap="round" />
+                    {/* Content: X's and O's and arrows */}
+                    <path d="M16 20L22 26M22 20L16 26" stroke="#F43F5E" strokeWidth="2.5" strokeLinecap="round" />
+                    <circle cx="46" cy="22" r="3" stroke="#F43F5E" strokeWidth="2.5" />
+                    <circle cx="18" cy="34" r="3" stroke="#F43F5E" strokeWidth="2.5" />
+                    <path d="M42 30L48 36M48 30L42 36" stroke="#F43F5E" strokeWidth="2.5" strokeLinecap="round" />
+                    <path d="M24 24C30 20 34 36 40 32" stroke="#F43F5E" strokeWidth="2.5" strokeDasharray="3 3" strokeLinecap="round" />
+                    <path d="M37 30.5L41.5 32L39 36" stroke="#F43F5E" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                );
+              }
+              if (item.icon === 'presenter') {
+                return (
+                  <svg className="w-16 h-16 text-rose-500 mb-6 mx-auto" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="18" cy="18" r="4.5" fill="#F43F5E" />
+                    <path d="M12 28.5C12 25.5 14.5 24 18 24C21.5 24 24 25.5 24 28.5V36H12V28.5Z" fill="#F43F5E" />
+                    <path d="M22 30L34 22" stroke="#F43F5E" strokeWidth="3" strokeLinecap="round" />
+                    <rect x="30" y="14" width="24" height="18" rx="2" stroke="#F43F5E" strokeWidth="3" />
+                    <line x1="35" y1="19" x2="49" y2="19" stroke="#F43F5E" strokeWidth="2.5" strokeLinecap="round" />
+                    <line x1="35" y1="23" x2="49" y2="23" stroke="#F43F5E" strokeWidth="2.5" strokeLinecap="round" />
+                    <line x1="35" y1="27" x2="44" y2="27" stroke="#F43F5E" strokeWidth="2.5" strokeLinecap="round" />
+                    <circle cx="34" cy="46" r="3.5" fill="#F43F5E" />
+                    <path d="M29 55C29 52 31 51 34 51C37 51 39 52 39 55V58H29V55Z" fill="#F43F5E" />
+                    <circle cx="48" cy="46" r="3.5" fill="#F43F5E" />
+                    <path d="M43 55C43 52 45 51 48 51C51 51 53 52 53 55V58H43V55Z" fill="#F43F5E" />
+                  </svg>
+                );
+              }
+              if (item.icon === 'ai_mind') {
+                return (
+                  <svg className="w-16 h-16 text-rose-500 mb-6 mx-auto" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 52C25 54 28 54 31 54C34 54 35.5 52.5 36.5 50.5C37.5 48.5 37 46 37 46C39.5 45.5 41 43.5 41.5 40.5C42 37.5 40.5 35.5 40.5 35.5C42.5 34.5 43.5 31.5 43.5 28C43.5 17 38 12 28 12C18 12 15.5 19.5 15.5 28C15.5 36.5 18 40.5 19.5 42C19.5 42 19 46.5 21.5 49.5C22.5 50.5 24 52 24 52Z" fill="#F43F5E" />
+                    <circle cx="28" cy="22" r="2.5" fill="white" />
+                    <circle cx="35" cy="27" r="2.5" fill="white" />
+                    <circle cx="25" cy="32" r="2.5" fill="white" />
+                    <circle cx="32" cy="38" r="2.5" fill="white" />
+                    <path d="M28 22H35V27" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M25 32H32V38" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M28 22V32" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
+                  </svg>
+                );
+              }
+              if (item.icon === 'communication') {
+                return (
+                  <svg className="w-16 h-16 text-rose-500 mb-6 mx-auto" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="24" y="16" width="30" height="20" rx="3" fill="#F43F5E" fillOpacity="0.8" />
+                    <path d="M46 36L50 41V36H46Z" fill="#F43F5E" fillOpacity="0.8" />
+                    <line x1="30" y1="22" x2="48" y2="22" stroke="white" strokeWidth="2" strokeLinecap="round" />
+                    <line x1="30" y1="26" x2="48" y2="26" stroke="white" strokeWidth="2" strokeLinecap="round" />
+                    <line x1="30" y1="30" x2="42" y2="30" stroke="white" strokeWidth="2" strokeLinecap="round" />
+                    <rect x="10" y="24" width="30" height="20" rx="3" stroke="#F43F5E" strokeWidth="3" fill="white" />
+                    <path d="M14 44L18 49V44H14Z" fill="#F43F5E" stroke="#F43F5E" strokeWidth="3" strokeLinejoin="round" />
+                    <line x1="16" y1="30" x2="34" y2="30" stroke="#F43F5E" strokeWidth="2.5" strokeLinecap="round" />
+                    <line x1="16" y1="34" x2="34" y2="34" stroke="#F43F5E" strokeWidth="2.5" strokeLinecap="round" />
+                    <line x1="16" y1="38" x2="28" y2="38" stroke="#F43F5E" strokeWidth="2.5" strokeLinecap="round" />
+                  </svg>
+                );
+              }
+              return null;
+            };
+
+            return (
+              <div key={item.title} className="rounded-[2rem] border border-slate-100 bg-white p-8 text-center shadow-[0_8px_30px_rgb(0,0,0,0.015)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(244,63,94,0.06)] flex flex-col items-center justify-center">
+                {renderIcon()}
+                <p className="text-[1.375rem] font-black leading-snug text-slate-900 tracking-tight mt-2">{item.title}</p>
+              </div>
+            );
+          })}
         </div>
       </section>
 
