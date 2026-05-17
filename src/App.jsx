@@ -1,7 +1,7 @@
 import React from 'react';
 import speakerAn from './assets/speaker-an.png';
-import speakerSaran from './assets/speaker-saran.png';
 import speakerKriengkrai from './assets/speaker-kriengkrai.png';
+import speakerSaran from './assets/speaker-saran.png';
 
 const syllabus = [
   {
@@ -23,8 +23,8 @@ const syllabus = [
         extra: 'ดึงศักยภาพของคุณออกมาเป็นจุดขาย! เรียนรู้วิธีการสื่อสารให้ทรงพลัง เพื่อก้าวขึ้นเป็นผู้นำทางความคิด',
       },
       {
-        title: 'Guest Speaker Theme',
-        speaker: 'BearHouse & Merge',
+        title: 'Guest Speaker CEO Branding',
+        speaker: '',
         detail: 'ทำไมตัวตนผู้นำสำคัญกว่าสินค้า',
         extra: 'เจาะลึกเบื้องหลังว่าคาแรกเตอร์ของเจ้าของธุรกิจ ช่วยขับเคลื่อนยอดขายและสร้างแฟนคลับที่เหนียวแน่นได้อย่างไร',
       },
@@ -38,7 +38,7 @@ const syllabus = [
     topics: [
       {
         title: 'Practical Storytelling & Conversion Copywriting',
-        speaker: 'คุณท๊อป สุพศล (เด็กสมบูรณ์)',
+        speaker: '',
         detail: 'สร้างเรื่องเล่าสะกดใจ เปลี่ยนคนอ่านเป็นคนจ่ายเงิน',
         extra: 'หมดปัญหาคอนเทนต์ฝืด! เรียนรู้ศิลปะการเล่าเรื่องที่กระตุ้นอารมณ์ร่วม ผสานเทคนิคการเขียนคำโฆษณาที่มุ่งเน้นผลลัพธ์',
       },
@@ -176,7 +176,7 @@ function SectionTitle({ eyebrow, title, subtitle }) {
 
 function SpeakerPortrait({ name, title, accent, imageUrl }) {
   const [imageError, setImageError] = React.useState(false);
-  
+
   const getInitial = (fullName) => {
     const cleanName = fullName.replace('คุณ', '').replace('ดร.', '').trim();
     return cleanName.charAt(0) || 'S';
@@ -190,7 +190,7 @@ function SpeakerPortrait({ name, title, accent, imageUrl }) {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.35),transparent_45%),radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.1),transparent_25%)]" />
         <div className="absolute -right-10 -top-8 h-28 w-28 rounded-full bg-white/10 blur-2xl" />
       </div>
-      
+
       {/* 2. Speaker Image (placed outside the overflow-hidden background to allow top overflow!) */}
       {!imageError && imageUrl ? (
         <img
@@ -250,7 +250,7 @@ export default function App() {
             alt="R.U.N. by SPU - Revenue. Unlock. Now. รอด รวย เริ่ม เริศ"
             className="w-full h-auto block select-none pointer-events-none"
           />
-          
+
           {/* Interactive Absolute-Positioned Overlay Buttons */}
           <div className="absolute left-[14%] bottom-[7%] sm:left-[16%] sm:bottom-[10%] md:left-[17%] md:bottom-[12%] lg:left-[17.5%] lg:bottom-[14%] flex gap-2.5 sm:gap-4 z-20">
             <a
@@ -288,15 +288,15 @@ export default function App() {
       </section>
 
       <section id="syllabus" className="py-20">
-        <SectionTitle 
+        <SectionTitle
           title={
             <>
               หลักสูตร 4 วัน ลงมือทำจริง
               <br />
               เปลี่ยนจากเดินสู่การวิ่ง
             </>
-          } 
-          subtitle="แต่ละวันผสมกลยุทธ์ คอนเทนต์ และ AI เพื่อให้ผู้เรียนเห็นภาพรวมครบวงจร" 
+          }
+          subtitle="แต่ละวันผสมกลยุทธ์ คอนเทนต์ และ AI เพื่อให้ผู้เรียนเห็นภาพรวมครบวงจร"
         />
         <div className="mx-auto mt-12 max-w-5xl space-y-6 px-6">
           {syllabus.map((day) => (
@@ -329,8 +329,12 @@ export default function App() {
                   <div key={topic.title} className="rounded-xl border border-slate-200/60 bg-[#f8faff] p-4 transition duration-300 hover:border-rose-200 hover:bg-white hover:shadow-sm">
                     <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-base font-extrabold sm:text-lg">
                       <span className="text-slate-900">{topic.title}</span>
-                      <span className="text-slate-300 font-light hidden sm:inline">|</span>
-                      <span className="text-rose-500 text-sm sm:text-base font-bold">{topic.speaker}</span>
+                      {topic.speaker && (
+                        <>
+                          <span className="text-slate-300 font-light hidden sm:inline">|</span>
+                          <span className="text-rose-500 text-sm sm:text-base font-bold">{topic.speaker}</span>
+                        </>
+                      )}
                     </div>
                     <p className="mt-1 text-sm font-bold text-slate-800 sm:text-base leading-relaxed">{topic.detail}</p>
                     {topic.extra && (
