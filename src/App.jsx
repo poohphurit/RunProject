@@ -550,32 +550,101 @@ export default function App() {
             <div className="max-w-2xl">
               <p className="text-sm font-bold uppercase tracking-[0.35em] text-rose-500">Ready to join?</p>
               <h2 className="mt-4 text-3xl font-black text-slate-900 md:text-5xl">พร้อมก้าวสู่มนุษย์พันธุ์ใหม่ไปด้วยกัน</h2>
-              <p className="mt-4 text-lg leading-8 text-slate-600">ถ้าคุณต้องการคอร์สที่ดูดี น่าเชื่อถือ และพาผู้เรียนไปสู่การลงมือทำจริง หน้า landing page นี้ถูกออกแบบมาให้ใช้เป็นต้นแบบได้ทันที</p>
+              <p className="mt-4 text-lg leading-8 text-slate-600">ก้าวข้ามทุกขีดจำกัด ปลดล็อกศักยภาพธุรกิจและทีมการตลาดของคุณไปกับวิทยากรระดับแนวหน้า และการผสานพลังของกลยุทธ์และการใช้งาน AI</p>
             </div>
-            <div className="mt-8 grid gap-4 md:grid-cols-[1.2fr_0.8fr]">
-              <div className="rounded-3xl border border-slate-200 bg-[#f8faff] p-6">
-                <p className="text-sm font-bold uppercase tracking-[0.3em] text-rose-500">สมัครรับข้อมูล</p>
-                <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                  <input className="rounded-2xl border border-slate-200 bg-white px-4 py-3 outline-none placeholder:text-slate-400" placeholder="ชื่อ-นามสกุล" />
-                  <input className="rounded-2xl border border-slate-200 bg-white px-4 py-3 outline-none placeholder:text-slate-400" placeholder="อีเมล" />
-                  <input className="rounded-2xl border border-slate-200 bg-white px-4 py-3 outline-none placeholder:text-slate-400 sm:col-span-2" placeholder="ชื่อธุรกิจ / หน่วยงาน" />
+            <div className="mt-8 grid gap-6 md:grid-cols-2">
+              {/* Left Column: Contact Channels */}
+              <div className="rounded-3xl border border-slate-200 bg-[#f8faff] p-6 sm:p-8 flex flex-col justify-between">
+                <div>
+                  <p className="text-sm font-bold uppercase tracking-[0.3em] text-rose-500 mb-6">สอบถามข้อมูลเพิ่มเติมที่</p>
+                  
+                  {/* Line Official */}
+                  <div className="flex items-start gap-4 p-3.5 rounded-2xl bg-white border border-slate-100 shadow-sm mb-4">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#06c755]/10 text-[#06c755]">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" className="w-5 h-5">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider">Line Official</span>
+                      <span className="block text-base font-extrabold text-slate-800">@runbyspu</span>
+                      <a href="https://lin.ee/8I9yHV6" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 mt-1 text-xs font-extrabold text-[#06c755] hover:underline">
+                        แอดไลน์ lin.ee/8I9yHV6
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="w-3 h-3">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* Tel */}
+                  <div className="flex items-start gap-4 p-3.5 rounded-2xl bg-white border border-slate-100 shadow-sm mb-4">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-500/10 text-blue-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" className="w-5 h-5">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.387a12.035 12.035 0 01-7.108-7.108c-.145-.44.02-.927.387-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider">เบอร์โทรศัพท์</span>
+                      <div className="flex flex-wrap gap-x-2 gap-y-0.5 mt-0.5">
+                        <a href="tel:0612745157" className="text-sm font-extrabold text-slate-800 hover:text-rose-500 transition">061-274-5157</a>
+                        <span className="text-slate-300">,</span>
+                        <a href="tel:0929889516" className="text-sm font-extrabold text-slate-800 hover:text-rose-500 transition">092-988-9516</a>
+                      </div>
+                      <span className="block text-[10px] text-slate-400 mt-0.5">*กดโทรออกเพื่อติดต่อฝ่ายบริการหลักสูตร</span>
+                    </div>
+                  </div>
+
+                  {/* Email */}
+                  <div className="flex items-start gap-4 p-3.5 rounded-2xl bg-white border border-slate-100 shadow-sm">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-amber-500/10 text-amber-500">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" className="w-5 h-5">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                      </svg>
+                    </div>
+                    <div>
+                      <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider">อีเมลติดต่อ</span>
+                      <a href="mailto:runbyspu@gmail.com" className="block text-sm font-extrabold text-slate-800 hover:text-rose-500 transition mt-0.5">runbyspu@gmail.com</a>
+                    </div>
+                  </div>
                 </div>
-                <button className="mt-4 rounded-2xl bg-slate-900 px-6 py-3 font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-800">
-                  ขอข้อมูลเพิ่มเติม
-                </button>
               </div>
-              <div className="rounded-3xl border border-slate-200 bg-[#f8faff] p-6">
-                <p className="text-sm font-bold uppercase tracking-[0.3em] text-rose-500">Highlight</p>
-                <ul className="mt-4 space-y-3 text-slate-700">
-                  <li>• Workshop เน้นลงมือทำจริง</li>
-                  <li>• เหมาะกับคนทำธุรกิจและทีมการตลาด</li>
-                  <li>• ได้ framework ไปต่อยอดทันที</li>
-                </ul>
+
+              {/* Right Column: Online Registration */}
+              <div className="rounded-3xl border-2 border-rose-100 bg-[#fff5f6] p-6 sm:p-8 flex flex-col justify-between items-center text-center shadow-md relative overflow-hidden">
+                <div className="flex flex-col items-center">
+                  {/* Checkmark Badge */}
+                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-rose-500 text-white shadow-lg shadow-rose-200/50 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="w-8 h-8">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+                  </div>
+                  <p className="text-xs font-bold uppercase tracking-[0.35em] text-rose-500">Registration</p>
+                  <h3 className="text-xl font-black text-slate-900 mt-2 sm:text-2xl">กรอกใบสมัครเข้าร่วมโครงการ</h3>
+                  <p className="text-slate-600 text-sm mt-3 leading-relaxed max-w-sm">
+                    กรอกใบสมัครออนไลน์เพื่อยืนยันข้อมูลและเตรียมความพร้อมในการก้าวสู่การเปลี่ยนจากเดินเป็นวิ่งในโลกธุรกิจกับโครงการ R.U.N. by SPU
+                  </p>
+                </div>
+                
+                <div className="w-full mt-6">
+                  <a 
+                    href="https://forms.gle/nkAMHRD2H13VVemD7" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-[#ff3b60] to-[#ff5a79] hover:from-[#ff5a79] hover:to-[#ff3b60] text-white font-extrabold text-base sm:text-lg shadow-lg shadow-rose-200/60 transition duration-300 hover:scale-[1.03] active:scale-[0.98] inline-flex items-center justify-center gap-2"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="w-5 h-5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    กรอกใบสมัคร คลิกที่นี่
+                  </a>
+                  <span className="block text-[10px] text-rose-400 font-bold mt-2.5 uppercase tracking-widest">*สมัครเรียนและลงทะเบียนเพื่อยืนยันสิทธิ์ทันที</span>
+                </div>
               </div>
             </div>
             <div className="mt-8 flex flex-wrap gap-4">
               <a href="#hero" className="rounded-2xl bg-rose-500 px-6 py-3 font-semibold text-white transition hover:-translate-y-0.5 hover:bg-rose-600">กลับขึ้นด้านบน</a>
-              <a href="mailto:hello@run-spu.com" className="rounded-2xl border border-slate-200 bg-white px-6 py-3 font-semibold text-slate-700 transition hover:bg-slate-50">ติดต่อทีมงาน</a>
+              <a href="mailto:runbyspu@gmail.com" className="rounded-2xl border border-slate-200 bg-white px-6 py-3 font-semibold text-slate-700 transition hover:bg-slate-50">ติดต่อทีมงาน</a>
             </div>
           </div>
         </div>
