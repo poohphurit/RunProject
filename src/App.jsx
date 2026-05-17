@@ -12,7 +12,7 @@ const syllabus = [
     topics: [
       {
         title: 'AI Strategy Revolution',
-        speaker: 'คุณอัน ปฤณ (AEIOU)',
+        speaker: 'คุณอั้น ปฤณ (AEIOU)',
         detail: 'ถอดรหัส Master Marketing Canvas & New Marketing Funnel ยุคปัจจุบัน',
         extra: 'ปรับมายด์เซ็ตการตลาดใหม่ให้ทันโลก! วิเคราะห์และวางแผนกลยุทธ์ตั้งแต่ต้นน้ำยันปลายน้ำเพื่อหาช่องโหว่ทางธุรกิจ',
       },
@@ -60,25 +60,25 @@ const syllabus = [
     day: 'DAY 3',
     date: '17 ก.ค. 2569',
     theme: 'AI Visual + AI Video + Agentic AI',
-    subTheme: 'ติดปีกด้วย AI – ใช้เทคโนโลยีขยายไอเดียและสร้างผลงานระดับโปร',
+    subTheme: 'วิ่งเร็วขึ้น – ผลิตงานระดับโปร ต้นทุนต่ำลงหลายเท่า',
     topics: [
       {
         title: 'AI Graphic Design Mastery',
-        speaker: 'คุณปอง นักฆ่า (Enkay Studio)',
+        speaker: 'คุณปอง นัทชา (Enkay Studio)',
         detail: 'สร้าง Visual Identity และภาพโฆษณาระดับสตูดิโอด้วย Midjourney, Nano Banana',
-        extra: 'ยกระดับงานดีไซน์ของธุรกิจด้วย AI! สร้างสรรค์ภาพโปรโมตแบรนด์ที่มีเอกลักษณ์โดดเด่นสะดุดตาภายในไม่กี่วินาที',
+        extra: 'เรียนรู้วิธีใช้ AI สร้างอัตลักษณ์แบรนด์ให้สวยหรู ดูแพง และดึงดูดสายตา ประหยัดเวลาและงบประมาณได้มหาศาล',
       },
       {
         title: 'AI Video Production',
-        speaker: 'คุณกฤษ โอสถเลิศ (Bigbrain & Marketmind)',
+        speaker: 'คุณกฤษ โอสถาเลิศ (Bigbrain & Marketmind)',
         detail: 'ผลิตคลิป Short-form ครบวงจรด้วย AI ลงทั้ง TikTok, Reels, Shorts',
-        extra: 'สร้างวิดีโอระดับมืออาชีพอย่างรวดเร็ว! เรียนรู้ขั้นตอนการใช้ AI ช่วยตัดต่อ ใส่ซับไตเติล และเพิ่มลูกเล่นน่าสนใจ',
+        extra: 'ร่นระยะเวลาการทำวิดีโอจากหลายวันเหลือเพียงไม่กี่ชั่วโมง! ด้วย AI ที่ช่วยเนรมิตคลิปวิดีโอสั้นแบบรวดเดียวจบ',
       },
       {
         title: 'Agentic AI for Marketing',
-        speaker: 'คุณอัน ปฤณ (AEIOU)',
+        speaker: 'คุณอั้น ปฤณ (AEIOU)',
         detail: 'ใช้ AI ช่วยทำงานจริง ตั้งแต่คอนเทนต์จนถึง workflow',
-        extra: 'เปลี่ยน AI ให้เป็นผู้ร่วมงานที่รู้ใจ! ออกแบบระบบการทำงานอัตโนมัติเพื่อลดเวลาทำงานซ้ำซากและเพิ่มเวลาคิดสร้างสรรค์',
+        extra: 'ยกระดับ AI ให้เป็นเสมือนพนักงานดีเด่นประจำทีม สร้างระบบ Automation ในการทำงาน',
       },
     ],
   },
