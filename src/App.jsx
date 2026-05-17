@@ -298,43 +298,43 @@ export default function App() {
           } 
           subtitle="แต่ละวันผสมกลยุทธ์ คอนเทนต์ และ AI เพื่อให้ผู้เรียนเห็นภาพรวมครบวงจร" 
         />
-        <div className="mx-auto mt-12 max-w-5xl space-y-8 px-6">
+        <div className="mx-auto mt-12 max-w-5xl space-y-6 px-6">
           {syllabus.map((day) => (
-            <section key={day.day} className="rounded-[2.5rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl md:p-10">
+            <section key={day.day} className="rounded-3xl border border-slate-200/80 bg-white p-5 shadow-sm transition duration-300 hover:shadow-lg md:p-6">
               {/* Day Header */}
-              <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between border-b border-slate-100 pb-6 mb-8">
-                <div className="flex items-center gap-5">
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between border-b border-slate-100 pb-4 mb-4">
+                <div className="flex items-center gap-4">
                   {/* Day block */}
-                  <div className="flex flex-col items-center justify-center text-center min-w-[3.5rem]">
-                    <span className="text-xs font-bold uppercase tracking-[0.25em] text-rose-500 leading-none">DAY</span>
-                    <span className="text-5xl font-black text-rose-500 mt-1.5 leading-none">{day.day.replace('DAY ', '')}</span>
+                  <div className="flex flex-col items-center justify-center text-center min-w-[3rem]">
+                    <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-rose-500 leading-none">DAY</span>
+                    <span className="text-4xl font-black text-rose-500 mt-1 leading-none">{day.day.replace('DAY ', '')}</span>
                   </div>
                   {/* Vertical Divider */}
-                  <div className="h-12 w-[1px] bg-slate-200" />
+                  <div className="h-8 w-[1px] bg-slate-200 hidden sm:block" />
                   {/* Theme & Sub-theme */}
                   <div>
-                    <h3 className="text-xl font-black text-slate-900 sm:text-2xl leading-tight">{day.theme}</h3>
+                    <h3 className="text-lg font-black text-slate-900 sm:text-xl leading-tight">{day.theme}</h3>
                     {day.subTheme && (
-                      <p className="text-sm font-semibold text-slate-500 mt-1 sm:text-base">{day.subTheme}</p>
+                      <p className="text-xs font-semibold text-slate-400 mt-0.5 sm:text-sm">{day.subTheme}</p>
                     )}
                   </div>
                 </div>
                 {/* Date */}
-                <div className="text-sm font-semibold text-slate-400 self-end sm:self-center sm:text-base">
+                <div className="text-xs font-semibold text-slate-400 self-end sm:self-center sm:text-sm">
                   {day.date}
                 </div>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-2.5">
                 {day.topics.map((topic) => (
-                  <div key={topic.title} className="rounded-2xl border border-slate-200 bg-[#f8faff] p-5 sm:p-6 transition duration-300 hover:border-rose-200 hover:bg-white hover:shadow-md">
-                    <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-lg font-bold sm:text-xl">
+                  <div key={topic.title} className="rounded-xl border border-slate-200/60 bg-[#f8faff] p-4 transition duration-300 hover:border-rose-200 hover:bg-white hover:shadow-sm">
+                    <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-base font-extrabold sm:text-lg">
                       <span className="text-slate-900">{topic.title}</span>
                       <span className="text-slate-300 font-light hidden sm:inline">|</span>
-                      <span className="text-rose-500 text-base sm:text-lg font-semibold">{topic.speaker}</span>
+                      <span className="text-rose-500 text-sm sm:text-base font-bold">{topic.speaker}</span>
                     </div>
-                    <p className="mt-2 text-base font-bold text-slate-800 sm:text-lg leading-relaxed">{topic.detail}</p>
+                    <p className="mt-1 text-sm font-bold text-slate-800 sm:text-base leading-relaxed">{topic.detail}</p>
                     {topic.extra && (
-                      <p className="mt-1.5 text-sm text-slate-500 leading-relaxed sm:text-base">{topic.extra}</p>
+                      <p className="mt-1 text-xs text-slate-500 leading-relaxed sm:text-sm">{topic.extra}</p>
                     )}
                   </div>
                 ))}
