@@ -12,13 +12,13 @@ const syllabus = [
     topics: [
       {
         title: 'AI Strategy Revolution',
-        speaker: 'คุณอั้น ปฤณ (AEIOU)',
+        speaker: 'คุณอ้น ปฤณ (AEIOU)',
         detail: 'ถอดรหัส Master Marketing Canvas & New Marketing Funnel ยุคปัจจุบัน',
         extra: 'ปรับมายด์เซ็ตการตลาดใหม่ให้ทันโลก! วิเคราะห์และวางแผนกลยุทธ์ตั้งแต่ต้นน้ำยันปลายน้ำเพื่อหาช่องโหว่ทางธุรกิจ',
       },
       {
         title: 'CEO Branding - The Power of Personal Authority',
-        speaker: 'คุณแอ้ม ศรัณย์ (Uppercuz)',
+        speaker: 'คุณแอ๊ม ศรัณย์ (Uppercuz)',
         detail: 'วาง Positioning ผู้นำในยุคที่ลูกค้าไว้ใจ “คน” มากกว่า “ร้าน”',
         extra: 'ดึงศักยภาพของคุณออกมาเป็นจุดขาย! เรียนรู้วิธีการสื่อสารให้ทรงพลัง เพื่อก้าวขึ้นเป็นผู้นำทางความคิด',
       },
@@ -50,7 +50,7 @@ const syllabus = [
       },
       {
         title: 'Live Commerce Mastery',
-        speaker: 'คุณแอ้ม ศรัณย์ (Uppercuz)',
+        speaker: 'คุณแอ๊ม ศรัณย์ (Uppercuz)',
         detail: 'จิตวิทยาขายผ่านจอ สคริปต์ 3 จังหวะ Hook-Pitch-Close',
         extra: 'ทลายกำแพงความกลัวหน้ากล้อง! ฝึกทักษะการไลฟ์สดแบบมือโปร ที่ทำให้ลูกค้าต้องรีบ F ก่อนของหมด',
       },
@@ -76,7 +76,7 @@ const syllabus = [
       },
       {
         title: 'Agentic AI for Marketing',
-        speaker: 'คุณอั้น ปฤณ (AEIOU)',
+        speaker: 'คุณอ้น ปฤณ (AEIOU)',
         detail: 'ใช้ AI ช่วยทำงานจริง ตั้งแต่คอนเทนต์จนถึง workflow',
         extra: 'ยกระดับ AI ให้เป็นเสมือนพนักงานดีเด่นประจำทีม สร้างระบบ Automation ในการทำงาน',
       },
@@ -112,7 +112,7 @@ const syllabus = [
 
 const speakers = [
   {
-    name: 'คุณอั้น ปฤณ (AEIOU)',
+    name: 'คุณอ้น ปฤณ (AEIOU)',
     role: 'FOUNDER & CEO AEIOU',
     bio: 'กลยุทธ์การตลาดและ AI ที่ใช้ได้จริงสำหรับธุรกิจยุคใหม่',
     image: speakerAn,
@@ -557,7 +557,7 @@ export default function App() {
               <div className="rounded-3xl border border-slate-200 bg-[#f8faff] p-6 sm:p-8 flex flex-col justify-between">
                 <div>
                   <p className="text-sm font-black text-rose-500 mb-6 tracking-normal">สอบถามข้อมูลเพิ่มเติมที่</p>
-                  
+
                   {/* Line Official */}
                   <div className="flex items-start gap-4 p-3.5 rounded-2xl bg-white border border-slate-100 shadow-sm mb-4">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#06c755]/10 text-[#06c755]">
@@ -625,12 +625,12 @@ export default function App() {
                     กรอกใบสมัครออนไลน์เพื่อยืนยันข้อมูลและเตรียมความพร้อมในการก้าวสู่การเปลี่ยนจากเดินเป็นวิ่งในโลกธุรกิจกับโครงการ R.U.N. by SPU
                   </p>
                 </div>
-                
+
                 <div className="w-full mt-6">
-                  <a 
-                    href="https://forms.gle/nkAMHRD2H13VVemD7" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href="https://forms.gle/nkAMHRD2H13VVemD7"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-[#ff3b60] to-[#ff5a79] hover:from-[#ff5a79] hover:to-[#ff3b60] text-white font-extrabold text-base sm:text-lg shadow-lg shadow-rose-200/60 transition duration-300 hover:scale-[1.03] active:scale-[0.98] inline-flex items-center justify-center gap-2"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="w-5 h-5">
