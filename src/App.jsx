@@ -217,27 +217,38 @@ export default function App() {
   return (
     <main className="min-h-screen bg-[#f4f7ff] text-slate-800">
       <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
-          <div className="flex flex-col items-start">
-            <span className="text-xl font-black tracking-tight text-slate-900 leading-none">
-              R<span className="text-rose-500">.</span>U<span className="text-rose-500">.</span>N
-            </span>
-            <span className="text-[8px] font-bold uppercase tracking-[0.2em] text-slate-400 mt-1">
-              REVENUE. UNLOCK. NOW.
-            </span>
+        <div className="mx-auto flex max-w-7xl flex-col md:flex-row md:items-center justify-between gap-3 md:gap-4 px-4 py-3 sm:px-6">
+          {/* Logo and Mobile Register Button Row */}
+          <div className="flex w-full items-center justify-between md:w-auto">
+            <div className="flex flex-col items-start">
+              <span className="text-xl font-black tracking-tight text-slate-900 leading-none">
+                R<span className="text-rose-500">.</span>U<span className="text-rose-500">.</span>N
+              </span>
+              <span className="text-[8px] font-bold uppercase tracking-[0.2em] text-slate-400 mt-1">
+                REVENUE. UNLOCK. NOW.
+              </span>
+            </div>
+            {/* Visible on Mobile only */}
+            <a href="#apply" className="rounded-full bg-rose-500 px-3.5 py-1.5 text-xs font-semibold text-white shadow-lg shadow-rose-200 transition hover:-translate-y-0.5 hover:bg-rose-600 md:hidden">
+              สมัครเลย
+            </a>
           </div>
-          <nav className="hidden items-center gap-1 rounded-full border border-slate-200 bg-slate-50 p-1 md:flex">
+
+          {/* Navigation Pill Menu (Horizontally Scrollable on Mobile) */}
+          <nav className="w-full overflow-x-auto no-scrollbar flex items-center gap-1 rounded-full border border-slate-200 bg-slate-50 p-1 md:w-auto md:flex md:overflow-x-visible">
             {sections.map((item) => (
               <a
                 key={item.id}
                 href={`#${item.id}`}
-                className="rounded-full px-4 py-2 text-sm font-semibold text-slate-600 transition hover:bg-rose-500 hover:text-white"
+                className="rounded-full px-3 py-1.5 md:px-4 md:py-2 text-xs md:text-sm font-semibold text-slate-600 transition hover:bg-rose-500 hover:text-white shrink-0 whitespace-nowrap"
               >
                 {item.label}
               </a>
             ))}
           </nav>
-          <a href="#apply" className="rounded-full bg-rose-500 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-rose-200 transition hover:-translate-y-0.5 hover:bg-rose-600">
+
+          {/* Visible on Desktop/Tablet only */}
+          <a href="#apply" className="hidden md:inline-block rounded-full bg-rose-500 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-rose-200 transition hover:-translate-y-0.5 hover:bg-rose-600">
             สมัครเลย
           </a>
         </div>
