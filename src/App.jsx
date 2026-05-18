@@ -70,7 +70,7 @@ const syllabus = [
       },
       {
         title: 'AI Video Production',
-        speaker: 'คุณกฤษ โอสถาเลิศ (Bigbrain & Marketmind)',
+        speaker: 'คุณกฤษ (Bigbrain & Marketmind)',
         detail: 'ผลิตคลิป Short-form ครบวงจรด้วย AI ลงทั้ง TikTok, Reels, Shorts',
         extra: 'ร่นระยะเวลาการทำวิดีโอจากหลายวันเหลือเพียงไม่กี่ชั่วโมง! ด้วย AI ที่ช่วยเนรมิตคลิปวิดีโอสั้นแบบรวดเดียวจบ',
       },
