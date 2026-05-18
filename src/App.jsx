@@ -556,7 +556,7 @@ export default function App() {
               {/* Left Column: Contact Channels */}
               <div className="rounded-3xl border border-slate-200 bg-[#f8faff] p-6 sm:p-8 flex flex-col justify-between">
                 <div>
-                  <p className="text-sm font-bold uppercase tracking-[0.3em] text-rose-500 mb-6">สอบถามข้อมูลเพิ่มเติมที่</p>
+                  <p className="text-sm font-black text-rose-500 mb-6 tracking-normal">สอบถามข้อมูลเพิ่มเติมที่</p>
                   
                   {/* Line Official */}
                   <div className="flex items-start gap-4 p-3.5 rounded-2xl bg-white border border-slate-100 shadow-sm mb-4">
@@ -638,7 +638,7 @@ export default function App() {
                     </svg>
                     กรอกใบสมัคร คลิกที่นี่
                   </a>
-                  <span className="block text-[10px] text-rose-400 font-bold mt-2.5 uppercase tracking-widest">*สมัครเรียนและลงทะเบียนเพื่อยืนยันสิทธิ์ทันที</span>
+                  <span className="block text-[10px] text-rose-400 font-bold mt-2.5 tracking-normal">*สมัครเรียนและลงทะเบียนเพื่อยืนยันสิทธิ์ทันที</span>
                 </div>
               </div>
             </div>
