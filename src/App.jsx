@@ -259,14 +259,14 @@ export default function App() {
           {/* Responsive Hero Banner Images */}
           {/* Desktop/Tablet Image */}
           <img
-            src="/hero-banner.jpg"
+            src="/hero-banner.jpg?v=2"
             alt="R.U.N. by SPU - Revenue. Unlock. Now. รอด รวย เริ่ม เริศ"
             className="hidden sm:block w-full h-auto select-none pointer-events-none"
           />
 
           {/* Mobile Image */}
           <img
-            src="/hero-banner-mobile.jpg"
+            src="/hero-banner-mobile.jpg?v=2"
             alt="R.U.N. by SPU - Revenue. Unlock. Now. รอด รวย เริ่ม เริศ"
             className="block sm:hidden w-full h-auto select-none pointer-events-none"
           />
