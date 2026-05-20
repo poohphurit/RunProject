@@ -398,7 +398,7 @@ export default function App() {
               {/* Badge Title */}
               <div className="inline-flex items-center gap-1.5 bg-slate-50 border border-slate-200/80 px-4 py-1.5 rounded-full shadow-sm mb-4 transition duration-300 group-hover:border-rose-300 group-hover:bg-rose-50/30">
                 <span className="text-rose-500 font-extrabold text-sm">{step.tag}</span>
-                <span className="text-slate-300 font-light text-xs">|</span>
+                <span className="text-slate-400 font-black text-sm">=</span>
                 <span className="text-slate-800 font-black text-sm">{step.title}</span>
               </div>
 
