@@ -732,7 +732,7 @@ export default function App() {
       </section>
 
       {/* STEEP Landscape Section */}
-      <section id="steep" className="py-20 border-b border-slate-200/50 bg-white">
+      <section id="steep" className="py-20 border-b border-slate-200/50">
         <SectionTitle
           eyebrow="SITUATIONAL LANDSCAPE"
           title="ภูมิทัศน์ธุรกิจ STEEP (2025-2026)"
@@ -807,7 +807,7 @@ export default function App() {
       </section>
 
       {/* Human Core & 4 Pillars Section */}
-      <section id="human-core" className="py-20 border-b border-slate-200/50 bg-white">
+      <section id="human-core" className="py-20 border-b border-slate-200/50">
         <SectionTitle
           eyebrow="HUMAN CORE VALUE"
           title="คุณค่าของความเป็นมนุษย์ คือแก่นที่ AI ไม่มีวันทดแทน"
