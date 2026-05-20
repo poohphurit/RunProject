@@ -731,6 +731,81 @@ export default function App() {
         </div>
       </section>
 
+      {/* STEEP Landscape Section */}
+      <section id="steep" className="py-20 border-b border-slate-200/50 bg-[#f4f7ff]/30">
+        <SectionTitle
+          eyebrow="SITUATIONAL LANDSCAPE"
+          title="ภูมิทัศน์ธุรกิจ STEEP (2025-2026)"
+          subtitle="วิเคราะห์มิติสถานการณ์จริงที่จะส่งผลกระทบต่อธุรกิจคุณในปัจจุบันและอนาคตอันใกล้"
+        />
+
+        <div className="mx-auto mt-12 max-w-4xl px-6 space-y-6">
+          {/* STEEP Cards Container */}
+          <div className="rounded-[2rem] border border-slate-200/80 bg-white p-6 md:p-10 shadow-sm space-y-6">
+            <h4 className="text-lg font-black text-slate-800 border-b border-slate-100 pb-4 mb-4 flex items-center gap-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-rose-500" />
+              มิติสถานการณ์ (Situation Analysis)
+            </h4>
+
+            <div className="space-y-6">
+              {[
+                {
+                  letter: 'S',
+                  title: 'Social — สังคมคนไทย',
+                  desc: 'สังคมคนไทย 91% ซื้อผ่าน Social Commerce สูงสุดในโลก ลูกค้า "พบเจอ" สินค้าบนฟีด ไม่ได้ค้นหาอีกต่อไป คอนเทนต์ขยะท่วม Trust กลายเป็นสกุลเงินที่มีค่าที่สุด',
+                  color: 'bg-rose-500 text-white',
+                },
+                {
+                  letter: 'T',
+                  title: 'Technology — เทคโนโลยี',
+                  desc: 'เทคโนโลยีลูกค้าถาม ChatGPT, Perplexity แทน Google แบรนด์ที่ AI ไม่หยิบแนะนำจะหายไปจากสายตาลูกค้า คู่แข่งที่ใช้ AI ก่อนกำลังทิ้งห่าง',
+                  color: 'bg-rose-500 text-white',
+                },
+                {
+                  letter: 'E',
+                  title: 'Economy — เศรษฐกิจผู้บริโภค',
+                  desc: 'เศรษฐกิจผู้บริโภค 71% รับรู้เศรษฐกิจตึงตัว ตลาดแยกขั้วชัด (Premium vs Value) ตลาดกลางหดตัว SME ที่ไม่เลือกจุดยืนจะถูกบีบจากทุกด้าน',
+                  color: 'bg-rose-500 text-white',
+                },
+                {
+                  letter: 'E',
+                  title: 'Environment — สิ่งแวดล้อม',
+                  desc: 'สิ่งแวดล้อมสินค้าจีนถูกกว่า 3-5 เท่า เข้าถึงคนไทยตรงผ่าน TikTok Shop, Shopee ไม่ผ่านคนกลาง ความขัดแย้งในภูมิภาคกัดเซาะห่วงโซ่อุปทาน',
+                  color: 'bg-rose-500 text-white',
+                },
+                {
+                  letter: 'P',
+                  title: 'Politics — การเมือง',
+                  desc: 'การเมืองการเมืองในประเทศผันผวน จุดยืนใหม่สหรัฐฯ สงครามเพื่อนบ้าน นโยบายการค้าเปลี่ยนตลอด ส่งผลต่อต้นทุน โอกาส ความมั่นใจลงทุน',
+                  color: 'bg-rose-500 text-white',
+                },
+              ].map((item, idx) => (
+                <div key={idx} className="flex gap-4 items-start p-4 rounded-2xl transition duration-300 hover:bg-slate-50 border border-transparent hover:border-slate-100">
+                  <div className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl font-black text-xl shadow-sm ${item.color}`}>
+                    {item.letter}
+                  </div>
+                  <div>
+                    <h5 className="font-extrabold text-slate-900 text-base leading-snug">{item.title}</h5>
+                    <p className="text-slate-600 font-bold text-sm sm:text-base mt-2 leading-relaxed">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Red Banner underneath */}
+          <div className="rounded-[2rem] bg-gradient-to-r from-rose-600 to-rose-500 p-8 text-white shadow-md shadow-rose-200/50 text-center relative overflow-hidden">
+            <div className="absolute -top-12 -right-12 w-32 h-32 bg-white/10 rounded-full blur-2xl" />
+            <p className="text-base sm:text-lg font-black tracking-wide leading-relaxed">
+              ผู้ประกอบการที่ยังยึดวิธีเดิม ไม่ได้แค่เดินช้า — <span className="underline decoration-wavy decoration-rose-300">กำลังถอยหลังโดยไม่รู้ตัว</span>
+            </p>
+            <p className="mt-4 text-sm sm:text-base font-bold text-rose-50 leading-relaxed max-w-2xl mx-auto">
+              R.U.N. ออกแบบมาให้ลุกขึ้นวิ่ง — ปลดล็อกรายได้ใหม่ มอบท่าไม้ตายใช้ได้ทันที สร้างผลลัพธ์จับต้องได้ตั้งแต่วันแรกที่กลับไปทำงาน
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="syllabus" className="py-20">
         <SectionTitle
           title={
