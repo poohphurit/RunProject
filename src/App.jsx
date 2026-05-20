@@ -656,6 +656,26 @@ export default function App() {
 
       <section id="problem" className="py-20">
         <SectionTitle title="ทำไมต้องวิ่งตอนนี้?" subtitle="เพราะตลาดเปลี่ยนเร็ว ลูกค้าเปลี่ยนวิธีตัดสินใจ และการแข่งขันใหม่ไม่ได้วัดกันที่ความรู้เพียงอย่างเดียว" />
+        
+        {/* Centered Message */}
+        <div className="text-center max-w-3xl mx-auto mt-12 mb-16 px-6 space-y-4">
+          <p className="text-xl sm:text-2xl font-black text-slate-900 leading-tight">
+            " ในขณะที่คุณยังเดินอยู่ โลกกำลังวิ่ง "
+          </p>
+          <p className="text-lg sm:text-xl font-extrabold text-slate-800 leading-relaxed">
+            คู่แข่งจีน วิ่ง / AI วิ่ง / ลูกค้า วิ่ง / ตลาด วิ่ง
+          </p>
+          <p className="text-xl sm:text-2xl font-black text-rose-500 leading-tight">
+            ถ้าคุณไม่วิ่ง คุณไม่ได้แค่ช้า คุณกำลังถอยหลัง
+          </p>
+          <div className="space-y-1.5 pt-4 text-base sm:text-lg font-bold text-slate-800 leading-relaxed">
+            <p>ภูมิทัศน์ธุรกิจ 2025-2026 เปลี่ยนถอนรากถอนโคน</p>
+            <p>ทุกมิติ (STEEP) สั่นสะเทือนพร้อมกัน</p>
+            <p>เหมือนวันที่โลกเปลี่ยนจาก Offline สู่ Online แต่ครั้ง</p>
+            <p>นี้คือ Online สู่ AI เร็วกว่าเดิมหลายเท่า</p>
+          </div>
+        </div>
+
         <div className="mx-auto mt-12 grid max-w-7xl gap-6 px-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           {[
             ['AI', 'เปลี่ยน AI เป็นผู้ช่วย ลดต้นทุน ทุ่นแรง ผลิตงานระดับโปร เพื่อให้คุณวิ่งเร็วกว่าคู่แข่ง'],
