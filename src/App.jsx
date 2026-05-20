@@ -8,25 +8,34 @@ const syllabus = [
     day: 'DAY 1',
     date: '3 ก.ค. 2569',
     theme: 'Brand + Marketing + Personal Branding',
-    subTheme: 'ลุกขึ้นยืน – เปิดตาเห็นสนามรบใหม่ สร้างตัวตนให้ทรงพลัง',
+    subTheme: 'ลุกขึ้นยืน - เปิดตาเห็นสนามรบใหม่ สร้างตัวตนให้ทรงพลัง',
     topics: [
       {
+        time: '10.00 - 12.00 น.',
         title: 'AI Strategy Revolution',
         speaker: 'คุณอ้น ปฤณ (AEIOU)',
-        detail: 'ถอดรหัส Master Marketing Canvas & New Marketing Funnel ยุคปัจจุบัน',
-        extra: 'ปรับมายด์เซ็ตการตลาดใหม่ให้ทันโลก! วิเคราะห์และวางแผนกลยุทธ์ตั้งแต่ต้นน้ำยันปลายน้ำเพื่อหาช่องโหว่ทางธุรกิจ',
+        company: 'บริษัท/แบรนด์ AEIOU Solution Co.,Ltd.',
+        status: 'Confirmed',
+        headline: 'ถอดรหัส Master Marketing Canvas & New Marketing Funnel ยุคปัจจุบัน',
+        detail: 'ปรับมายด์เซ็ตการตลาดใหม่ให้ทันโลก! วิเคราะห์และวางแผนกลยุทธ์ตั้งแต่ต้นน้ำยันปลายน้ำเพื่อหาช่องโหว่ทางธุรกิจ',
       },
       {
+        time: '13.00 - 15.00 น.',
         title: 'CEO Branding - The Power of Personal Authority',
-        speaker: 'คุณแอ๊ม ศรัณย์ (Uppercuz)',
-        detail: 'วาง Positioning ผู้นำในยุคที่ลูกค้าไว้ใจ “คน” มากกว่า “ร้าน”',
-        extra: 'ดึงศักยภาพของคุณออกมาเป็นจุดขาย! เรียนรู้วิธีการสื่อสารให้ทรงพลัง เพื่อก้าวขึ้นเป็นผู้นำทางความคิด',
+        speaker: 'คุณแอ้ม ศรัณย์',
+        company: 'บริษัท/แบรนด์ Uppercuz Creative Agency',
+        status: 'Confirmed',
+        headline: 'วาง Positioning ผู้นำในยุคที่ลูกค้าไว้ใจ “คน” มากกว่า “ร้าน”',
+        detail: 'ดึงศักยภาพของคุณออกมาเป็นจุดขาย! เรียนรู้วิธีการสื่อสารให้ทรงพลัง เพื่อก้าวขึ้นเป็นผู้นำทางความคิด',
       },
       {
+        time: '15.30 - 17.30 น.',
         title: 'Guest Speaker CEO Branding',
         speaker: '',
-        detail: 'ทำไมตัวตนผู้นำสำคัญกว่าสินค้า',
-        extra: 'เจาะลึกเบื้องหลังว่าคาแรกเตอร์ของเจ้าของธุรกิจ ช่วยขับเคลื่อนยอดขายและสร้างแฟนคลับที่เหนียวแน่นได้อย่างไร',
+        company: '',
+        status: 'TBA',
+        headline: 'ทำไมตัวตนผู้นำสำคัญกว่าสินค้า',
+        detail: 'เจาะลึกเบื้องหลังว่าคาแรกเตอร์ของเจ้าของธุรกิจ ช่วยขับเคลื่อนยอดขายและสร้างแฟนคลับที่เหนียวแน่นได้อย่างไร',
       },
     ],
   },
@@ -34,25 +43,34 @@ const syllabus = [
     day: 'DAY 2',
     date: '10 ก.ค. 2569',
     theme: 'Storytelling + Short form video + Live Commerce',
-    subTheme: 'เริ่มวิ่ง – เล่าเรื่องให้ขายได้ สร้างผลงานชิ้นแรก',
+    subTheme: 'เริ่มวิ่ง - เล่าเรื่องให้ขายได้ สร้างผลงานชิ้นแรก',
     topics: [
       {
+        time: '10.00 - 12.00 น.',
         title: 'Practical Storytelling & Conversion Copywriting',
         speaker: '',
-        detail: 'สร้างเรื่องเล่าสะกดใจ เปลี่ยนคนอ่านเป็นคนจ่ายเงิน',
-        extra: 'หมดปัญหาคอนเทนต์ฝืด! เรียนรู้ศิลปะการเล่าเรื่องที่กระตุ้นอารมณ์ร่วม ผสานเทคนิคการเขียนคำโฆษณาที่มุ่งเน้นผลลัพธ์',
+        company: '',
+        status: 'TBA',
+        headline: 'สร้างเรื่องเล่าสะกดใจ เปลี่ยนคนอ่านเป็นคนจ่ายเงิน',
+        detail: 'หมดปัญหาคอนเทนต์ฝืด! เรียนรู้ศิลปะการเล่าเรื่องที่กระตุ้นอารมณ์ร่วม ผสานเทคนิคการเขียนคำโฆษณาที่มุ่งเน้นผลลัพธ์',
       },
       {
+        time: '13.00 - 15.00 น.',
         title: 'Short Video + TikTok Marketing',
-        speaker: 'ทีมงาน Uppercuz',
-        detail: 'สูตรคลิปสั้นปิดการขาย อัลกอริทึม TikTok ระบบ Affiliate',
-        extra: 'เจาะลึกความลับของวิดีโอสั้น เข้าใจระบบการดันฟีด และเรียนรู้วิธีสร้างกองทัพนักขายผ่านระบบ Affiliate',
+        speaker: 'วิทยากร ทีมงาน Uppercuz',
+        company: 'บริษัท/แบรนด์ Uppercuz Creative Agency',
+        status: 'Confirmed',
+        headline: 'สูตรคลิปสั้นปิดการขาย อัลกอริทึม TikTok ระบบ Affiliate',
+        detail: 'เจาะลึกความลับของวิดีโอสั้น เข้าใจระบบการดันฟีด และเรียนรู้วิธีสร้างกองทัพนักขายผ่านระบบ Affiliate',
       },
       {
+        time: '15.30 - 17.30 น.',
         title: 'Live Commerce Mastery',
-        speaker: 'คุณแอ๊ม ศรัณย์ (Uppercuz)',
-        detail: 'จิตวิทยาขายผ่านจอ สคริปต์ 3 จังหวะ Hook-Pitch-Close',
-        extra: 'ทลายกำแพงความกลัวหน้ากล้อง! ฝึกทักษะการไลฟ์สดแบบมือโปร ที่ทำให้ลูกค้าต้องรีบ F ก่อนของหมด',
+        speaker: 'คุณแอ้ม ศรัณย์',
+        company: 'บริษัท/แบรนด์ Uppercuz Creative Agency',
+        status: 'Confirmed',
+        headline: 'จิตวิทยาขายผ่านจอ สคริปต์ 3 จังหวะ Hook-Pitch-Close',
+        detail: 'ทลายกำแพงความกลัวหน้ากล้อง! ฝึกทักษะการไลฟ์สดแบบมือโปร ที่ทำให้ลูกค้าต้องรีบ F ก่อนของหมด',
       },
     ],
   },
@@ -60,25 +78,34 @@ const syllabus = [
     day: 'DAY 3',
     date: '17 ก.ค. 2569',
     theme: 'AI Visual + AI Video + Agentic AI',
-    subTheme: 'วิ่งเร็วขึ้น – ผลิตงานระดับโปร ต้นทุนต่ำลงหลายเท่า',
+    subTheme: 'วิ่งเร็วขึ้น - ผลิตงานระดับโปร ต้นทุนต่ำลงหลายเท่า',
     topics: [
       {
+        time: '10.00 - 12.00 น.',
         title: 'AI Graphic Design Mastery',
-        speaker: 'คุณปอง นัทชา (Enkay Studio)',
-        detail: 'สร้าง Visual Identity และภาพโฆษณาระดับสตูดิโอด้วย Midjourney, Nano Banana',
-        extra: 'เรียนรู้วิธีใช้ AI สร้างอัตลักษณ์แบรนด์ให้สวยหรู ดูแพง และดึงดูดสายตา ประหยัดเวลาและงบประมาณได้มหาศาล',
+        speaker: 'วิทยากร คุณนัทชา กาญจนจิตรา (ปอง)',
+        company: 'บริษัท/แบรนด์ Enkay Studio',
+        status: 'Confirmed',
+        headline: 'สร้าง Visual Identity และภาพโฆษณาระดับสตูดิโอด้วย Midjourney, Nano Banana',
+        detail: 'เรียนรู้วิธีใช้ AI สร้างอัตลักษณ์แบรนด์ให้สวยหรู ดูแพง และดึงดูดสายตา ประหยัดเวลาและงบประมาณได้มหาศาล',
       },
       {
+        time: '13.00 - 15.00 น.',
         title: 'AI Video Production',
-        speaker: 'คุณกฤษ (Bigbrain & Marketmind)',
-        detail: 'ผลิตคลิป Short-form ครบวงจรด้วย AI ลงทั้ง TikTok, Reels, Shorts',
-        extra: 'ร่นระยะเวลาการทำวิดีโอจากหลายวันเหลือเพียงไม่กี่ชั่วโมง! ด้วย AI ที่ช่วยเนรมิตคลิปวิดีโอสั้นแบบรวดเดียวจบ',
+        speaker: 'วิทยากร คุณกฤษ โฮสถาเลิศ (พี่กฤษ)',
+        company: 'บริษัท/แบรนด์ Bigbrain & Marketmind',
+        status: 'Confirmed',
+        headline: 'ผลิตคลิป Short-form ครบวงจรด้วย AI ลงทั้ง TikTok, Reels, Shorts',
+        detail: 'ร่นระยะเวลาการทำวิดีโอจากหลายวันเหลือเพียงไม่กี่ชั่วโมง! ด้วย AI ที่ช่วยเนรมิตคลิปวิดีโอสั้นแบบรวดเดียวจบ',
       },
       {
+        time: '15.30 - 17.30 น.',
         title: 'Agentic AI for Marketing',
-        speaker: 'คุณอ้น ปฤณ (AEIOU)',
-        detail: 'ใช้ AI ช่วยทำงานจริง ตั้งแต่คอนเทนต์จนถึง workflow',
-        extra: 'ยกระดับ AI ให้เป็นเสมือนพนักงานดีเด่นประจำทีม สร้างระบบ Automation ในการทำงาน',
+        speaker: 'วิทยากร คุณ ปตุณ จำเริญพานิช (อั้น)',
+        company: 'บริษัท/แบรนด์ AEIOU Solution Co.,Ltd.',
+        status: 'Confirmed',
+        headline: 'ใช้ AI ช่วยทำงานจริง ตั้งแต่คอนเทนต์จนถึง workflow',
+        detail: 'ยกระดับ AI ให้เป็นเสมือนพนักงานดีเด่นประจำทีม สร้างระบบ Automation ในการทำงาน',
       },
     ],
   },
@@ -86,25 +113,34 @@ const syllabus = [
     day: 'DAY 4',
     date: '24 ก.ค. 2569',
     theme: 'New Product + AI Search + Sustain Marketing',
-    subTheme: 'วิ่งนำหน้า – นวัตกรรมใหม่ เครื่องมือใหม่ ช่องทางใหม่',
+    subTheme: 'วิ่งนำหน้า - นวัตกรรมใหม่ เครื่องมือใหม่ ช่องทางใหม่',
     topics: [
       {
+        time: '10.00 - 12.00 น.',
         title: 'New Product Creation for New Market',
-        speaker: 'คุณป๊อป พลภัทร (Whale Ground)',
-        detail: 'ออกแบบ Product-Market Fit ปรับ Packaging ให้ตรงกลุ่มเป้าหมาย',
-        extra: 'ค้นหาโอกาสในตลาดที่คนอื่นมองไม่เห็น! เรียนรู้วิธีพัฒนาสินค้าหรือปรับปรุงแพ็กเกจจิ้ง',
+        speaker: 'วิทยากร คุณพลภัทร ทรงรัตนจิตติ (ป๊อป)',
+        company: 'บริษัท/แบรนด์ Whale Ground',
+        status: 'Confirmed',
+        headline: 'ออกแบบ Product-Market Fit ปรับ Packaging ให้ตรงกลุ่มเป้าหมาย',
+        detail: 'ค้นหาโอกาสในตลาดที่คนอื่นมองไม่เห็น! เรียนรู้วิธีพัฒนาสินค้าหรือปรับปรุงแพ็กเกจจิ้ง',
       },
       {
+        time: '13.00 - 15.00 น.',
         title: 'กลยุทธ์ให้แบรนด์ติดคำแนะนำของ AI Search (GEO)',
-        speaker: 'คุณไอซ์ ศิริพงษ์ (Nerd Optimize)',
-        detail: 'ทำให้แบรนด์ถูกหยิบไปแนะนำโดย AI Search ได้จริง',
-        extra: 'ก้าวข้าม SEO แบบเดิมๆ สู่ GEO (Generative Engine Optimization) ทำให้ธุรกิจของคุณกลายเป็นตัวเลือกอันดับหนึ่ง',
+        speaker: 'วิทยากร คุณศิริพงษ์ กลิ่นขจร (ไอซ์)',
+        company: 'บริษัท/แบรนด์ Nerd Optimize',
+        status: 'Confirmed',
+        headline: 'ทำให้แบรนด์ถูกหยิบไปแนะนำโดย AI Search ได้จริง',
+        detail: 'ก้าวข้าม SEO แบบเดิมๆ สู่ GEO (Generative Engine Optimization) ทำให้ธุรกิจของคุณกลายเป็นตัวเลือกอันดับหนึ่ง',
       },
       {
+        time: '15.30 - 17.30 น.',
         title: 'Makoto Marketing + New Human Value',
-        speaker: 'ดร.กฤตินี (อ.เกศ เกตุวดี Marumura)',
-        detail: 'การตลาดเชิงคุณค่าที่มนุษย์และความไว้วางใจอยู่ตรงกลาง',
-        extra: 'สรุปจบด้วยแก่นแท้ของการทำธุรกิจที่ยั่งยืน เรียนรู้ปรัชญาการตลาดสไตล์ญี่ปุ่นที่เน้น "ความจริงใจ"',
+        speaker: 'วิทยากร ดร.กฤตินี พงษ์ธนเลิศ (อ.เกตุ)',
+        company: 'บริษัท/แบรนด์ เกตุดี Marumura',
+        status: 'Confirmed_NoBadge',
+        headline: 'การตลาดเชิงคุณค่าที่มนุษย์และความไว้วางใจอยู่ตรงกลาง',
+        detail: 'สรุปจบด้วยแก่นแท้ของการทำธุรกิจที่ยั่งยืน เรียนรู้ปรัชญาการตลาดสไตล์ญี่ปุ่นที่เน้น "ความจริงใจ"',
       },
     ],
   },
@@ -1049,21 +1085,60 @@ export default function App() {
                   {day.date}
                 </div>
               </div>
-              <div className="space-y-2.5">
-                {day.topics.map((topic) => (
-                  <div key={topic.title} className="rounded-xl border border-slate-200/60 bg-[#f8faff] p-4 transition duration-300 hover:border-rose-200 hover:bg-white hover:shadow-sm">
-                    <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-base font-extrabold sm:text-lg">
+              <div className="space-y-4">
+                {day.topics.map((topic, idx) => (
+                  <div key={idx} className="rounded-2xl border border-slate-200/60 bg-[#f8faff] p-5 transition duration-300 hover:border-rose-200 hover:bg-white hover:shadow-sm">
+                    {/* Time line */}
+                    {topic.time && (
+                      <div className="text-rose-600 text-sm sm:text-base font-black tracking-wide mb-1.5 flex items-center gap-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse" />
+                        {topic.time}
+                      </div>
+                    )}
+                    
+                    {/* Header: Title | Speaker + Company + Status */}
+                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1.5 text-base font-black text-slate-900 sm:text-lg">
                       <span className="text-slate-900">{topic.title}</span>
-                      {topic.speaker && (
+                      
+                      {topic.status === 'TBA' ? (
                         <>
                           <span className="text-slate-300 font-light hidden sm:inline">|</span>
-                          <span className="text-rose-500 text-sm sm:text-base font-bold">{topic.speaker}</span>
+                          <span className="inline-flex items-center rounded-md bg-slate-100 border border-slate-200/60 px-2.5 py-0.5 text-xs font-bold text-slate-500">
+                            วิทยากร / บริษัท/แบรนด์ (อยู่ในระหว่างการเรียนเชิญ)
+                          </span>
+                        </>
+                      ) : (
+                        <>
+                          {topic.speaker && (
+                            <>
+                              <span className="text-slate-300 font-light hidden sm:inline">|</span>
+                              <span className="text-rose-600 font-extrabold text-sm sm:text-base">{topic.speaker}</span>
+                            </>
+                          )}
+                          {topic.company && (
+                            <span className="text-slate-500 font-bold text-xs sm:text-sm">
+                              {topic.company}
+                            </span>
+                          )}
+                          {topic.status === 'Confirmed' && (
+                            <span className="inline-flex items-center rounded-full bg-rose-50 border border-rose-100 px-2.5 py-0.5 text-[10px] font-extrabold text-rose-600 shadow-sm shrink-0">
+                              Confirmed
+                            </span>
+                          )}
                         </>
                       )}
                     </div>
-                    <p className="mt-1 text-sm font-bold text-slate-800 sm:text-base leading-relaxed">{topic.detail}</p>
-                    {topic.extra && (
-                      <p className="mt-1 text-xs text-slate-500 leading-relaxed sm:text-sm">{topic.extra}</p>
+                    
+                    {/* Headline */}
+                    <p className="mt-2 text-sm font-extrabold text-slate-800 sm:text-base leading-relaxed">
+                      {topic.headline}
+                    </p>
+                    
+                    {/* Detail */}
+                    {topic.detail && (
+                      <p className="mt-1 text-xs font-semibold text-slate-400 leading-relaxed sm:text-sm">
+                        {topic.detail}
+                      </p>
                     )}
                   </div>
                 ))}
