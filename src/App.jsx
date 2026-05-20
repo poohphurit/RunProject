@@ -137,10 +137,10 @@ const speakers = [
 const sections = [
   { id: 'hero', label: 'หน้าแรก' },
   { id: 'concept', label: 'คอนเซปต์ R.U.N.' },
+  { id: 'audience', label: 'เหมาะกับใคร' },
   { id: 'problem', label: 'ปัญหา' },
   { id: 'syllabus', label: 'ตารางเรียน' },
   { id: 'speakers', label: 'วิทยากร' },
-  { id: 'audience', label: 'เหมาะกับใคร' },
   { id: 'results', label: 'ผลลัพธ์' },
   { id: 'apply', label: 'สมัคร' },
 ];
@@ -411,101 +411,6 @@ export default function App() {
         </div>
       </section>
 
-      <section id="problem" className="py-20">
-        <SectionTitle title="ทำไมต้องวิ่งตอนนี้?" subtitle="เพราะตลาดเปลี่ยนเร็ว ลูกค้าเปลี่ยนวิธีตัดสินใจ และการแข่งขันใหม่ไม่ได้วัดกันที่ความรู้เพียงอย่างเดียว" />
-        <div className="mx-auto mt-12 grid max-w-7xl gap-6 px-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-          {[
-            ['AI', 'เปลี่ยน AI เป็นผู้ช่วย ลดต้นทุน ทุ่นแรง ผลิตงานระดับโปร เพื่อให้คุณวิ่งเร็วกว่าคู่แข่ง'],
-            ['MARKETING', 'เจาะลึก New Marketing Funnel รับมือปี 2026 ปรับแผนทันทีไม่ให้แบรนด์ถูกทิ้งไว้ข้างหลัง'],
-            ['BRANDING', 'สร้างแบรนด์ผู้นำ (CEO Branding) มัดใจลูกค้าด้วย "Trust" สิ่งเดียวที่ AI เลียนแบบไม่ได้'],
-            ['SALE', 'มุ่งเป้าที่ REVENUE ด้วยสคริปต์ปิดการขายและจิตวิทยาไลฟ์สด เปลี่ยนคนดูเป็นคนจ่ายเงิน'],
-            ['CONTENT', 'สะกดลูกค้าด้วย Storytelling และคลิปสั้น เข้าใจทั้งใจมนุษย์และอัลกอริทึม ดึงดูดให้คนซื้อ'],
-          ].map(([tag, text]) => (
-            <article key={tag} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
-              <p className="text-xl font-black uppercase tracking-wide text-rose-500">{tag}</p>
-              <p className="mt-3 leading-7 text-slate-600">{text}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section id="syllabus" className="py-20">
-        <SectionTitle
-          title={
-            <>
-              หลักสูตร 4 วัน ลงมือทำจริง
-              <br />
-              เปลี่ยนจากเดินสู่การวิ่ง
-            </>
-          }
-          subtitle="แต่ละวันผสมกลยุทธ์ คอนเทนต์ และ AI เพื่อให้ผู้เรียนเห็นภาพรวมครบวงจร"
-        />
-        <div className="mx-auto mt-12 max-w-5xl space-y-6 px-6">
-          {syllabus.map((day) => (
-            <section key={day.day} className="rounded-3xl border border-slate-200/80 bg-white p-5 shadow-sm transition duration-300 hover:shadow-lg md:p-6">
-              {/* Day Header */}
-              <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between border-b border-slate-100 pb-4 mb-4">
-                <div className="flex items-center gap-4">
-                  {/* Day block */}
-                  <div className="flex flex-col items-center justify-center text-center min-w-[3rem]">
-                    <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-rose-500 leading-none">DAY</span>
-                    <span className="text-4xl font-black text-rose-500 mt-1 leading-none">{day.day.replace('DAY ', '')}</span>
-                  </div>
-                  {/* Vertical Divider */}
-                  <div className="h-8 w-[1px] bg-slate-200 hidden sm:block" />
-                  {/* Theme & Sub-theme */}
-                  <div>
-                    <h3 className="text-lg font-black text-slate-900 sm:text-xl leading-tight">{day.theme}</h3>
-                    {day.subTheme && (
-                      <p className="text-xs font-semibold text-slate-400 mt-0.5 sm:text-sm">{day.subTheme}</p>
-                    )}
-                  </div>
-                </div>
-                {/* Date */}
-                <div className="text-xs font-semibold text-slate-400 self-end sm:self-center sm:text-sm">
-                  {day.date}
-                </div>
-              </div>
-              <div className="space-y-2.5">
-                {day.topics.map((topic) => (
-                  <div key={topic.title} className="rounded-xl border border-slate-200/60 bg-[#f8faff] p-4 transition duration-300 hover:border-rose-200 hover:bg-white hover:shadow-sm">
-                    <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-base font-extrabold sm:text-lg">
-                      <span className="text-slate-900">{topic.title}</span>
-                      {topic.speaker && (
-                        <>
-                          <span className="text-slate-300 font-light hidden sm:inline">|</span>
-                          <span className="text-rose-500 text-sm sm:text-base font-bold">{topic.speaker}</span>
-                        </>
-                      )}
-                    </div>
-                    <p className="mt-1 text-sm font-bold text-slate-800 sm:text-base leading-relaxed">{topic.detail}</p>
-                    {topic.extra && (
-                      <p className="mt-1 text-xs text-slate-500 leading-relaxed sm:text-sm">{topic.extra}</p>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </section>
-          ))}
-        </div>
-      </section>
-
-      <section id="speakers" className="py-20">
-        <SectionTitle title="วิทยากรตัวจริงผู้เชี่ยวชาญ" subtitle="วิทยากรตัวจริงที่ลงสนามทุกวัน" />
-        <div className="mx-auto mt-12 grid max-w-6xl gap-6 px-6 lg:grid-cols-3">
-          {speakers.map((speaker) => (
-            <article key={speaker.name} className="group rounded-[2rem] border border-slate-200 bg-white p-4 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(244,63,94,0.12)]">
-              <SpeakerPortrait name={speaker.name} title={speaker.role} accent={speaker.accent} imageUrl={speaker.image} />
-              <div className="p-4 pt-5">
-                <h3 className="text-xl font-black text-slate-900 leading-tight">{speaker.name}</h3>
-                <p className="mt-2 text-sm font-bold uppercase tracking-wide text-rose-500">{speaker.role}</p>
-                <p className="mt-3 text-base leading-relaxed text-slate-500">{speaker.bio}</p>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
-
       <section id="audience" className="py-20 border-b border-slate-200/50 bg-[#f4f7ff]">
         <SectionTitle
           eyebrow="TARGET AUDIENCE"
@@ -752,6 +657,101 @@ export default function App() {
                 {item.text}
               </p>
             </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="problem" className="py-20">
+        <SectionTitle title="ทำไมต้องวิ่งตอนนี้?" subtitle="เพราะตลาดเปลี่ยนเร็ว ลูกค้าเปลี่ยนวิธีตัดสินใจ และการแข่งขันใหม่ไม่ได้วัดกันที่ความรู้เพียงอย่างเดียว" />
+        <div className="mx-auto mt-12 grid max-w-7xl gap-6 px-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+          {[
+            ['AI', 'เปลี่ยน AI เป็นผู้ช่วย ลดต้นทุน ทุ่นแรง ผลิตงานระดับโปร เพื่อให้คุณวิ่งเร็วกว่าคู่แข่ง'],
+            ['MARKETING', 'เจาะลึก New Marketing Funnel รับมือปี 2026 ปรับแผนทันทีไม่ให้แบรนด์ถูกทิ้งไว้ข้างหลัง'],
+            ['BRANDING', 'สร้างแบรนด์ผู้นำ (CEO Branding) มัดใจลูกค้าด้วย "Trust" สิ่งเดียวที่ AI เลียนแบบไม่ได้'],
+            ['SALE', 'มุ่งเป้าที่ REVENUE ด้วยสคริปต์ปิดการขายและจิตวิทยาไลฟ์สด เปลี่ยนคนดูเป็นคนจ่ายเงิน'],
+            ['CONTENT', 'สะกดลูกค้าด้วย Storytelling และคลิปสั้น เข้าใจทั้งใจมนุษย์และอัลกอริทึม ดึงดูดให้คนซื้อ'],
+          ].map(([tag, text]) => (
+            <article key={tag} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+              <p className="text-xl font-black uppercase tracking-wide text-rose-500">{tag}</p>
+              <p className="mt-3 leading-7 text-slate-600">{text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="syllabus" className="py-20">
+        <SectionTitle
+          title={
+            <>
+              หลักสูตร 4 วัน ลงมือทำจริง
+              <br />
+              เปลี่ยนจากเดินสู่การวิ่ง
+            </>
+          }
+          subtitle="แต่ละวันผสมกลยุทธ์ คอนเทนต์ และ AI เพื่อให้ผู้เรียนเห็นภาพรวมครบวงจร"
+        />
+        <div className="mx-auto mt-12 max-w-5xl space-y-6 px-6">
+          {syllabus.map((day) => (
+            <section key={day.day} className="rounded-3xl border border-slate-200/80 bg-white p-5 shadow-sm transition duration-300 hover:shadow-lg md:p-6">
+              {/* Day Header */}
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between border-b border-slate-100 pb-4 mb-4">
+                <div className="flex items-center gap-4">
+                  {/* Day block */}
+                  <div className="flex flex-col items-center justify-center text-center min-w-[3rem]">
+                    <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-rose-500 leading-none">DAY</span>
+                    <span className="text-4xl font-black text-rose-500 mt-1 leading-none">{day.day.replace('DAY ', '')}</span>
+                  </div>
+                  {/* Vertical Divider */}
+                  <div className="h-8 w-[1px] bg-slate-200 hidden sm:block" />
+                  {/* Theme & Sub-theme */}
+                  <div>
+                    <h3 className="text-lg font-black text-slate-900 sm:text-xl leading-tight">{day.theme}</h3>
+                    {day.subTheme && (
+                      <p className="text-xs font-semibold text-slate-400 mt-0.5 sm:text-sm">{day.subTheme}</p>
+                    )}
+                  </div>
+                </div>
+                {/* Date */}
+                <div className="text-xs font-semibold text-slate-400 self-end sm:self-center sm:text-sm">
+                  {day.date}
+                </div>
+              </div>
+              <div className="space-y-2.5">
+                {day.topics.map((topic) => (
+                  <div key={topic.title} className="rounded-xl border border-slate-200/60 bg-[#f8faff] p-4 transition duration-300 hover:border-rose-200 hover:bg-white hover:shadow-sm">
+                    <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-base font-extrabold sm:text-lg">
+                      <span className="text-slate-900">{topic.title}</span>
+                      {topic.speaker && (
+                        <>
+                          <span className="text-slate-300 font-light hidden sm:inline">|</span>
+                          <span className="text-rose-500 text-sm sm:text-base font-bold">{topic.speaker}</span>
+                        </>
+                      )}
+                    </div>
+                    <p className="mt-1 text-sm font-bold text-slate-800 sm:text-base leading-relaxed">{topic.detail}</p>
+                    {topic.extra && (
+                      <p className="mt-1 text-xs text-slate-500 leading-relaxed sm:text-sm">{topic.extra}</p>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+      </section>
+
+      <section id="speakers" className="py-20">
+        <SectionTitle title="วิทยากรตัวจริงผู้เชี่ยวชาญ" subtitle="วิทยากรตัวจริงที่ลงสนามทุกวัน" />
+        <div className="mx-auto mt-12 grid max-w-6xl gap-6 px-6 lg:grid-cols-3">
+          {speakers.map((speaker) => (
+            <article key={speaker.name} className="group rounded-[2rem] border border-slate-200 bg-white p-4 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(244,63,94,0.12)]">
+              <SpeakerPortrait name={speaker.name} title={speaker.role} accent={speaker.accent} imageUrl={speaker.image} />
+              <div className="p-4 pt-5">
+                <h3 className="text-xl font-black text-slate-900 leading-tight">{speaker.name}</h3>
+                <p className="mt-2 text-sm font-bold uppercase tracking-wide text-rose-500">{speaker.role}</p>
+                <p className="mt-3 text-base leading-relaxed text-slate-500">{speaker.bio}</p>
+              </div>
+            </article>
           ))}
         </div>
       </section>
