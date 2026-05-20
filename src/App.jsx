@@ -136,30 +136,13 @@ const speakers = [
 
 const sections = [
   { id: 'hero', label: 'หน้าแรก' },
+  { id: 'concept', label: 'คอนเซปต์ R.U.N.' },
   { id: 'problem', label: 'ปัญหา' },
   { id: 'syllabus', label: 'ตารางเรียน' },
   { id: 'speakers', label: 'วิทยากร' },
   { id: 'audience', label: 'เหมาะกับใคร' },
   { id: 'results', label: 'ผลลัพธ์' },
   { id: 'apply', label: 'สมัคร' },
-];
-
-const audience = [
-  {
-    title: 'เจ้าของธุรกิจที่อยากเพิ่มยอดขาย',
-    desc: 'มีทีม ยอดขายเริ่มชะลอ และต้องการมุมใหม่เพื่อเร่งการเติบโต',
-    icon: 'chart',
-  },
-  {
-    title: 'Startup ที่อยากเติบโตให้ไวและยั่งยืน',
-    desc: 'มีของดีแต่ขาดกลยุทธ์ตลาดยุคใหม่ และระบบคอนเทนต์ที่ทำเงินได้จริง',
-    icon: 'rocket',
-  },
-  {
-    title: 'ผู้ที่กำลังเริ่มธุรกิจใหม่ต้องการคำแนะนำ',
-    desc: 'มีไอเดีย มีทุน และอยากใช้ AI / ไม่เสียเวลาลองผิดลองถูก',
-    icon: 'shop',
-  },
 ];
 
 
@@ -289,6 +272,145 @@ export default function App() {
         </div>
       </section>
 
+      <section id="concept" className="py-20 border-b border-slate-200/50 bg-[#f4f7ff]">
+        <SectionTitle
+          eyebrow="R.U.N. Concept"
+          title="คอนเซปต์หลัก (Revenue. Unlock. Now.)"
+          subtitle="หัวใจสำคัญของหลักสูตรที่จะเปลี่ยนโฉมธุรกิจและการทำงานของคุณอย่างยั่งยืน"
+        />
+
+        {/* 3 Core Cards */}
+        <div className="mx-auto mt-12 grid max-w-5xl gap-6 px-6 sm:grid-cols-1 lg:grid-cols-3">
+          {/* Card 1: REVENUE */}
+          <article className="group rounded-[2rem] border border-slate-100 bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.015)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(244,63,94,0.06)] flex flex-col justify-between items-center text-center">
+            <div className="flex flex-col items-center">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-rose-500 text-white shadow-lg shadow-rose-200">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              </div>
+              <span className="inline-block px-4 py-1.5 rounded-lg bg-rose-500 text-white font-extrabold text-xs tracking-wider uppercase mt-6 mb-4">
+                REVENUE
+              </span>
+              <p className="text-base font-semibold leading-relaxed text-slate-600 px-2">
+                ทุกเนื้อหามุ่งสร้างยอดขายที่วัดผลได้จริง ไม่ใช่ความรู้ลอยๆ
+              </p>
+            </div>
+          </article>
+
+          {/* Card 2: UNLOCK */}
+          <article className="group rounded-[2rem] border border-slate-100 bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.015)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(244,63,94,0.06)] flex flex-col justify-between items-center text-center">
+            <div className="flex flex-col items-center">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-rose-500 text-white shadow-lg shadow-rose-200">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </div>
+              <span className="inline-block px-4 py-1.5 rounded-lg bg-rose-500 text-white font-extrabold text-xs tracking-wider uppercase mt-6 mb-4">
+                UNLOCK
+              </span>
+              <p className="text-base font-semibold leading-relaxed text-slate-600 px-2">
+                เปิดประตูสู่เครื่องมือ ทักษะ กลยุทธ์ที่ทำลายกำแพงระหว่างธุรกิจเล็ก กับศักยภาพระดับองค์กรใหญ่
+              </p>
+            </div>
+          </article>
+
+          {/* Card 3: NOW */}
+          <article className="group rounded-[2rem] border border-slate-100 bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.015)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(244,63,94,0.06)] flex flex-col justify-between items-center text-center">
+            <div className="flex flex-col items-center">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-rose-500 text-white shadow-lg shadow-rose-200">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 2v2" />
+                </svg>
+              </div>
+              <span className="inline-block px-4 py-1.5 rounded-lg bg-rose-500 text-white font-extrabold text-xs tracking-wider uppercase mt-6 mb-4">
+                NOW
+              </span>
+              <p className="text-base font-semibold leading-relaxed text-slate-600 px-2">
+                เรียนวันนี้ ใช้ได้พรุ่งนี้ ทุก Workshop สร้างผลงานจริงในห้องเรียน
+              </p>
+            </div>
+          </article>
+        </div>
+
+        {/* 4 Process/Timeline Steps */}
+        <div className="mx-auto grid max-w-5xl gap-6 lg:gap-10 px-6 sm:grid-cols-2 lg:grid-cols-4 mt-24">
+          {[
+            {
+              tag: 'รอด',
+              title: 'ลุกขึ้นยืน',
+              desc: 'เห็นสนามรบใหม่อย่างกระจ่าง หมดยุคยืนนิ่งในความมืด',
+              icon: (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                  <circle cx="12" cy="4" r="2" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M8 9h8m-4 0v6M9 20l3-5 3 5" />
+                </svg>
+              ),
+            },
+            {
+              tag: 'รวย',
+              title: 'เริ่มวิ่ง',
+              desc: 'ครบมือด้วยเครื่องมือและท่าไม้ตายที่สร้างรายได้เพิ่มได้ทันที',
+              icon: (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2z" />
+                </svg>
+              ),
+            },
+            {
+              tag: 'เริ่ม',
+              title: 'วิ่งเร็วขึ้น',
+              desc: 'ลงมือทำจริงทุกวันด้วยผลงานจริงพร้อมใช้',
+              icon: (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.5 8.5L21 3m0 0l-5.5 5.5M21 3v5.5m-11 5.5L4 20m0 0v-5.5M4 20h5.5M10.5 7.5L4 14M16.5 13.5L10 20" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M14 6a8 8 0 00-8 8v1.5a1.5 1.5 0 001.5 1.5H9a8 8 0 008-8v-1.5a1.5 1.5 0 00-1.5-1.5H14z" />
+                </svg>
+              ),
+            },
+            {
+              tag: 'เลิศ',
+              title: 'วิ่งนำหน้า',
+              desc: 'ก้าวข้ามขีดจำกัดเดิม ทิ้งคู่แข่งไว้เบื้องหลัง',
+              icon: (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 15a4 4 0 004-4V5H8v6a4 4 0 004 4zm0 0v4m0 0h3m-3 0H9m11-9h-2v2a3 3 0 01-3 3M4 10h2v2a3 3 0 003 3" />
+                </svg>
+              ),
+            },
+          ].map((step, idx) => (
+            <article key={step.tag} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl relative group text-center flex flex-col items-center justify-start h-full">
+              {/* Connector Arrow for Desktop */}
+              {idx < 3 && (
+                <div className="hidden lg:flex absolute top-1/2 left-full -translate-y-1/2 w-10 items-center justify-center text-rose-300 z-10">
+                  <svg className="w-5 h-5 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="3">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              )}
+
+              {/* Icon Container */}
+              <div className="w-14 h-14 rounded-full bg-rose-50 border border-rose-100 flex items-center justify-center text-rose-500 mx-auto mb-4 group-hover:scale-110 transition duration-300 shadow-sm">
+                {step.icon}
+              </div>
+
+              {/* Badge Title */}
+              <div className="inline-flex items-center gap-1.5 bg-slate-50 border border-slate-200/80 px-4 py-1.5 rounded-full shadow-sm mb-4 transition duration-300 group-hover:border-rose-300 group-hover:bg-rose-50/30">
+                <span className="text-rose-500 font-extrabold text-sm">{step.tag}</span>
+                <span className="text-slate-300 font-light text-xs">|</span>
+                <span className="text-slate-800 font-black text-sm">{step.title}</span>
+              </div>
+
+              {/* Description */}
+              <p className="text-sm leading-relaxed text-slate-600">
+                {step.desc}
+              </p>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section id="problem" className="py-20">
         <SectionTitle title="ทำไมต้องวิ่งตอนนี้?" subtitle="เพราะตลาดเปลี่ยนเร็ว ลูกค้าเปลี่ยนวิธีตัดสินใจ และการแข่งขันใหม่ไม่ได้วัดกันที่ความรู้เพียงอย่างเดียว" />
         <div className="mx-auto mt-12 grid max-w-7xl gap-6 px-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
@@ -384,82 +506,253 @@ export default function App() {
         </div>
       </section>
 
-      <section id="audience" className="py-20">
-        <SectionTitle title="คอร์สนี้เหมาะกับใคร" subtitle="ออกแบบสำหรับเจ้าของธุรกิจ ทีมการตลาด และคนที่อยากใช้ AI และคอนเทนต์ให้เกิดยอดขายจริง" />
-        <div className="mx-auto mt-12 grid max-w-5xl gap-6 px-6 lg:grid-cols-3">
-          {audience.map((item) => {
-            const renderIcon = () => {
-              if (item.icon === 'chart') {
-                return (
-                  <svg className="w-16 h-16 text-rose-500 mb-6" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    {/* Pie chart */}
-                    <path d="M18 10C22.4183 10 26 13.5817 26 18C26 18.5 25.5 19 25 19H17C16.5 19 16 18.5 16 18V10C16 9.5 17.5 10 18 10Z" fill="#F43F5E" />
-                    <path d="M15 19C15 20.6569 13.6569 22 12 22C10.3431 22 9 20.6569 9 19C9 17.3431 10.3431 16 12 16C13.6569 16 15 17.3431 15 19Z" stroke="#F43F5E" strokeWidth="2.5" />
-                    {/* Percentage sign % */}
-                    <text x="29" y="19" fill="#F43F5E" fontSize="13" fontWeight="900" fontFamily="sans-serif">%</text>
-                    {/* Trending line with dots */}
-                    <path d="M10 40L24 28L36 34L54 16" stroke="#F43F5E" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                    <circle cx="10" cy="40" r="3.5" fill="#F43F5E" />
-                    <circle cx="24" cy="28" r="3.5" fill="#F43F5E" />
-                    <circle cx="36" cy="34" r="3.5" fill="#F43F5E" />
-                    <circle cx="54" cy="16" r="4.5" fill="#F43F5E" />
-                    {/* Three vertical bars */}
-                    <rect x="14" y="46" width="6" height="12" rx="1.5" fill="#F43F5E" />
-                    <rect x="28" y="43" width="6" height="15" rx="1.5" fill="#F43F5E" />
-                    <rect x="42" y="38" width="6" height="20" rx="1.5" fill="#F43F5E" />
-                  </svg>
-                );
-              }
-              if (item.icon === 'rocket') {
-                return (
-                  <svg className="w-16 h-16 text-rose-500 mb-6" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    {/* Clean modern rocket */}
-                    <path d="M42.5 16.5C45.5 19.5 49.5 26.5 46.5 33.5C44.5 38.5 39.5 42.5 33.5 44.5C26.5 47.5 19.5 43.5 16.5 40.5C14.5 38.5 14 36 15 33C17 27 21 22 26 17C31 12 36.5 11 40 12L42.5 16.5Z" fill="#F43F5E" />
-                    {/* Fins */}
-                    <path d="M16.5 40.5L8 47L10 39.5L16.5 40.5Z" fill="#F43F5E" />
-                    <path d="M22.5 43.5L16 52L20.5 45.5" stroke="#F43F5E" strokeWidth="2.5" strokeLinecap="round" />
-                    {/* Fins other side */}
-                    <path d="M40.5 16.5L47 8L39.5 10L40.5 16.5Z" fill="#F43F5E" />
-                    <path d="M43.5 22.5L52 16L45.5 20.5" stroke="#F43F5E" strokeWidth="2.5" strokeLinecap="round" />
-                    {/* Window */}
-                    <circle cx="32" cy="28" r="3.5" fill="white" />
-                    {/* Blast flames */}
-                    <path d="M11 49C9 52 5 57 9 59C11 61 16 57 18 55" stroke="#F43F5E" strokeWidth="3" strokeLinecap="round" />
-                    <path d="M6 44C4.5 46.5 1.5 50.5 4.5 52C6 53.5 10 50.5 11.5 49" stroke="#F43F5E" strokeWidth="2" strokeLinecap="round" />
-                    <path d="M19 57C17.5 58.5 14.5 61.5 16 63C17.5 64.5 21.5 61.5 23 60" stroke="#F43F5E" strokeWidth="2" strokeLinecap="round" />
-                  </svg>
-                );
-              }
-              if (item.icon === 'shop') {
-                return (
-                  <svg className="w-16 h-16 text-rose-500 mb-6" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    {/* Storefront roof/awning */}
-                    <path d="M30 28H56V32C56 34.2091 54.2091 36 52 36C49.7909 36 48 34.2091 48 32C48 34.2091 46.2091 36 44 36C41.7909 36 40 34.2091 40 32C40 34.2091 38.2091 36 36 36C33.7909 36 32 34.2091 32 32V28H30Z" fill="#F43F5E" />
-                    <path d="M34 18H54L58 28H30L34 18Z" fill="#F43F5E" fillOpacity="0.8" />
-                    {/* Store body */}
-                    <rect x="34" y="36" width="20" height="16" stroke="#F43F5E" strokeWidth="3" strokeLinecap="round" />
-                    {/* Key */}
-                    <path d="M8 32C8 28.6863 10.6863 26 14 26C17.3137 26 20 28.6863 20 32C20 35.3137 17.3137 38 14 38C10.6863 38 8 35.3137 8 32Z" stroke="#F43F5E" strokeWidth="3" />
-                    <circle cx="14" cy="32" r="2.5" fill="#F43F5E" />
-                    <path d="M20 32H30M27 32V36M23 32V36" stroke="#F43F5E" strokeWidth="3" strokeLinecap="round" />
-                  </svg>
-                );
-              }
-              return null;
-            };
+      <section id="audience" className="py-20 border-b border-slate-200/50 bg-[#f4f7ff]">
+        <SectionTitle
+          eyebrow="TARGET AUDIENCE"
+          title="กลุ่มเป้าหมาย : เจ้าของธุรกิจ & STARTUP"
+          subtitle="R.U.N. ออกแบบมาสำหรับผู้ประกอบการ 3 กลุ่มที่อยู่คนละจุดของเส้นทาง แต่มีเป้าหมายเดียวกัน วิ่งให้ถึงความสำเร็จ ก่อนที่โลกจะวิ่งหนีไป"
+        />
 
-            return (
-              <article key={item.title} className="rounded-[2rem] border border-slate-100 bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.015)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(244,63,94,0.06)] flex flex-col justify-between">
-                <div>
-                  <div className="flex items-center justify-start">
-                    {renderIcon()}
-                  </div>
-                  <h3 className="text-2xl font-black text-slate-900 leading-tight tracking-tight mb-4">{item.title}</h3>
-                  <p className="text-base leading-relaxed text-slate-500 font-medium">{item.desc}</p>
+        {/* Groups 1 & 2 Grid */}
+        <div className="mx-auto mt-12 grid max-w-5xl gap-8 px-6 md:grid-cols-2">
+          {/* Card: กลุ่ม 1 */}
+          <article className="group relative rounded-[2rem] border border-slate-100 bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.015)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(244,63,94,0.06)] flex flex-col justify-between">
+            <span className="absolute -top-3 left-8 inline-flex items-center gap-1 rounded-full bg-rose-500 px-4 py-1 text-xs font-black uppercase tracking-wider text-white shadow-md shadow-rose-200">
+              กลุ่ม 1
+            </span>
+            <div>
+              <div className="flex items-start gap-4 mt-2">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-rose-50 border border-rose-100 text-rose-500 shadow-sm">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
                 </div>
-              </article>
-            );
-          })}
+                <div>
+                  <h4 className="text-xl font-black text-slate-900 leading-tight">
+                    เจ้าของธุรกิจรายได้ <span className="text-rose-500">10 ล้านบาทขึ้นไป</span>
+                  </h4>
+                  <p className="text-sm font-bold text-slate-400 mt-1">
+                    "กำลังเดินอยู่ ต้องเปลี่ยนมาวิ่ง"
+                  </p>
+                </div>
+              </div>
+
+              <ul className="mt-6 space-y-3 border-t border-slate-100 pt-6">
+                <li className="flex items-start gap-3 text-base font-semibold text-slate-600">
+                  <svg className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                  <span>ยอดขายชะลอ สูตรเดิมไม่ตอบโจทย์</span>
+                </li>
+                <li className="flex items-start gap-3 text-base font-semibold text-slate-600">
+                  <svg className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                  <span>คู่แข่งหน้าใหม่แซงหน้า มองไม่เห็นทิศทาง ปรับตัว</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="mt-8 rounded-2xl bg-rose-50/50 border border-rose-100/50 p-4 transition duration-300 group-hover:bg-rose-50 group-hover:border-rose-200">
+              <p className="text-sm font-black text-rose-600 uppercase tracking-wider mb-1">
+                &gt; มาเพื่อ : รอดแล้วรวย
+              </p>
+              <p className="text-sm font-bold text-slate-800">
+                เปลี่ยนจากเดินช้า สู่วิ่งด้วยกลยุทธ์ยุคใหม่
+              </p>
+            </div>
+          </article>
+
+          {/* Card: กลุ่ม 2 */}
+          <article className="group relative rounded-[2rem] border border-slate-100 bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.015)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(244,63,94,0.06)] flex flex-col justify-between">
+            <span className="absolute -top-3 left-8 inline-flex items-center gap-1 rounded-full bg-rose-500 px-4 py-1 text-xs font-black uppercase tracking-wider text-white shadow-md shadow-rose-200">
+              กลุ่ม 2
+            </span>
+            <div>
+              <div className="flex items-start gap-4 mt-2">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-rose-50 border border-rose-100 text-rose-500 shadow-sm">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="text-xl font-black text-slate-900 leading-tight">
+                    เจ้าของธุรกิจรายได้ <span className="text-rose-500">10 ล้านบาทขึ้นไป</span>
+                  </h4>
+                  <p className="text-sm font-bold text-slate-400 mt-1">
+                    "วิ่งอยู่แล้ว ก็ต้องวิ่งเร็วขึ้น"
+                  </p>
+                </div>
+              </div>
+
+              <ul className="mt-6 space-y-3 border-t border-slate-100 pt-6">
+                <li className="flex items-start gap-3 text-base font-semibold text-slate-600">
+                  <svg className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                  <span>มีของดีแต่ขาดกลยุทธ์การตลาดยุคใหม่</span>
+                </li>
+                <li className="flex items-start gap-3 text-base font-semibold text-slate-600">
+                  <svg className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                  <span>ขาด Storytelling ขาดระบบขยายธุรกิจ</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="mt-8 rounded-2xl bg-rose-50/50 border border-rose-100/50 p-4 transition duration-300 group-hover:bg-rose-50 group-hover:border-rose-200">
+              <p className="text-sm font-black text-rose-600 uppercase tracking-wider mb-1">
+                &gt; มาเพื่อ : วิ่งเร็วกว่าคู่แข่ง
+              </p>
+              <p className="text-sm font-bold text-slate-800">
+                ติดจรวดด้วย Branding, Marketing, Storytelling และ AI
+              </p>
+            </div>
+          </article>
+        </div>
+
+        {/* Section divider and Title 2 */}
+        <div className="mt-24">
+          <SectionTitle
+            title="กลุ่มเป้าหมาย : ผู้พร้อมเริ่มธุรกิจใหม่"
+          />
+        </div>
+
+        {/* Group 3 & Caution Grid */}
+        <div className="mx-auto mt-12 grid max-w-5xl gap-8 px-6 md:grid-cols-2">
+          {/* Card: กลุ่ม 3 */}
+          <article className="group relative rounded-[2rem] border border-slate-100 bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.015)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(244,63,94,0.06)] flex flex-col justify-between">
+            <span className="absolute -top-3 left-8 inline-flex items-center gap-1 rounded-full bg-rose-500 px-4 py-1 text-xs font-black uppercase tracking-wider text-white shadow-md shadow-rose-200">
+              กลุ่ม 3
+            </span>
+            <div>
+              <div className="flex items-start gap-4 mt-2">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-rose-50 border border-rose-100 text-rose-500 shadow-sm">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 12H5m14 0-4 4m4-4-4-4" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="text-xl font-black text-slate-900 leading-tight">
+                    ผู้ที่พร้อมเริ่มธุรกิจใหม่
+                  </h4>
+                  <p className="text-sm font-bold text-slate-400 mt-1">
+                    "ยังไม่ได้ออกวิ่ง แต่อยากวิ่งถูกทางตั้งแต่ก้าวแรก"
+                  </p>
+                </div>
+              </div>
+
+              <ul className="mt-6 space-y-3 border-t border-slate-100 pt-6">
+                <li className="flex items-start gap-3 text-base font-semibold text-slate-600">
+                  <svg className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>มีไอเดีย มีทุน แต่ไม่อยากเสียเวลา 2-3 ปี กับความผิดพลาดที่หลีกเลี่ยงได้</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="mt-8 rounded-2xl bg-rose-50/50 border border-rose-100/50 p-4 transition duration-300 group-hover:bg-rose-50 group-hover:border-rose-200">
+              <p className="text-sm font-black text-rose-600 uppercase tracking-wider mb-1">
+                &gt; มาเพื่อ : วิ่งถูกทางตั้งแต่ก้าวแรก
+              </p>
+              <p className="text-sm font-bold text-slate-800">
+                ข้ามความผิดพลาดราคาแพง ด้วยสูตรจากคนที่ทำสำเร็จแล้ว
+              </p>
+            </div>
+          </article>
+
+          {/* Card: ข้อควรระวัง */}
+          <article className="group relative rounded-[2rem] border border-amber-200 bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.015)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(245,158,11,0.06)] flex flex-col justify-between">
+            <span className="absolute -top-3 left-8 inline-flex items-center gap-1.5 rounded-full bg-amber-500 px-4 py-1 text-xs font-black uppercase tracking-wider text-white shadow-md shadow-amber-200">
+              <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+              </svg>
+              ข้อควรระวัง
+            </span>
+            <div>
+              <div className="flex items-start gap-4 mt-2">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-amber-50 border border-amber-100 text-amber-500 shadow-sm">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="text-xl font-black text-slate-900 leading-tight">
+                    ไม่เหมาะสำหรับ :
+                  </h4>
+                  <p className="text-sm font-bold text-amber-600 mt-1">
+                    โปรดตรวจสอบก่อนการสมัครเรียน
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-6 border-t border-slate-100 pt-6 space-y-4">
+                <p className="text-base font-semibold leading-relaxed text-slate-600">
+                  ผู้ที่ยังไม่เปิดตัวธุรกิจ หรือต้องการเรียนเพื่อเน้นทฤษฎีเพียงอย่างเดียว
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-8 rounded-2xl bg-amber-50/50 border border-amber-100/50 p-4 transition duration-300 group-hover:bg-amber-50 group-hover:border-amber-200">
+              <p className="text-sm font-black text-amber-700 uppercase tracking-wider mb-1">
+                แนวทางของหลักสูตร R.U.N.
+              </p>
+              <p className="text-sm font-bold text-slate-800 leading-relaxed">
+                หลักสูตรนี้ <strong className="text-rose-500 font-extrabold">ไม่ได้สอนให้ "คิด" แต่สอนให้ "วิ่ง"</strong> ทุกวัน บังคับลงมือทำจริงเพื่อให้เกิดผลลัพธ์
+              </p>
+            </div>
+          </article>
+        </div>
+
+        {/* Bottom summary features row */}
+        <div className="mx-auto mt-16 max-w-5xl border-t border-slate-200/60 pt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 px-6">
+          {[
+            {
+              text: 'เป้าหมายเดียวกัน วิ่งให้ถึงความสำเร็จก่อนที่โลกจะวิ่งหนีไป',
+              icon: (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                  <circle cx="12" cy="12" r="10" />
+                  <circle cx="12" cy="12" r="6" />
+                  <circle cx="12" cy="12" r="2" />
+                </svg>
+              ),
+            },
+            {
+              text: '3 จุดเริ่มต้น แต่มีเป้าหมายปลายทางเดียวกัน',
+              icon: (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              ),
+            },
+            {
+              text: 'เรียนรู้ เสริมสปีด ก้าวกระโดดด้วยกลยุทธ์ และ AI',
+              icon: (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              ),
+            },
+            {
+              text: 'รอด แล้ว รวย จากประสบการณ์ผู้ประกอบการตัวจริง',
+              icon: (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 15a4 4 0 004-4V5H8v6a4 4 0 004 4zm0 0v4m0 0h3m-3 0H9m11-9h-2v2a3 3 0 01-3 3M4 10h2v2a3 3 0 003 3" />
+                </svg>
+              ),
+            },
+          ].map((item, idx) => (
+            <div key={idx} className="flex gap-4 items-start bg-white rounded-2xl border border-slate-100 p-5 shadow-sm transition duration-300 hover:shadow-md hover:border-slate-200">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-rose-50 text-rose-500">
+                {item.icon}
+              </div>
+              <p className="text-sm font-bold leading-relaxed text-slate-700">
+                {item.text}
+              </p>
+            </div>
+          ))}
         </div>
       </section>
 
