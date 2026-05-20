@@ -888,6 +888,130 @@ export default function App() {
         </div>
       </section>
 
+      {/* Course Content Ratio Section */}
+      <section id="course-ratio" className="py-20 border-b border-slate-200/50">
+        <SectionTitle
+          eyebrow="COURSE STRUCTURE"
+          title="สัดส่วนเนื้อหาของหลักสูตร"
+          subtitle="โครงสร้างหลักสูตรที่ออกแบบมาเพื่อให้ผู้เรียนได้รับความรู้ครบทุกมิติอย่างสมดุล"
+        />
+
+        <div className="mx-auto mt-12 max-w-5xl px-6 grid gap-12 md:grid-cols-2 items-stretch">
+          {/* Left: Donut Chart */}
+          <div className="flex flex-col items-center justify-center bg-white border border-slate-200/80 rounded-[2rem] p-8 shadow-sm relative overflow-hidden h-full">
+            <div className="absolute -top-10 -right-10 w-32 h-32 bg-rose-500/5 rounded-full blur-2xl" />
+            <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-slate-500/5 rounded-full blur-2xl" />
+
+            {/* SVG Donut Chart */}
+            <div className="relative w-60 h-60 md:w-64 md:h-64 flex items-center justify-center">
+              <svg className="w-full h-full drop-shadow-md" viewBox="0 0 100 100">
+                {/* Marketing 50% - Red */}
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="38"
+                  fill="transparent"
+                  stroke="#f43f5e" /* rose-500 */
+                  strokeWidth="12"
+                  strokeDasharray="119.38 238.76"
+                  strokeDashoffset="0"
+                  transform="rotate(-90 50 50)"
+                />
+                {/* AI 30% - Dark Slate */}
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="38"
+                  fill="transparent"
+                  stroke="#0f172a" /* slate-900 */
+                  strokeWidth="12"
+                  strokeDasharray="71.63 238.76"
+                  strokeDashoffset="-119.38"
+                  transform="rotate(-90 50 50)"
+                />
+                {/* Real Case 20% - Slate 300 */}
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="38"
+                  fill="transparent"
+                  stroke="#cbd5e1" /* slate-300 */
+                  strokeWidth="12"
+                  strokeDasharray="47.75 238.76"
+                  strokeDashoffset="-191.01"
+                  transform="rotate(-90 50 50)"
+                />
+              </svg>
+
+              {/* Center Content */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center">
+                <span className="text-2xl font-black text-slate-800 tracking-wider">R.U.N.</span>
+                <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mt-1">Syllabus</span>
+              </div>
+            </div>
+
+            {/* Custom chart legend with bubble tags */}
+            <div className="mt-8 flex flex-wrap gap-3 justify-center">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-rose-50 border border-rose-100 px-3.5 py-1 text-xs font-bold text-rose-600 shadow-sm">
+                <span className="h-2 w-2 rounded-full bg-rose-500" />
+                Marketing 50%
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-slate-900 px-3.5 py-1 text-xs font-bold text-white shadow-sm">
+                <span className="h-2 w-2 rounded-full bg-white" />
+                AI 30%
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-slate-100 border border-slate-200 px-3.5 py-1 text-xs font-bold text-slate-600 shadow-sm">
+                <span className="h-2 w-2 rounded-full bg-slate-400" />
+                Real Case 20%
+              </span>
+            </div>
+          </div>
+
+          {/* Right: Content Details Card (Without Black Background) */}
+          <div className="rounded-[2rem] border border-slate-200/80 bg-white p-8 shadow-sm space-y-6 relative overflow-hidden h-full flex flex-col justify-center">
+            {/* Header Badge */}
+            <div className="self-center bg-rose-500 text-white font-black text-sm px-6 py-2.5 rounded-full shadow-sm shadow-rose-200/50 mb-2">
+              สัดส่วนเนื้อหาของหลักสูตร
+            </div>
+
+            <div className="divide-y divide-slate-100">
+              {/* Item 1 */}
+              <div className="pb-5 pt-2">
+                <h5 className="font-extrabold text-rose-600 text-base md:text-lg">
+                  50% : ทักษะแก่นของมนุษย์ที่ AI ทดแทนไม่ได้
+                </h5>
+                <p className="font-bold text-slate-800 mt-1.5 text-sm sm:text-base">
+                  Branding • Marketing • Storytelling • Product
+                </p>
+                <p className="text-slate-500 font-semibold text-xs sm:text-sm mt-1">
+                  รายละเอียดทักษะสำคัญในการสร้างธุรกิจ
+                </p>
+              </div>
+
+              {/* Item 2 */}
+              <div className="py-5">
+                <h5 className="font-extrabold text-rose-600 text-base md:text-lg">
+                  30% : ตัวขยายผล ทำงานเร็วขึ้น สวยขึ้น ต้นทุนต่ำลง
+                </h5>
+                <p className="font-bold text-slate-800 mt-1.5 text-sm sm:text-base">
+                  AI • MarTech (Canva, CapCut, Midjourney, ChatGPT)
+                </p>
+              </div>
+
+              {/* Item 3 */}
+              <div className="pt-5">
+                <h5 className="font-extrabold text-rose-600 text-base md:text-lg">
+                  20% : สมการความสำเร็จ ไม่ใช่ทฤษฎีจากตำรา
+                </h5>
+                <p className="font-bold text-slate-800 mt-1.5 text-sm sm:text-base">
+                  Real Case จาก Guest Speaker (ผู้ประกอบการตัวจริง)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="syllabus" className="py-20">
         <SectionTitle
           title={
