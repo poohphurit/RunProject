@@ -418,8 +418,8 @@ export default function App() {
           subtitle="R.U.N. ออกแบบมาสำหรับผู้ประกอบการ 3 กลุ่มที่อยู่คนละจุดของเส้นทาง แต่มีเป้าหมายเดียวกัน วิ่งให้ถึงความสำเร็จ ก่อนที่โลกจะวิ่งหนีไป"
         />
 
-        {/* Groups 1 & 2 Grid */}
-        <div className="mx-auto mt-12 grid max-w-5xl gap-8 px-6 md:grid-cols-2">
+        {/* Groups 1, 2 & 3 Grid */}
+        <div className="mx-auto mt-12 grid max-w-6xl gap-6 px-6 lg:grid-cols-3">
           {/* Card: กลุ่ม 1 */}
           <article className="group relative rounded-[2rem] border border-slate-100 bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.015)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(244,63,94,0.06)] flex flex-col justify-between">
             <span className="absolute -top-3 left-8 inline-flex items-center gap-1 rounded-full bg-rose-500 px-4 py-1 text-xs font-black uppercase tracking-wider text-white shadow-md shadow-rose-200">
@@ -515,17 +515,7 @@ export default function App() {
               </p>
             </div>
           </article>
-        </div>
 
-        {/* Section divider and Title 2 */}
-        <div className="mt-24">
-          <SectionTitle
-            title="กลุ่มเป้าหมาย : ผู้พร้อมเริ่มธุรกิจใหม่"
-          />
-        </div>
-
-        {/* Group 3 & Caution Grid */}
-        <div className="mx-auto mt-12 grid max-w-5xl gap-8 px-6 md:grid-cols-2">
           {/* Card: กลุ่ม 3 */}
           <article className="group relative rounded-[2rem] border border-slate-100 bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.015)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(244,63,94,0.06)] flex flex-col justify-between">
             <span className="absolute -top-3 left-8 inline-flex items-center gap-1 rounded-full bg-rose-500 px-4 py-1 text-xs font-black uppercase tracking-wider text-white shadow-md shadow-rose-200">
@@ -567,7 +557,10 @@ export default function App() {
               </p>
             </div>
           </article>
+        </div>
 
+        {/* Caution Card Container */}
+        <div className="mx-auto mt-12 max-w-2xl px-6">
           {/* Card: ข้อควรระวัง */}
           <article className="group relative rounded-[2rem] border border-amber-200 bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.015)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(245,158,11,0.06)] flex flex-col justify-between">
             <span className="absolute -top-3 left-8 inline-flex items-center gap-1.5 rounded-full bg-amber-500 px-4 py-1 text-xs font-black uppercase tracking-wider text-white shadow-md shadow-amber-200">
