@@ -806,6 +806,88 @@ export default function App() {
         </div>
       </section>
 
+      {/* Human Core & 4 Pillars Section */}
+      <section id="human-core" className="py-20 border-b border-slate-200/50 bg-white">
+        <SectionTitle
+          eyebrow="HUMAN CORE VALUE"
+          title="คุณค่าของความเป็นมนุษย์ คือแก่นที่ AI ไม่มีวันทดแทน"
+          subtitle="สิ่งที่ทำให้ธุรกิจชนะในระยะยาวไม่ใช่เทคโนโลยี แต่คือความเป็นมนุษย์ที่สร้างผลลัพธ์ผ่านเทคโนโลยี"
+        />
+
+        <div className="mx-auto mt-12 max-w-4xl px-6 space-y-12">
+          {/* Intro Box */}
+          <div className="rounded-[2rem] bg-slate-50 border border-slate-200/60 p-8 md:p-10 shadow-sm relative overflow-hidden">
+            <div className="absolute -top-10 -left-10 w-32 h-32 bg-rose-500/5 rounded-full blur-2xl" />
+            <p className="text-base sm:text-lg font-bold leading-relaxed text-slate-700 relative z-10">
+              สิ่งที่ทำให้ธุรกิจชนะในระยะยาวไม่ใช่เทคโนโลยี แต่คือความคิดสร้างสรรค์ ความเข้าอกเข้าใจลูกค้า สัญชาตญาณที่ AI จำลองไม่ได้ <strong className="text-rose-500 font-extrabold">R.U.N. จึงสอนสิ่งที่เป็น Core Competitive ของมนุษย์เป็นหลัก</strong> ส่วน AI ทำหน้าที่เป็น <strong className="text-slate-900 font-extrabold">"ตัวขยายผล"</strong> ไม่ใช่สิ่งที่มาแทนที่
+            </p>
+          </div>
+
+          {/* Pillars Section Header */}
+          <div className="text-center">
+            <h4 className="text-2xl font-black text-slate-900 flex items-center justify-center gap-3">
+              <span className="h-[2px] w-8 bg-rose-500/20" />
+              โฟกัสเดียว: สร้างยอดขาย ผ่าน 4 เสาหลัก
+              <span className="h-[2px] w-8 bg-rose-500/20" />
+            </h4>
+          </div>
+
+          {/* Pillars Grid */}
+          <div className="grid gap-6 md:grid-cols-2">
+            {[
+              {
+                title: 'Branding & Personal Branding',
+                desc: 'ลูกค้ามอบ Trust ให้แบรนด์ที่จริงใจ และจับต้องได้ Personal Brand ผู้นำมีมูลค่าสูงกว่าสินค้า',
+                icon: (
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                  </svg>
+                ),
+              },
+              {
+                title: 'New Marketing 2026',
+                desc: 'กลยุทธ์เดิมใช้ไม่ได้ พฤติกรรมลูกค้าพลิก AI เขียนกติกาใหม่ ผู้ที่ไม่ปรับจะถูกแซงโดยไม่ทันตั้งตัว',
+                icon: (
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18V6a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 6v3.75m-18 0h18" />
+                  </svg>
+                ),
+              },
+              {
+                title: 'Storytelling',
+                desc: 'เรื่องเล่าที่จับใจ กระตุ้นอารมณ์ ทำให้ลูกค้าเป็นส่วนหนึ่งของแบรนด์ โดยเฉพาะ Short-Form Video ที่กลายเป็นภาษาหลัก',
+                icon: (
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                  </svg>
+                ),
+              },
+              {
+                title: 'Product Development',
+                desc: 'สินค้าที่ดีต้องออกแบบใหม่ให้ตอบโจทย์ลูกค้าทุกกลุ่มวัยที่เปลี่ยนไป สินค้าที่ดีคือรากฐานที่การตลาดทดแทนไม่ได้',
+                icon: (
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+                  </svg>
+                ),
+              },
+            ].map((pillar, idx) => (
+              <div key={idx} className="group relative rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md hover:border-rose-200">
+                <div className="flex gap-4 items-start">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-rose-50 border border-rose-100 text-rose-500 shadow-sm group-hover:scale-110 transition duration-300">
+                    {pillar.icon}
+                  </div>
+                  <div>
+                    <h5 className="font-extrabold text-slate-900 text-base leading-snug">{pillar.title}</h5>
+                    <p className="text-slate-600 font-bold text-sm sm:text-base mt-2.5 leading-relaxed">{pillar.desc}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="syllabus" className="py-20">
         <SectionTitle
           title={
