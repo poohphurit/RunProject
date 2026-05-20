@@ -657,22 +657,61 @@ export default function App() {
       <section id="problem" className="py-20">
         <SectionTitle title="ทำไมต้องวิ่งตอนนี้?" subtitle="เพราะตลาดเปลี่ยนเร็ว ลูกค้าเปลี่ยนวิธีตัดสินใจ และการแข่งขันใหม่ไม่ได้วัดกันที่ความรู้เพียงอย่างเดียว" />
         
-        {/* Centered Message */}
-        <div className="text-center max-w-3xl mx-auto mt-12 mb-16 px-6 space-y-4">
-          <p className="text-xl sm:text-2xl font-black text-slate-900 leading-tight">
-            " ในขณะที่คุณยังเดินอยู่ โลกกำลังวิ่ง "
-          </p>
-          <p className="text-lg sm:text-xl font-extrabold text-slate-800 leading-relaxed">
-            คู่แข่งจีน วิ่ง / AI วิ่ง / ลูกค้า วิ่ง / ตลาด วิ่ง
-          </p>
-          <p className="text-xl sm:text-2xl font-black text-rose-500 leading-tight">
-            ถ้าคุณไม่วิ่ง คุณไม่ได้แค่ช้า คุณกำลังถอยหลัง
-          </p>
-          <div className="space-y-1.5 pt-4 text-base sm:text-lg font-bold text-slate-800 leading-relaxed">
-            <p>ภูมิทัศน์ธุรกิจ 2025-2026 เปลี่ยนถอนรากถอนโคน</p>
-            <p>ทุกมิติ (STEEP) สั่นสะเทือนพร้อมกัน</p>
-            <p>เหมือนวันที่โลกเปลี่ยนจาก Offline สู่ Online แต่ครั้ง</p>
-            <p>นี้คือ Online สู่ AI เร็วกว่าเดิมหลายเท่า</p>
+        {/* Why Run Now - Premium Card */}
+        <div className="mx-auto mt-12 mb-16 max-w-4xl px-6">
+          <div className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-tr from-rose-50/20 via-white to-slate-50/50 border border-slate-200/80 p-8 md:p-12 shadow-sm text-center">
+            {/* Background design elements */}
+            <div className="absolute -top-12 -right-12 w-40 h-40 bg-rose-100/20 rounded-full blur-3xl" />
+            <div className="absolute -bottom-12 -left-12 w-40 h-40 bg-slate-100/30 rounded-full blur-3xl" />
+
+            {/* Quote Block */}
+            <div className="relative max-w-2xl mx-auto">
+              <span className="text-6xl font-serif text-rose-200/70 absolute -top-8 -left-4 select-none leading-none">“</span>
+              <p className="text-xl sm:text-2xl font-black text-slate-900 leading-snug px-6 relative z-10">
+                ในขณะที่คุณยังเดินอยู่ โลกกำลังวิ่ง
+              </p>
+              <span className="text-6xl font-serif text-rose-200/70 absolute -bottom-12 -right-4 select-none leading-none">”</span>
+            </div>
+
+            {/* Sub-quote */}
+            <p className="mt-6 text-base sm:text-lg font-extrabold text-slate-600 uppercase tracking-wide">
+              คู่แข่งจีน วิ่ง / AI วิ่ง / ลูกค้า วิ่ง / ตลาด วิ่ง
+            </p>
+
+            {/* High Impact Warning Badge */}
+            <div className="mt-8 inline-block bg-rose-50 border border-rose-100 px-6 py-3 rounded-full shadow-sm shadow-rose-100/50 transition duration-300 hover:scale-105">
+              <p className="text-base sm:text-lg font-black text-rose-600">
+                ถ้าคุณไม่วิ่ง คุณไม่ได้แค่ช้า คุณกำลังถอยหลัง
+              </p>
+            </div>
+
+            {/* Context details as 2-column or list */}
+            <div className="mt-12 pt-8 border-t border-slate-100/80 grid gap-6 md:grid-cols-2 text-left">
+              <div className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-slate-100 shadow-sm transition duration-300 hover:shadow-md">
+                <div className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-xl bg-rose-50 text-rose-500">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="3">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                  </svg>
+                </div>
+                <div>
+                  <h5 className="font-extrabold text-slate-900 text-base leading-snug">ภูมิทัศน์ธุรกิจ 2025-2026 เปลี่ยนถอนรากถอนโคน</h5>
+                  <p className="text-sm font-semibold text-slate-500 mt-1">ทุกมิติ (STEEP) สั่นสะเทือนพร้อมกันอย่างรุนแรง</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-slate-100 shadow-sm transition duration-300 hover:shadow-md">
+                <div className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-xl bg-rose-50 text-rose-500">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="3">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                  </svg>
+                </div>
+                <div>
+                  <h5 className="font-extrabold text-slate-900 text-base leading-snug">เหมือนวันที่โลกเปลี่ยนจาก Offline สู่ Online</h5>
+                  <p className="text-sm font-semibold text-slate-500 mt-1">แต่รอบนี้คือการก้าวจาก <span className="text-rose-500 font-extrabold">Online สู่ AI</span> ที่เร็วกว่าเดิมหลายเท่า</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
