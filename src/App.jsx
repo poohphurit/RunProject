@@ -732,7 +732,7 @@ export default function App() {
       </section>
 
       {/* STEEP Landscape Section */}
-      <section id="steep" className="py-20 border-b border-slate-200/50 bg-[#f4f7ff]/30">
+      <section id="steep" className="py-20 border-b border-slate-200/50 bg-white">
         <SectionTitle
           eyebrow="SITUATIONAL LANDSCAPE"
           title="ภูมิทัศน์ธุรกิจ STEEP (2025-2026)"
