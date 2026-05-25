@@ -152,14 +152,14 @@ const syllabus = [
 
 const speakers = [
   {
-    name: 'คุณอ้น ปฤณ (AEIOU)',
+    name: 'คุณ ปฤณ จำเริญพานิช',
     role: 'FOUNDER & CEO AEIOU',
     bio: 'กลยุทธ์การตลาดและ AI ที่ใช้ได้จริงสำหรับธุรกิจยุคใหม่',
     image: speakerAn,
     accent: 'from-rose-500 to-orange-400',
   },
   {
-    name: 'คุณศรัณย์ แบ่งกุลจิต',
+    name: 'คุณ ศรัณย์ แบ่งกุศลจิต',
     role: 'CEO UPPERCUZ',
     bio: 'สาย TikTok การตลาดคอนเทนต์ และระบบปิดการขายที่โตไว',
     image: speakerSaran,
@@ -176,13 +176,11 @@ const speakers = [
 
 const sections = [
   { id: 'hero', label: 'หน้าแรก' },
-  { id: 'concept', label: 'คอนเซปต์ R.U.N.' },
-  { id: 'audience', label: 'เหมาะกับใคร' },
-  { id: 'problem', label: 'ปัญหา' },
-  { id: 'syllabus', label: 'ตารางเรียน' },
+  { id: 'concept', label: 'เกี่ยวกับหลักสูตร R.U.N' },
+  { id: 'problem', label: 'ทำไมต้อง R.U.N.' },
+  { id: 'syllabus', label: 'Course Outline' },
   { id: 'speakers', label: 'วิทยากร' },
-  { id: 'results', label: 'ผลลัพธ์' },
-  { id: 'apply', label: 'สมัคร' },
+  { id: 'apply', label: 'การรับสมัคร' },
 ];
 
 
@@ -243,13 +241,8 @@ export default function App() {
         <div className="mx-auto flex max-w-7xl flex-col md:flex-row md:items-center justify-between gap-3 md:gap-4 px-4 py-3 sm:px-6">
           {/* Logo and Mobile Register Button Row */}
           <div className="flex w-full items-center justify-between md:w-auto">
-            <div className="flex flex-col items-start">
-              <span className="text-xl font-black tracking-tight text-slate-900 leading-none">
-                R<span className="text-rose-500">.</span>U<span className="text-rose-500">.</span>N
-              </span>
-              <span className="text-[8px] font-bold uppercase tracking-[0.2em] text-slate-400 mt-1">
-                REVENUE. UNLOCK. NOW.
-              </span>
+            <div className="flex items-center">
+              <img src="/logo.png" alt="R.U.N. by SPU" className="h-10 w-auto object-contain" />
             </div>
             {/* Visible on Mobile only */}
             <a href="#apply" className="rounded-full bg-rose-500 px-3.5 py-1.5 text-xs font-semibold text-white shadow-lg shadow-rose-200 transition hover:-translate-y-0.5 hover:bg-rose-600 md:hidden">
@@ -295,7 +288,7 @@ export default function App() {
           />
 
           {/* Interactive Absolute-Positioned Overlay Buttons */}
-          <div className="absolute left-1/2 -translate-x-1/2 bottom-[4%] sm:left-[16%] sm:translate-x-0 sm:bottom-[10%] md:left-[17%] md:bottom-[12%] lg:left-[17.5%] lg:bottom-[14%] flex gap-2.5 sm:gap-4 z-20 w-max">
+          <div className="absolute left-1/2 -translate-x-1/2 bottom-[12%] sm:left-[16%] sm:translate-x-0 sm:bottom-[20%] md:left-[17%] md:bottom-[22%] lg:left-[17.5%] lg:bottom-[25%] flex gap-2.5 sm:gap-4 z-20 w-max">
             <a
               href="#syllabus"
               className="rounded-full bg-[#0f172a] py-2 px-0 w-[105px] sm:w-auto sm:px-7 sm:py-3.5 md:px-10 md:py-4.5 lg:px-12 lg:py-5 text-[10px] sm:text-sm md:text-base lg:text-lg font-extrabold text-white shadow-[0_8px_30px_rgba(15,23,42,0.35)] transition duration-300 hover:scale-[1.05] hover:bg-[#1e293b] active:scale-[0.98] inline-flex items-center justify-center text-center"
@@ -668,7 +661,7 @@ export default function App() {
               <p className="text-xl sm:text-2xl font-black text-slate-900 leading-snug px-6 relative z-10">
                 ในขณะที่คุณยังเดินอยู่ <span className="text-rose-500 font-black">“โลกกำลังวิ่ง”</span>
               </p>
-              
+
               <p className="text-xl sm:text-2xl font-black text-slate-900 leading-relaxed px-6 relative z-10 mt-6">
                 เพราะตลาดเปลี่ยนเร็ว ลูกค้าเปลี่ยนวิธีตัดสินใจ และการแข่งขันใหม่ไม่ได้วัดกันที่ความรู้เพียงอย่างเดียว
               </p>
@@ -711,97 +704,9 @@ export default function App() {
 
           </div>
         </div>
-
-        <div className="mx-auto mt-12 grid max-w-7xl gap-6 px-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-          {[
-            ['AI', 'เปลี่ยน AI เป็นผู้ช่วย ลดต้นทุน ทุ่นแรง ผลิตงานระดับโปร เพื่อให้คุณวิ่งเร็วกว่าคู่แข่ง'],
-            ['MARKETING', 'เจาะลึก New Marketing Funnel รับมือปี 2026 ปรับแผนทันทีไม่ให้แบรนด์ถูกทิ้งไว้ข้างหลัง'],
-            ['BRANDING', 'สร้างแบรนด์ผู้นำ (CEO Branding) มัดใจลูกค้าด้วย "Trust" สิ่งเดียวที่ AI เลียนแบบไม่ได้'],
-            ['SALE', 'มุ่งเป้าที่ REVENUE ด้วยสคริปต์ปิดการขายและจิตวิทยาไลฟ์สด เปลี่ยนคนดูเป็นคนจ่ายเงิน'],
-            ['CONTENT', 'สะกดลูกค้าด้วย Storytelling และคลิปสั้น เข้าใจทั้งใจมนุษย์และอัลกอริทึม ดึงดูดให้คนซื้อ'],
-          ].map(([tag, text]) => (
-            <article key={tag} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
-              <p className="text-xl font-black uppercase tracking-wide text-rose-500">{tag}</p>
-              <p className="mt-3 leading-7 text-slate-600">{text}</p>
-            </article>
-          ))}
-        </div>
       </section>
 
-      {/* STEEP Landscape Section */}
-      <section id="steep" className="py-20 border-b border-slate-200/50">
-        <SectionTitle
-          eyebrow="SITUATIONAL LANDSCAPE"
-          title="ภูมิทัศน์ธุรกิจ STEEP (2025-2026)"
-          subtitle="วิเคราะห์มิติสถานการณ์จริงที่จะส่งผลกระทบต่อธุรกิจคุณในปัจจุบันและอนาคตอันใกล้"
-        />
 
-        <div className="mx-auto mt-12 max-w-4xl px-6 space-y-6">
-          {/* STEEP Cards Container */}
-          <div className="rounded-[2rem] border border-slate-200/80 bg-white p-6 md:p-10 shadow-sm space-y-6">
-            <h4 className="text-lg font-black text-slate-800 border-b border-slate-100 pb-4 mb-4 flex items-center gap-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-rose-500" />
-              มิติสถานการณ์ (Situation Analysis)
-            </h4>
-
-            <div className="space-y-6">
-              {[
-                {
-                  letter: 'S',
-                  title: 'Social — สังคมคนไทย',
-                  desc: 'สังคมคนไทย 91% ซื้อผ่าน Social Commerce สูงสุดในโลก ลูกค้า "พบเจอ" สินค้าบนฟีด ไม่ได้ค้นหาอีกต่อไป คอนเทนต์ขยะท่วม Trust กลายเป็นสกุลเงินที่มีค่าที่สุด',
-                  color: 'bg-rose-500 text-white',
-                },
-                {
-                  letter: 'T',
-                  title: 'Technology — เทคโนโลยี',
-                  desc: 'เทคโนโลยีลูกค้าถาม ChatGPT, Perplexity แทน Google แบรนด์ที่ AI ไม่หยิบแนะนำจะหายไปจากสายตาลูกค้า คู่แข่งที่ใช้ AI ก่อนกำลังทิ้งห่าง',
-                  color: 'bg-rose-500 text-white',
-                },
-                {
-                  letter: 'E',
-                  title: 'Economy — เศรษฐกิจผู้บริโภค',
-                  desc: 'เศรษฐกิจผู้บริโภค 71% รับรู้เศรษฐกิจตึงตัว ตลาดแยกขั้วชัด (Premium vs Value) ตลาดกลางหดตัว SME ที่ไม่เลือกจุดยืนจะถูกบีบจากทุกด้าน',
-                  color: 'bg-rose-500 text-white',
-                },
-                {
-                  letter: 'E',
-                  title: 'Environment — สิ่งแวดล้อม',
-                  desc: 'สิ่งแวดล้อมสินค้าจีนถูกกว่า 3-5 เท่า เข้าถึงคนไทยตรงผ่าน TikTok Shop, Shopee ไม่ผ่านคนกลาง ความขัดแย้งในภูมิภาคกัดเซาะห่วงโซ่อุปทาน',
-                  color: 'bg-rose-500 text-white',
-                },
-                {
-                  letter: 'P',
-                  title: 'Politics — การเมือง',
-                  desc: 'การเมืองการเมืองในประเทศผันผวน จุดยืนใหม่สหรัฐฯ สงครามเพื่อนบ้าน นโยบายการค้าเปลี่ยนตลอด ส่งผลต่อต้นทุน โอกาส ความมั่นใจลงทุน',
-                  color: 'bg-rose-500 text-white',
-                },
-              ].map((item, idx) => (
-                <div key={idx} className="flex gap-4 items-start p-4 rounded-2xl transition duration-300 hover:bg-slate-50 border border-transparent hover:border-slate-100">
-                  <div className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl font-black text-xl shadow-sm ${item.color}`}>
-                    {item.letter}
-                  </div>
-                  <div>
-                    <h5 className="font-extrabold text-slate-900 text-base leading-snug">{item.title}</h5>
-                    <p className="text-slate-600 font-bold text-sm sm:text-base mt-2 leading-relaxed">{item.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Red Banner underneath */}
-          <div className="rounded-[2rem] bg-gradient-to-r from-rose-600 to-rose-500 p-8 text-white shadow-md shadow-rose-200/50 text-center relative overflow-hidden">
-            <div className="absolute -top-12 -right-12 w-32 h-32 bg-white/10 rounded-full blur-2xl" />
-            <p className="text-base sm:text-lg font-black tracking-wide leading-relaxed">
-              ผู้ประกอบการที่ยังยึดวิธีเดิม ไม่ได้แค่เดินช้า — <span className="underline decoration-wavy decoration-rose-300">กำลังถอยหลังโดยไม่รู้ตัว</span>
-            </p>
-            <p className="mt-4 text-sm sm:text-base font-bold text-rose-50 leading-relaxed max-w-2xl mx-auto">
-              R.U.N. ออกแบบมาให้ลุกขึ้นวิ่ง — ปลดล็อกรายได้ใหม่ มอบท่าไม้ตายใช้ได้ทันที สร้างผลลัพธ์จับต้องได้ตั้งแต่วันแรกที่กลับไปทำงาน
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Human Core & 4 Pillars Section */}
       <section id="human-core" className="py-20 border-b border-slate-200/50">
@@ -834,7 +739,7 @@ export default function App() {
             {[
               {
                 title: 'Branding & Personal Branding',
-                desc: 'ลูกค้ามอบ Trust ให้แบรนด์ที่จริงใจ และจับต้องได้ Personal Brand ผู้นำมีมูลค่าสูงกว่าสินค้า',
+                desc: 'ลูกค้ามอบ Trust ให้แบรนด์ที่จริงใจ และจับต้องได้ Personal Brand เป็นยุคที่ผู้นำมีมูลค่าสูงกว่าสินค้า',
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
@@ -843,7 +748,7 @@ export default function App() {
               },
               {
                 title: 'New Marketing 2026',
-                desc: 'กลยุทธ์เดิมใช้ไม่ได้ พฤติกรรมลูกค้าพลิก AI เขียนกติกาใหม่ ผู้ที่ไม่ปรับจะถูกแซงโดยไม่ทันตั้งตัว',
+                desc: 'กลยุทธ์เดิมใช้ไม่ได้ พฤติกรรมลูกค้าพลิกด้วย AI เขียนกติกาใหม่ ผู้ที่ไม่ปรับจะถูกแซงโดยไม่ทันตั้งตัว',
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18V6a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 6v3.75m-18 0h18" />
@@ -889,7 +794,7 @@ export default function App() {
       <section id="course-ratio" className="py-20 border-b border-slate-200/50">
         <SectionTitle
           eyebrow="COURSE STRUCTURE"
-          title="สัดส่วนเนื้อหาของหลักสูตร"
+          title="เรียนอะไรบ้าง ?"
           subtitle="โครงสร้างหลักสูตรที่ออกแบบมาเพื่อให้ผู้เรียนได้รับความรู้ครบทุกมิติอย่างสมดุล"
         />
 
@@ -1007,6 +912,22 @@ export default function App() {
             </div>
           </div>
         </div>
+
+        {/* 5 Core Learning Area Cards */}
+        <div className="mx-auto mt-16 grid max-w-7xl gap-6 px-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+          {[
+            ['AI', 'เปลี่ยน AI เป็นผู้ช่วย ลดต้นทุน ทุ่นแรง ผลิตงานระดับโปร เพื่อให้คุณวิ่งเร็วกว่าคู่แข่ง'],
+            ['MARKETING', 'เจาะลึก New Marketing Funnel รับมือปี 2026 ปรับแผนทันทีไม่ให้แบรนด์ถูกทิ้งไว้ข้างหลัง'],
+            ['BRANDING', 'สร้างแบรนด์ผู้นำ (CEO Branding) มัดใจลูกค้าด้วย "Trust" สิ่งเดียวที่ AI เลียนแบบไม่ได้'],
+            ['SALE', 'มุ่งเป้าที่ REVENUE ด้วยสคริปต์ปิดการขายและจิตวิทยาไลฟ์สด เปลี่ยนคนดูเป็นคนจ่ายเงิน'],
+            ['CONTENT', 'สะกดลูกค้าด้วย Storytelling และคลิปสั้น เข้าใจทั้งใจมนุษย์และอัลกอริทึม ดึงดูดให้คนซื้อ'],
+          ].map(([tag, text]) => (
+            <article key={tag} className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+              <p className="text-xl font-black uppercase tracking-wide text-rose-500">{tag}</p>
+              <p className="mt-3 leading-7 text-slate-600">{text}</p>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section id="syllabus" className="py-20">
@@ -1043,7 +964,7 @@ export default function App() {
       </section>
 
       <section id="speakers" className="py-20">
-        <SectionTitle title="วิทยากรตัวจริงผู้เชี่ยวชาญ" subtitle="วิทยากรตัวจริงที่ลงสนามทุกวัน" />
+        <SectionTitle title="DIRECTORS" subtitle="วิทยากรตัวจริงที่ลงสนามทุกวัน" />
         <div className="mx-auto mt-12 grid max-w-6xl gap-6 px-6 lg:grid-cols-3">
           {speakers.map((speaker) => (
             <article key={speaker.name} className="group rounded-[2rem] border border-slate-200 bg-white p-4 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(244,63,94,0.12)]">
@@ -1058,203 +979,231 @@ export default function App() {
         </div>
       </section>
 
-      <section id="results" className="py-20">
-        <SectionTitle title="สิ่งที่ผู้เรียนจะได้รับ" subtitle="เมื่อจบคอร์ส ผู้เรียนจะไม่ใช่แค่คนที่มีความรู้ แต่เป็นคนที่พร้อมลงมือสร้างผลลัพธ์ได้จริง" />
-        <div className="mx-auto mt-12 grid max-w-5xl gap-6 px-6 md:grid-cols-2 lg:grid-cols-4">
-          {[
-            { title: 'เข้าใจกลยุทธ์ใหม่', icon: 'strategy' },
-            { title: 'มีงานจริงกลับไปใช้', icon: 'presenter' },
-            { title: 'ใช้ AI ได้คล่องขึ้น', icon: 'ai_mind' },
-            { title: 'สื่อสารแบรนด์ได้ชัดขึ้น', icon: 'communication' },
-          ].map((item) => {
-            const renderIcon = () => {
-              if (item.icon === 'strategy') {
-                return (
-                  <svg className="w-16 h-16 text-rose-500 mb-6 mx-auto" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    {/* Whiteboard outline */}
-                    <rect x="10" y="12" width="44" height="30" rx="3" stroke="#F43F5E" strokeWidth="3" />
-                    {/* Whiteboard header */}
-                    <line x1="8" y1="12" x2="56" y2="12" stroke="#F43F5E" strokeWidth="4" strokeLinecap="round" />
-                    {/* Tri-pod stand */}
-                    <path d="M22 42L16 56M42 42L48 56M32 42V56" stroke="#F43F5E" strokeWidth="3" strokeLinecap="round" />
-                    {/* Content: X's and O's and arrows */}
-                    <path d="M16 20L22 26M22 20L16 26" stroke="#F43F5E" strokeWidth="2.5" strokeLinecap="round" />
-                    <circle cx="46" cy="22" r="3" stroke="#F43F5E" strokeWidth="2.5" />
-                    <circle cx="18" cy="34" r="3" stroke="#F43F5E" strokeWidth="2.5" />
-                    <path d="M42 30L48 36M48 30L42 36" stroke="#F43F5E" strokeWidth="2.5" strokeLinecap="round" />
-                    <path d="M24 24C30 20 34 36 40 32" stroke="#F43F5E" strokeWidth="2.5" strokeDasharray="3 3" strokeLinecap="round" />
-                    <path d="M37 30.5L41.5 32L39 36" stroke="#F43F5E" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                );
-              }
-              if (item.icon === 'presenter') {
-                return (
-                  <svg className="w-16 h-16 text-rose-500 mb-6 mx-auto" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="18" cy="18" r="4.5" fill="#F43F5E" />
-                    <path d="M12 28.5C12 25.5 14.5 24 18 24C21.5 24 24 25.5 24 28.5V36H12V28.5Z" fill="#F43F5E" />
-                    <path d="M22 30L34 22" stroke="#F43F5E" strokeWidth="3" strokeLinecap="round" />
-                    <rect x="30" y="14" width="24" height="18" rx="2" stroke="#F43F5E" strokeWidth="3" />
-                    <line x1="35" y1="19" x2="49" y2="19" stroke="#F43F5E" strokeWidth="2.5" strokeLinecap="round" />
-                    <line x1="35" y1="23" x2="49" y2="23" stroke="#F43F5E" strokeWidth="2.5" strokeLinecap="round" />
-                    <line x1="35" y1="27" x2="44" y2="27" stroke="#F43F5E" strokeWidth="2.5" strokeLinecap="round" />
-                    <circle cx="34" cy="46" r="3.5" fill="#F43F5E" />
-                    <path d="M29 55C29 52 31 51 34 51C37 51 39 52 39 55V58H29V55Z" fill="#F43F5E" />
-                    <circle cx="48" cy="46" r="3.5" fill="#F43F5E" />
-                    <path d="M43 55C43 52 45 51 48 51C51 51 53 52 53 55V58H43V55Z" fill="#F43F5E" />
-                  </svg>
-                );
-              }
-              if (item.icon === 'ai_mind') {
-                return (
-                  <svg className="w-16 h-16 text-rose-500 mb-6 mx-auto" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 52C25 54 28 54 31 54C34 54 35.5 52.5 36.5 50.5C37.5 48.5 37 46 37 46C39.5 45.5 41 43.5 41.5 40.5C42 37.5 40.5 35.5 40.5 35.5C42.5 34.5 43.5 31.5 43.5 28C43.5 17 38 12 28 12C18 12 15.5 19.5 15.5 28C15.5 36.5 18 40.5 19.5 42C19.5 42 19 46.5 21.5 49.5C22.5 50.5 24 52 24 52Z" fill="#F43F5E" />
-                    <circle cx="28" cy="22" r="2.5" fill="white" />
-                    <circle cx="35" cy="27" r="2.5" fill="white" />
-                    <circle cx="25" cy="32" r="2.5" fill="white" />
-                    <circle cx="32" cy="38" r="2.5" fill="white" />
-                    <path d="M28 22H35V27" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M25 32H32V38" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M28 22V32" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
-                  </svg>
-                );
-              }
-              if (item.icon === 'communication') {
-                return (
-                  <svg className="w-16 h-16 text-rose-500 mb-6 mx-auto" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="24" y="16" width="30" height="20" rx="3" fill="#F43F5E" fillOpacity="0.8" />
-                    <path d="M46 36L50 41V36H46Z" fill="#F43F5E" fillOpacity="0.8" />
-                    <line x1="30" y1="22" x2="48" y2="22" stroke="white" strokeWidth="2" strokeLinecap="round" />
-                    <line x1="30" y1="26" x2="48" y2="26" stroke="white" strokeWidth="2" strokeLinecap="round" />
-                    <line x1="30" y1="30" x2="42" y2="30" stroke="white" strokeWidth="2" strokeLinecap="round" />
-                    <rect x="10" y="24" width="30" height="20" rx="3" stroke="#F43F5E" strokeWidth="3" fill="white" />
-                    <path d="M14 44L18 49V44H14Z" fill="#F43F5E" stroke="#F43F5E" strokeWidth="3" strokeLinejoin="round" />
-                    <line x1="16" y1="30" x2="34" y2="30" stroke="#F43F5E" strokeWidth="2.5" strokeLinecap="round" />
-                    <line x1="16" y1="34" x2="34" y2="34" stroke="#F43F5E" strokeWidth="2.5" strokeLinecap="round" />
-                    <line x1="16" y1="38" x2="28" y2="38" stroke="#F43F5E" strokeWidth="2.5" strokeLinecap="round" />
-                  </svg>
-                );
-              }
-              return null;
-            };
 
-            return (
-              <div key={item.title} className="rounded-[2rem] border border-slate-100 bg-white p-8 text-center shadow-[0_8px_30px_rgb(0,0,0,0.015)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(244,63,94,0.06)] flex flex-col items-center justify-center">
-                {renderIcon()}
-                <p className="text-[1.375rem] font-black leading-snug text-slate-900 tracking-tight mt-2">{item.title}</p>
+
+
+
+      <section id="apply" className="py-24 bg-[#f4f7ff] border-t border-slate-200/50">
+        <div className="mx-auto max-w-5xl px-6 text-center">
+          <p className="text-sm font-bold uppercase tracking-[0.35em] text-rose-500">Ready to join?</p>
+          <h2 className="mt-4 text-3xl font-black text-slate-900 md:text-5xl leading-tight">
+            พร้อมก้าวสู่มนุษย์พันธุ์ใหม่<span className="inline-block">ไปด้วยกัน</span>
+          </h2>
+          <p className="mt-4 text-base sm:text-lg leading-relaxed text-slate-600 max-w-2xl mx-auto">
+            ก้าวข้ามทุกขีดจำกัด ปลดล็อกศักยภาพธุรกิจและทีมการตลาดของคุณไปกับวิทยากรระดับแนวหน้า และการผสานพลังของกลยุทธ์และการใช้งาน AI
+          </p>
+
+          {/* ข้อมูลการเรียน (Course Info - Grid Layout) */}
+          <div className="mt-12 grid gap-6 md:grid-cols-3 items-stretch">
+            {/* Box 1 */}
+            <div className="group bg-white border border-slate-200/80 rounded-3xl p-6 shadow-[0_8px_30px_rgba(0,0,0,0.01)] hover:shadow-[0_20px_50px_rgba(244,63,94,0.05)] hover:-translate-y-1 transition duration-300 text-center flex flex-col items-center justify-between">
+              <div className="flex flex-col items-center w-full">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-50 border border-rose-100/50 text-rose-500 mb-4 shadow-sm group-hover:scale-110 transition duration-300">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                  </svg>
+                </div>
+                <span className="block text-lg font-black text-rose-500 mb-2">รุ่นที่ 1</span>
+                <span className="block text-base font-extrabold text-slate-800 leading-snug">
+                  เรียนทุกวันศุกร์ที่ <span className="text-rose-500 font-extrabold">3, 10, 17, 24</span> กรกฎาคม 2569
+                </span>
               </div>
-            );
-          })}
-        </div>
-      </section>
-
-
-
-
-      <section id="apply" className="pb-24 pt-6">
-        <div className="mx-auto max-w-5xl px-6">
-          <div className="rounded-[2.5rem] border border-rose-200 bg-white p-6 shadow-[0_30px_120px_rgba(248,113,113,0.12)] sm:p-8 md:p-12">
-            <div className="max-w-2xl">
-              <p className="text-sm font-bold uppercase tracking-[0.35em] text-rose-500">Ready to join?</p>
-              <h2 className="mt-4 text-3xl font-black text-slate-900 md:text-5xl">พร้อมก้าวสู่มนุษย์พันธุ์ใหม่<span className="inline-block">ไปด้วยกัน</span></h2>
-              <p className="mt-4 text-lg leading-8 text-slate-600">ก้าวข้ามทุกขีดจำกัด ปลดล็อกศักยภาพธุรกิจและทีมการตลาดของคุณไปกับวิทยากรระดับแนวหน้า และการผสานพลังของกลยุทธ์และการใช้งาน AI</p>
+              <span className="block text-xs text-slate-400 font-extrabold mt-4 leading-relaxed">
+                เปิดรับสมัครตั้งแต่วันนี้เป็นต้นไป<br />ปิดเมื่อผู้สมัครเต็ม
+              </span>
             </div>
-            <div className="mt-8 grid gap-6 md:grid-cols-2">
-              {/* Left Column: Contact Channels */}
-              <div className="rounded-3xl border border-slate-200 bg-[#f8faff] p-6 sm:p-8 flex flex-col justify-between">
-                <div>
-                  <p className="text-sm font-black text-rose-500 mb-6 tracking-normal">สอบถามข้อมูลเพิ่มเติมที่</p>
 
-                  {/* Line Official */}
-                  <div className="flex items-start gap-4 p-3.5 rounded-2xl bg-white border border-slate-100 shadow-sm mb-4">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#06c755]/10 text-[#06c755]">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" className="w-5 h-5">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider">Line Official</span>
-                      <span className="block text-base font-extrabold text-slate-800">@runbyspu</span>
-                      <a href="https://lin.ee/8I9yHV6" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 mt-1 text-xs font-extrabold text-[#06c755] hover:underline">
-                        แอดไลน์ lin.ee/8I9yHV6
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="w-3 h-3">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-
-                  {/* Tel */}
-                  <div className="flex items-start gap-4 p-3.5 rounded-2xl bg-white border border-slate-100 shadow-sm mb-4">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-500/10 text-blue-500">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" className="w-5 h-5">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.387a12.035 12.035 0 01-7.108-7.108c-.145-.44.02-.927.387-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider">เบอร์โทรศัพท์</span>
-                      <div className="flex flex-wrap gap-x-2 gap-y-0.5 mt-0.5">
-                        <a href="tel:0612745157" className="text-sm font-extrabold text-slate-800 hover:text-rose-500 transition">061-274-5157</a>
-                        <span className="text-slate-300">,</span>
-                        <a href="tel:0929889516" className="text-sm font-extrabold text-slate-800 hover:text-rose-500 transition">092-988-9516</a>
-                      </div>
-                      <span className="block text-[10px] text-slate-400 mt-0.5">*กดโทรออกเพื่อติดต่อฝ่ายบริการหลักสูตร</span>
-                    </div>
-                  </div>
-
-                  {/* Email */}
-                  <div className="flex items-start gap-4 p-3.5 rounded-2xl bg-white border border-slate-100 shadow-sm">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-amber-500/10 text-amber-500">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" className="w-5 h-5">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-                      </svg>
-                    </div>
-                    <div>
-                      <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider">อีเมลติดต่อ</span>
-                      <a href="mailto:runbyspu@gmail.com" className="block text-sm font-extrabold text-slate-800 hover:text-rose-500 transition mt-0.5">runbyspu@gmail.com</a>
-                    </div>
-                  </div>
+            {/* Box 2 */}
+            <div className="group bg-white border border-slate-200/80 rounded-3xl p-6 shadow-[0_8px_30px_rgba(0,0,0,0.01)] hover:shadow-[0_20px_50px_rgba(244,63,94,0.05)] hover:-translate-y-1 transition duration-300 text-center flex flex-col items-center justify-between">
+              <div className="flex flex-col items-center w-full">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-50 border border-rose-100/50 text-rose-500 mb-4 shadow-sm group-hover:scale-110 transition duration-300">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                 </div>
+                <span className="block text-lg font-black text-rose-500 mb-2">รุ่นที่ 2</span>
+                <span className="block text-base font-extrabold text-slate-800 leading-snug">
+                  เรียน <span className="text-rose-500 font-extrabold">เดือนสิงหาคม</span> 2569
+                </span>
               </div>
-
-              {/* Right Column: Online Registration */}
-              <div className="rounded-3xl border-2 border-rose-100 bg-[#fff5f6] p-6 sm:p-8 flex flex-col justify-between items-center text-center shadow-md relative overflow-hidden">
-                <div className="flex flex-col items-center">
-                  {/* Checkmark Badge */}
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-rose-500 text-white shadow-lg shadow-rose-200/50 mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="w-8 h-8">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                    </svg>
-                  </div>
-                  <p className="text-xs font-bold uppercase tracking-[0.35em] text-rose-500">Registration</p>
-                  <h3 className="text-xl font-black text-slate-900 mt-2 sm:text-2xl">กรอกใบสมัครเข้าร่วมโครงการ</h3>
-                  <p className="text-slate-600 text-sm mt-3 leading-relaxed max-w-sm">
-                    กรอกใบสมัครออนไลน์เพื่อยืนยันข้อมูลและเตรียมความพร้อมในการก้าวสู่การเปลี่ยนจากเดินเป็นวิ่งในโลกธุรกิจกับโครงการ R.U.N. by SPU
-                  </p>
-                </div>
-
-                <div className="w-full mt-6">
-                  <a
-                    href="https://forms.gle/nkAMHRD2H13VVemD7"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-[#ff3b60] to-[#ff5a79] hover:from-[#ff5a79] hover:to-[#ff3b60] text-white font-extrabold text-base sm:text-lg shadow-lg shadow-rose-200/60 transition duration-300 hover:scale-[1.03] active:scale-[0.98] inline-flex items-center justify-center gap-2"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="w-5 h-5">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    กรอกใบสมัคร คลิกที่นี่
-                  </a>
-                  <span className="block text-[10px] text-rose-400 font-bold mt-2.5 tracking-normal">*สมัครเรียนและลงทะเบียนเพื่อยืนยันสิทธิ์ทันที</span>
-                </div>
-              </div>
+              <span className="block text-xs text-slate-400 font-extrabold mt-4">
+                ติดตามการเปิดรับสมัครเร็วๆ นี้
+              </span>
             </div>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <a href="#hero" className="rounded-2xl bg-rose-500 px-6 py-3 font-semibold text-white transition hover:-translate-y-0.5 hover:bg-rose-600">กลับขึ้นด้านบน</a>
-              <a href="mailto:runbyspu@gmail.com" className="rounded-2xl border border-slate-200 bg-white px-6 py-3 font-semibold text-slate-700 transition hover:bg-slate-50">ติดต่อทีมงาน</a>
+
+            {/* Box 3 */}
+            <div className="group bg-white border border-slate-200/80 rounded-3xl p-6 shadow-[0_8px_30px_rgba(0,0,0,0.01)] hover:shadow-[0_20px_50px_rgba(244,63,94,0.05)] hover:-translate-y-1 transition duration-300 text-center flex flex-col items-center justify-between">
+              <div className="flex flex-col items-center w-full">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-50 border border-rose-100/50 text-rose-500 mb-4 shadow-sm group-hover:scale-110 transition duration-300">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  </svg>
+                </div>
+                <span className="block text-lg font-black text-rose-500 mb-2">เรียนจำนวน 4 ครั้ง</span>
+                <span className="block text-base font-extrabold text-slate-800 leading-snug">
+                  เวลา <span className="text-rose-500 font-extrabold">10.00</span> ถึง <span className="text-rose-500 font-extrabold">17.30</span> น.
+                </span>
+              </div>
+              <span className="block text-xs text-slate-500 font-extrabold mt-4 leading-relaxed">
+                @มหาวิทยาลัยศรีปทุม บางเขน
+              </span>
+            </div>
+          </div>
+
+          {/* Unified Checkout and Price Card */}
+          <div className="mt-12 max-w-xl mx-auto bg-white border border-slate-200/80 rounded-[2.5rem] p-8 md:p-10 shadow-[0_20px_50px_rgba(15,23,42,0.025)] text-center relative overflow-hidden">
+            {/* Background glows */}
+            <div className="absolute -top-12 -right-12 w-32 h-32 bg-rose-50/50 rounded-full blur-2xl pointer-events-none" />
+            <div className="absolute -bottom-12 -left-12 w-32 h-32 bg-blue-50/50 rounded-full blur-2xl pointer-events-none" />
+            
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-50 border border-rose-100 text-rose-500 text-xs font-black uppercase tracking-wider mb-4">
+              ค่าลงทะเบียนเรียน
+            </span>
+            
+            <div className="flex flex-col items-center justify-center gap-1 mb-6">
+              <span className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight">44,500 <span className="text-2xl font-black text-slate-500">฿</span></span>
+              <span className="text-xs font-extrabold text-slate-400 uppercase tracking-widest mt-1">ราคาเน็ตสุทธิ (รวมภาษีมูลค่าเพิ่มแล้ว)</span>
+            </div>
+
+            <div className="py-4 border-t border-b border-slate-100 mb-8">
+              <p className="text-sm font-bold leading-relaxed text-slate-600 max-w-md mx-auto">
+                ✨ ราคานี้รวมอาหารกลางวัน อาหารว่าง และอาหารเย็นระดับพรีเมียม พร้อมรับคู่มือประกอบการเรียนประกอบหลักสูตรเรียบร้อยแล้ว
+              </p>
+            </div>
+
+            {/* Registration Button */}
+            <div>
+              <a
+                href="https://forms.gle/nkAMHRD2H13VVemD7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto py-4 px-12 rounded-2xl bg-gradient-to-r from-[#ff3b60] to-[#ff5a79] hover:from-[#ff5a79] hover:to-[#ff3b60] text-white font-extrabold text-base sm:text-lg shadow-lg shadow-rose-200/80 transition duration-300 hover:scale-[1.03] active:scale-[0.98] inline-flex items-center justify-center gap-2"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="w-5 h-5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                กรอกใบสมัคร คลิกที่นี่
+              </a>
+              <span className="block text-[11px] text-slate-400 font-bold mt-3.5">*สมัครเรียนและลงทะเบียนเพื่อยืนยันสิทธิ์ทันที</span>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-[#f4f7ff] border-t border-slate-200/50 py-16">
+        <div className="mx-auto max-w-6xl px-6">
+          {/* Contact Card */}
+          <div className="relative overflow-hidden rounded-[2.5rem] bg-white border border-slate-200/80 p-8 md:p-12 text-center shadow-[0_20px_50px_rgba(15,23,42,0.03)] hover:shadow-[0_30px_70px_rgba(244,63,94,0.06)] hover:-translate-y-1 transition duration-300">
+            {/* Background blur effects */}
+            <div className="absolute -top-24 -left-24 w-48 h-48 bg-rose-200/20 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute -bottom-24 -right-24 w-48 h-48 bg-blue-100/30 rounded-full blur-3xl pointer-events-none" />
+
+            <div className="relative z-10">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-50 border border-rose-100 text-rose-500 text-xs font-black uppercase tracking-wider mb-4">
+                Contact Us
+              </span>
+              <h3 className="text-2xl sm:text-3xl font-black tracking-tight text-slate-900">สอบถามรายละเอียดเพิ่มเติม</h3>
+
+
+              {/* Concept Tagline */}
+              <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-sm sm:text-base md:text-lg font-black tracking-wide text-slate-800">
+                <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-rose-50 border border-rose-100/50 text-rose-500">
+                  <span className="text-rose-600 font-black">R</span>evenue
+                </span>
+                <span className="text-slate-300">•</span>
+                <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-rose-50 border border-rose-100/50 text-rose-500">
+                  <span className="text-rose-600 font-black">U</span>nlock
+                </span>
+                <span className="text-slate-300">•</span>
+                <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-rose-50 border border-rose-100/50 text-rose-500">
+                  <span className="text-rose-600 font-black">N</span>ow
+                </span>
+              </div>
+
+              {/* Grid of contact details */}
+              <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-5 text-center items-stretch border-t border-slate-100 pt-10">
+                {/* 1. Address */}
+                <div className="group/item flex flex-col items-center text-center p-6 rounded-3xl bg-slate-50/40 border border-slate-100 hover:bg-rose-50/30 hover:border-rose-100/80 hover:shadow-lg hover:shadow-rose-100/20 transition-all duration-300 h-full">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-50 border border-rose-100/50 text-[#ff3b60] mb-4 shadow-sm transition-transform duration-300 group-hover/item:scale-110">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                    </svg>
+                  </div>
+                  <h4 className="text-sm font-extrabold text-slate-900 mb-1.5">มหาวิทยาลัยศรีปทุม</h4>
+                  <p className="text-xs font-bold leading-relaxed text-slate-500">
+                    2410/2 ถ.พหลโยธิน แขวงเสนานิคม<br />
+                    เขตจตุจักร กรุงเทพฯ 10900
+                  </p>
+                </div>
+
+                {/* 2. Working Hours */}
+                <div className="group/item flex flex-col items-center text-center p-6 rounded-3xl bg-slate-50/40 border border-slate-100 hover:bg-rose-50/30 hover:border-rose-100/80 hover:shadow-lg hover:shadow-rose-100/20 transition-all duration-300 h-full">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-50 border border-rose-100/50 text-[#ff3b60] mb-4 shadow-sm transition-transform duration-300 group-hover/item:scale-110">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <h4 className="text-sm font-extrabold text-slate-900 mb-1.5">วันและเวลาทำการ</h4>
+                  <p className="text-xs font-bold leading-relaxed text-slate-500">
+                    09:00 - 17:00 น.
+                  </p>
+                </div>
+
+                {/* 3. Telephone */}
+                <div className="group/item flex flex-col items-center text-center p-6 rounded-3xl bg-slate-50/40 border border-slate-100 hover:bg-rose-50/30 hover:border-rose-100/80 hover:shadow-lg hover:shadow-rose-100/20 transition-all duration-300 h-full">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-50 border border-rose-100/50 text-[#ff3b60] mb-4 shadow-sm transition-transform duration-300 group-hover/item:scale-110">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.387a12.035 12.035 0 01-7.108-7.108c-.145-.44.02-.927.387-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                    </svg>
+                  </div>
+                  <h4 className="text-sm font-extrabold text-slate-900 mb-1.5">เบอร์โทรศัพท์</h4>
+                  <div className="flex flex-col gap-1.5 text-xs font-black text-slate-600">
+                    <a href="tel:0612745157" className="hover:text-[#ff3b60] transition-colors duration-200">061-274-5157</a>
+                    <a href="tel:0929889516" className="hover:text-[#ff3b60] transition-colors duration-200">092-988-9516</a>
+                  </div>
+                </div>
+
+                {/* 4. Email */}
+                <div className="group/item flex flex-col items-center text-center p-6 rounded-3xl bg-slate-50/40 border border-slate-100 hover:bg-rose-50/30 hover:border-rose-100/80 hover:shadow-lg hover:shadow-rose-100/20 transition-all duration-300 h-full">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-50 border border-rose-100/50 text-[#ff3b60] mb-4 shadow-sm transition-transform duration-300 group-hover/item:scale-110">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                    </svg>
+                  </div>
+                  <h4 className="text-sm font-extrabold text-slate-900 mb-1.5">อีเมลติดต่อ</h4>
+                  <a href="mailto:runbyspu@gmail.com" className="text-xs font-black text-slate-600 hover:text-[#ff3b60] transition-colors duration-200 block break-all">
+                    runbyspu@gmail.com
+                  </a>
+                </div>
+
+                {/* 5. Line */}
+                <div className="group/item flex flex-col items-center text-center p-6 rounded-3xl bg-slate-50/40 border border-slate-100 hover:bg-rose-50/30 hover:border-rose-100/80 hover:shadow-lg hover:shadow-rose-100/20 transition-all duration-300 h-full">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-50 border border-rose-100/50 text-[#ff3b60] mb-4 shadow-sm transition-transform duration-300 group-hover/item:scale-110">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+                    </svg>
+                  </div>
+                  <h4 className="text-sm font-extrabold text-slate-900 mb-1.5">Line Official</h4>
+                  <a href="https://lin.ee/8I9yHV6" target="_blank" rel="noopener noreferrer" className="text-xs font-black text-slate-600 hover:text-[#ff3b60] transition-colors duration-200">
+                    @runbyspu
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Logo and Copyright */}
+          <div className="mt-12 flex flex-col items-center justify-center gap-3">
+            <img src="/logo.png" alt="R.U.N. by SPU" className="h-10 w-auto object-contain" />
+            <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mt-1">
+              © Copyright 2026 R.U.N. by SPU – All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
