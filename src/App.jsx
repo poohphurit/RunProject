@@ -355,16 +355,16 @@ export default function App() {
           />
 
           {/* Interactive Absolute-Positioned Overlay Buttons */}
-          <div className="absolute left-1/2 -translate-x-1/2 bottom-[12%] sm:left-[16%] sm:translate-x-0 sm:bottom-[20%] md:left-[17%] md:bottom-[22%] lg:left-[17.5%] lg:bottom-[25%] flex gap-2.5 sm:gap-4 z-20 w-max">
+          <div className="absolute left-1/2 -translate-x-1/2 bottom-[12%] sm:left-[32.5%] sm:-translate-x-1/2 sm:bottom-[23%] md:bottom-[24%] lg:bottom-[25%] flex gap-2.5 sm:gap-4.5 z-20 w-max">
             <a
               href="#syllabus"
-              className="rounded-full bg-[#0f172a] py-2 px-0 w-[105px] sm:w-auto sm:px-7 sm:py-3.5 md:px-10 md:py-4.5 lg:px-12 lg:py-5 text-[10px] sm:text-sm md:text-base lg:text-lg font-extrabold text-white shadow-[0_8px_30px_rgba(15,23,42,0.35)] transition duration-300 hover:scale-[1.05] hover:bg-[#1e293b] active:scale-[0.98] inline-flex items-center justify-center text-center"
+              className="rounded-full bg-[#0f172a] py-2 px-0 w-[105px] sm:w-auto sm:px-9 sm:py-4 md:px-11 md:py-4.5 lg:px-14 lg:py-5.5 text-[10px] sm:text-base md:text-lg lg:text-xl font-extrabold text-white shadow-[0_8px_30px_rgba(15,23,42,0.35)] transition duration-300 hover:scale-[1.05] hover:bg-[#1e293b] active:scale-[0.98] inline-flex items-center justify-center text-center"
             >
               ดูตารางเรียน
             </a>
             <a
               href="#apply"
-              className="rounded-full bg-[#ff3b60] py-2 px-0 w-[105px] sm:w-auto sm:px-7 sm:py-3.5 md:px-10 md:py-4.5 lg:px-12 lg:py-5 text-[10px] sm:text-sm md:text-base lg:text-lg font-extrabold text-white shadow-[0_8px_30px_rgba(255,59,96,0.45)] transition duration-300 hover:scale-[1.05] hover:bg-[#ff5a79] active:scale-[0.98] inline-flex items-center justify-center text-center"
+              className="rounded-full bg-[#ff3b60] py-2 px-0 w-[105px] sm:w-auto sm:px-9 sm:py-4 md:px-11 md:py-4.5 lg:px-14 lg:py-5.5 text-[10px] sm:text-base md:text-lg lg:text-xl font-extrabold text-white shadow-[0_8px_30px_rgba(255,59,96,0.45)] transition duration-300 hover:scale-[1.05] hover:bg-[#ff5a79] active:scale-[0.98] inline-flex items-center justify-center text-center"
             >
               สมัครเรียน
             </a>
