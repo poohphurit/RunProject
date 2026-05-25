@@ -256,7 +256,7 @@ function SectionTitle({ eyebrow, title, subtitle }) {
   return (
     <div className="mx-auto max-w-5xl px-6 text-center">
       {eyebrow && <p className="text-xs font-bold uppercase tracking-[0.45em] text-rose-500">{eyebrow}</p>}
-      <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-900 md:text-5xl">{title}</h2>
+      <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-900 md:text-5xl leading-relaxed md:leading-normal">{title}</h2>
       {subtitle ? <p className="mx-auto mt-4 max-w-3xl text-base leading-7 text-slate-600 md:text-lg md:leading-8">{subtitle}</p> : null}
     </div>
   );
