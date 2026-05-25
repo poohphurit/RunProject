@@ -867,7 +867,6 @@ export default function App() {
         <SectionTitle
           eyebrow="COURSE STRUCTURE"
           title="เรียนอะไรบ้าง ?"
-          subtitle="โครงสร้างหลักสูตรที่ออกแบบมาเพื่อให้ผู้เรียนได้รับความรู้ครบทุกมิติอย่างสมดุล"
         />
 
         <div className="mx-auto mt-12 max-w-5xl px-6 grid gap-12 md:grid-cols-2 items-stretch">
@@ -944,7 +943,7 @@ export default function App() {
           {/* Right: Content Details Card (Without Black Background) */}
           <div className="rounded-[2rem] border border-slate-200/80 bg-white p-8 shadow-sm space-y-6 relative overflow-hidden h-full flex flex-col justify-center">
             {/* Header Badge */}
-            <div className="self-center bg-rose-500 text-white font-black text-sm px-6 py-2.5 rounded-full shadow-sm shadow-rose-200/50 mb-2">
+            <div className="self-center bg-rose-500 text-white font-black text-base sm:text-lg md:text-xl px-8 py-3 sm:px-10 sm:py-3.5 rounded-full shadow-md shadow-rose-200/50 mb-4">
               สัดส่วนเนื้อหาของหลักสูตร
             </div>
 
