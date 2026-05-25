@@ -389,8 +389,9 @@ export default function App() {
               ),
             },
             {
-              tag: 'รวย',
-              title: 'เริ่มวิ่ง',
+              tag: 'ครบ',
+              hasEquals: false,
+              title: 'ด้วยเครื่อง',
               desc: 'ครบมือด้วยเครื่องมือและท่าไม้ตายที่สร้างรายได้เพิ่มได้ทันที',
               icon: (
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
@@ -401,7 +402,7 @@ export default function App() {
             {
               tag: 'เริ่ม',
               title: 'วิ่งเร็วขึ้น',
-              desc: 'ลงมือทำจริงทุกวันด้วยผลงานจริงพร้อมใช้',
+              desc: 'ลงมือทำจริงได้ทุกวันจาก Workshop ที่ใช้ได้จริง พร้อมใช้',
               icon: (
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15.5 8.5L21 3m0 0l-5.5 5.5M21 3v5.5m-11 5.5L4 20m0 0v-5.5M4 20h5.5M10.5 7.5L4 14M16.5 13.5L10 20" />
@@ -438,7 +439,7 @@ export default function App() {
               {/* Badge Title */}
               <div className="inline-flex items-center gap-1.5 bg-slate-50 border border-slate-200/80 px-4 py-1.5 rounded-full shadow-sm mb-4 transition duration-300 group-hover:border-rose-300 group-hover:bg-rose-50/30">
                 <span className="text-rose-500 font-extrabold text-sm">{step.tag}</span>
-                <span className="text-slate-400 font-black text-sm">=</span>
+                {step.hasEquals !== false && <span className="text-slate-400 font-black text-sm">=</span>}
                 <span className="text-slate-800 font-black text-sm">{step.title}</span>
               </div>
 
