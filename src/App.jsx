@@ -515,7 +515,7 @@ export default function App() {
         <SectionTitle
           eyebrow="TARGET AUDIENCE"
           title="หลักสูตรนี้เหมาะกับใคร"
-          subtitle="R.U.N. ออกแบบมาสำหรับผู้ประกอบการ 3 กลุ่ม ที่อยู่คนละจุดของเส้นทาง แต่มีเป้าหมายเดียวกัน วิ่งให้ถึงความสำเร็จ ก่อนที่โลกจะวิ่งหนีไป"
+          subtitle="R.U.N. ออกแบบมาสำหรับผู้ประกอบการ 3 กลุ่ม ที่อยู่คนละจุดของเส้นทาง แต่วิ่งสู่เป้าหมายเดียวกัน"
         />
 
         {/* Groups 1, 2 & 3 Grid */}
@@ -778,7 +778,13 @@ export default function App() {
       <section id="human-core" className="py-10 md:py-14 border-b border-slate-200/50">
         <SectionTitle
           eyebrow="HUMAN CORE VALUE"
-          title="คุณค่าของความเป็นมนุษย์ คือแก่นที่ AI ไม่มีวันทดแทน"
+          title={
+            <>
+              คุณค่าของความเป็นมนุษย์
+              <br />
+              คือแก่นที่ AI ไม่มีวันทดแทน
+            </>
+          }
           subtitle="สิ่งที่ทำให้ธุรกิจชนะในระยะยาวไม่ใช่เทคโนโลยี แต่คือความเป็นมนุษย์ที่สร้างผลลัพธ์ผ่านเทคโนโลยี"
         />
 
@@ -805,7 +811,7 @@ export default function App() {
             {[
               {
                 title: 'Branding & Personal Branding',
-                desc: 'ลูกค้ามอบ Trust ให้แบรนด์ที่จริงใจ และจับต้องได้ Personal Brand เป็นยุคที่ผู้นำมีมูลค่าสูงกว่าสินค้า',
+                desc: 'ลูกค้ามอบ Trust ให้แบรนด์ที่จริงใจ และจับต้องได้ด้วย Personal Brand เป็นยุคที่ผู้นำมีมูลค่าสูงกว่าสินค้า',
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
