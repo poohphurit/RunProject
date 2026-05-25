@@ -455,8 +455,8 @@ export default function App() {
       <section id="audience" className="py-20 border-b border-slate-200/50 bg-[#f4f7ff]">
         <SectionTitle
           eyebrow="TARGET AUDIENCE"
-          title="กลุ่มเป้าหมาย : เจ้าของธุรกิจ & STARTUP"
-          subtitle="R.U.N. ออกแบบมาสำหรับผู้ประกอบการ 3 กลุ่มที่อยู่คนละจุดของเส้นทาง แต่มีเป้าหมายเดียวกัน วิ่งให้ถึงความสำเร็จ ก่อนที่โลกจะวิ่งหนีไป"
+          title="หลักสูตรนี้เหมาะกับใคร"
+          subtitle="R.U.N. ออกแบบมาสำหรับผู้ประกอบการ 3 กลุ่ม ที่อยู่คนละจุดของเส้นทาง แต่มีเป้าหมายเดียวกัน วิ่งให้ถึงความสำเร็จ ก่อนที่โลกจะวิ่งหนีไป"
         />
 
         {/* Groups 1, 2 & 3 Grid */}
@@ -475,7 +475,7 @@ export default function App() {
                 </div>
                 <div>
                   <h4 className="text-xl font-black text-slate-900 leading-tight">
-                    เจ้าของธุรกิจรายได้ <span className="text-rose-500">10 ล้านบาทขึ้นไป</span>
+                    เจ้าของธุรกิจ
                   </h4>
                   <p className="text-sm font-bold text-slate-400 mt-1">
                     "กำลังเดินอยู่ ต้องเปลี่ยนมาวิ่ง"
@@ -494,7 +494,7 @@ export default function App() {
                   <svg className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                   </svg>
-                  <span>คู่แข่งหน้าใหม่แซงหน้า มองไม่เห็นทิศทาง ปรับตัว</span>
+                  <span>คู่แข่งหน้าใหม่วิ่งแซง</span>
                 </li>
               </ul>
             </div>
@@ -523,7 +523,7 @@ export default function App() {
                 </div>
                 <div>
                   <h4 className="text-xl font-black text-slate-900 leading-tight">
-                    เจ้าของธุรกิจรายได้ <span className="text-rose-500">10 ล้านบาทขึ้นไป</span>
+                    Start Up ที่ต้องการเร่งการเติบโตของธุรกิจ
                   </h4>
                   <p className="text-sm font-bold text-slate-400 mt-1">
                     "วิ่งอยู่แล้ว ก็ต้องวิ่งเร็วขึ้น"
@@ -542,7 +542,7 @@ export default function App() {
                   <svg className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                   </svg>
-                  <span>ขาด Storytelling ขาดระบบขยายธุรกิจ</span>
+                  <span>ขาด Storytelling และการสร้างตัวตน</span>
                 </li>
               </ul>
             </div>
@@ -584,7 +584,7 @@ export default function App() {
                   <svg className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span>มีไอเดีย มีทุน แต่ไม่อยากเสียเวลา 2-3 ปี กับความผิดพลาดที่หลีกเลี่ยงได้</span>
+                  <span>มีไอเดีย มีทุน แต่ไม่อยากเสียเวลา 2-3 ปี ไปกับการลองผิดลองถูก</span>
                 </li>
               </ul>
             </div>
@@ -600,50 +600,7 @@ export default function App() {
           </article>
         </div>
 
-        {/* Caution Card Container */}
-        <div className="mx-auto mt-12 max-w-2xl px-6">
-          {/* Card: ข้อควรระวัง */}
-          <article className="group relative rounded-[2rem] border border-amber-200 bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.015)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(245,158,11,0.06)] flex flex-col justify-between">
-            <span className="absolute -top-3 left-8 inline-flex items-center gap-1.5 rounded-full bg-amber-500 px-4 py-1 text-xs font-black uppercase tracking-wider text-white shadow-md shadow-amber-200">
-              <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
-              </svg>
-              ข้อควรระวัง
-            </span>
-            <div>
-              <div className="flex items-start gap-4 mt-2">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-amber-50 border border-amber-100 text-amber-500 shadow-sm">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="text-xl font-black text-slate-900 leading-tight">
-                    ไม่เหมาะสำหรับ :
-                  </h4>
-                  <p className="text-sm font-bold text-amber-600 mt-1">
-                    โปรดตรวจสอบก่อนการสมัครเรียน
-                  </p>
-                </div>
-              </div>
 
-              <div className="mt-6 border-t border-slate-100 pt-6 space-y-4">
-                <p className="text-base font-semibold leading-relaxed text-slate-600">
-                  ผู้ที่ยังไม่เปิดตัวธุรกิจ หรือต้องการเรียนเพื่อเน้นทฤษฎีเพียงอย่างเดียว
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-8 rounded-2xl bg-amber-50/50 border border-amber-100/50 p-4 transition duration-300 group-hover:bg-amber-50 group-hover:border-amber-200">
-              <p className="text-sm font-black text-amber-700 uppercase tracking-wider mb-1">
-                แนวทางของหลักสูตร R.U.N.
-              </p>
-              <p className="text-sm font-bold text-slate-800 leading-relaxed">
-                หลักสูตรนี้ <strong className="text-rose-500 font-extrabold">ไม่ได้สอนให้ "คิด" แต่สอนให้ "วิ่ง"</strong> ทุกวัน บังคับลงมือทำจริงเพื่อให้เกิดผลลัพธ์
-              </p>
-            </div>
-          </article>
-        </div>
 
         {/* Bottom summary features row */}
         <div className="mx-auto mt-16 max-w-5xl border-t border-slate-200/60 pt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 px-6">
@@ -697,7 +654,7 @@ export default function App() {
 
       <section id="problem" className="py-20">
         <SectionTitle title="ทำไมต้องวิ่งตอนนี้?" subtitle="เพราะตลาดเปลี่ยนเร็ว ลูกค้าเปลี่ยนวิธีตัดสินใจ และการแข่งขันใหม่ไม่ได้วัดกันที่ความรู้เพียงอย่างเดียว" />
-        
+
         {/* Why Run Now - Premium Card */}
         <div className="mx-auto mt-12 mb-16 max-w-4xl px-6">
           <div className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-tr from-rose-50/20 via-white to-slate-50/50 border border-slate-200/80 p-8 md:p-12 shadow-sm text-center">
@@ -1071,13 +1028,13 @@ export default function App() {
             { img: syllabusDay3, alt: "DAY 3 - AI Visual + AI Video + Agentic AI" },
             { img: syllabusDay4, alt: "DAY 4 - New Product + AI Search + Sustain Marketing" },
           ].map((day, idx) => (
-            <div 
-              key={idx} 
+            <div
+              key={idx}
               className="overflow-hidden rounded-3xl border border-slate-200/80 bg-white shadow-md transition-all duration-300 hover:scale-[1.01] hover:shadow-xl"
             >
-              <img 
-                src={day.img} 
-                alt={day.alt} 
+              <img
+                src={day.img}
+                alt={day.alt}
                 className="w-full h-auto block"
                 loading="lazy"
               />
