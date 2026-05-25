@@ -461,7 +461,7 @@ export default function App() {
             {
               tag: 'เริ่ม',
               title: 'วิ่งเร็วขึ้น',
-              desc: 'ลงมือทำจริงได้ทุกวันจาก Workshop ที่ใช้ได้จริง พร้อมใช้',
+              desc: 'ลงมือทำจริงได้ทุกวันจาก Workshop ที่ใช้ได้จริง พร้อมใช้งาน',
               icon: (
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15.5 8.5L21 3m0 0l-5.5 5.5M21 3v5.5m-11 5.5L4 20m0 0v-5.5M4 20h5.5M10.5 7.5L4 14M16.5 13.5L10 20" />
@@ -553,7 +553,7 @@ export default function App() {
                   <svg className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                   </svg>
-                  <span>คู่แข่งหน้าใหม่วิ่งแซง</span>
+                  <span>คู่แข่งหน้าใหม่วิ่งแซง มองไม่เห็นทิศทางที่จะปรับตัว</span>
                 </li>
               </ul>
             </div>
@@ -601,7 +601,7 @@ export default function App() {
                   <svg className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                   </svg>
-                  <span>ขาด Storytelling และการสร้างตัวตน</span>
+                  <span>ขาด Storytelling และต้องการหาจุดแตกต่างในธุรกิจ</span>
                 </li>
               </ul>
             </div>
@@ -1138,11 +1138,11 @@ export default function App() {
             {/* Background glows */}
             <div className="absolute -top-12 -right-12 w-32 h-32 bg-rose-50/50 rounded-full blur-2xl pointer-events-none" />
             <div className="absolute -bottom-12 -left-12 w-32 h-32 bg-blue-50/50 rounded-full blur-2xl pointer-events-none" />
-            
+
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-50 border border-rose-100 text-rose-500 text-xs font-black uppercase tracking-wider mb-4">
               ค่าลงทะเบียนเรียน
             </span>
-            
+
             <div className="flex flex-col items-center justify-center gap-1 mb-6">
               <span className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight">44,500 <span className="text-2xl font-black text-slate-500">฿</span></span>
               <span className="text-xs font-extrabold text-slate-400 uppercase tracking-widest mt-1">ราคาเน็ตสุทธิ (รวมภาษีมูลค่าเพิ่มแล้ว)</span>
