@@ -372,7 +372,7 @@ export default function App() {
         </div>
       </section>
 
-      <section id="concept" className="py-20 border-b border-slate-200/50 bg-[#f4f7ff]">
+      <section id="concept" className="py-10 md:py-14 border-b border-slate-200/50 bg-[#f4f7ff]">
         <SectionTitle
           eyebrow="R.U.N. Concept"
           title="คอนเซปต์หลัก (Revenue. Unlock. Now.)"
@@ -512,7 +512,7 @@ export default function App() {
         </div>
       </section>
 
-      <section id="audience" className="py-20 border-b border-slate-200/50 bg-[#f4f7ff]">
+      <section id="audience" className="py-10 md:py-14 border-b border-slate-200/50 bg-[#f4f7ff]">
         <SectionTitle
           eyebrow="TARGET AUDIENCE"
           title="หลักสูตรนี้เหมาะกับใคร"
@@ -712,7 +712,7 @@ export default function App() {
         </div>
       </section>
 
-      <section id="problem" className="py-20">
+      <section id="problem" className="py-10 md:py-14">
         <SectionTitle title="ทำไมต้องวิ่งตอนนี้?" />
 
         {/* Why Run Now - Premium Card */}
@@ -776,7 +776,7 @@ export default function App() {
 
 
       {/* Human Core & 4 Pillars Section */}
-      <section id="human-core" className="py-20 border-b border-slate-200/50">
+      <section id="human-core" className="py-10 md:py-14 border-b border-slate-200/50">
         <SectionTitle
           eyebrow="HUMAN CORE VALUE"
           title="คุณค่าของความเป็นมนุษย์ คือแก่นที่ AI ไม่มีวันทดแทน"
@@ -858,7 +858,7 @@ export default function App() {
       </section>
 
       {/* Course Content Ratio Section */}
-      <section id="course-ratio" className="py-20 border-b border-slate-200/50">
+      <section id="course-ratio" className="py-10 md:py-14 border-b border-slate-200/50">
         <SectionTitle
           eyebrow="COURSE STRUCTURE"
           title="เรียนอะไรบ้าง ?"
@@ -997,7 +997,7 @@ export default function App() {
         </div>
       </section>
 
-      <section id="syllabus" className="py-20">
+      <section id="syllabus" className="py-10 md:py-14">
         <SectionTitle
           title={
             <>
@@ -1030,7 +1030,7 @@ export default function App() {
         </div>
       </section>
 
-      <section id="directors" className="py-20 bg-[#f4f7ff] border-t border-slate-200/50">
+      <section id="directors" className="py-10 md:py-14 bg-[#f4f7ff] border-t border-slate-200/50">
         <SectionTitle title="DIRECTORS" subtitle="ผู้กำกับดูแลและพัฒนาหลักสูตรตัวจริงที่ลงสนามทุกวัน" />
         <div className="mx-auto mt-12 grid max-w-6xl gap-6 px-6 lg:grid-cols-3">
           {directors.map((director) => (
@@ -1046,7 +1046,7 @@ export default function App() {
         </div>
       </section>
 
-      <section id="speakers" className="py-20 border-t border-slate-200/50">
+      <section id="speakers" className="py-10 md:py-14 border-t border-slate-200/50">
         <SectionTitle title="SPEAKERS" subtitle="วิทยากรผู้เชี่ยวชาญระดับแนวหน้าที่จะมาร่วมถ่ายทอดประสบการณ์" />
         <div className="mx-auto mt-12 grid max-w-6xl gap-6 px-6 lg:grid-cols-3">
           {speakers.map((speaker) => (
@@ -1066,7 +1066,7 @@ export default function App() {
 
 
 
-      <section id="apply" className="py-24 bg-[#f4f7ff] border-t border-slate-200/50">
+      <section id="apply" className="py-12 md:py-16 bg-[#f4f7ff] border-t border-slate-200/50">
         <div className="mx-auto max-w-5xl px-6 text-center">
           <p className="text-sm font-bold uppercase tracking-[0.35em] text-rose-500">Ready to join?</p>
           <h2 className="mt-4 text-3xl font-black text-slate-900 md:text-5xl leading-tight">
