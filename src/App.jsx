@@ -150,6 +150,30 @@ const syllabus = [
   },
 ];
 
+const directors = [
+  {
+    name: 'คุณ ปฤณ จำเริญพานิช',
+    role: 'FOUNDER & CEO AEIOU',
+    bio: 'กลยุทธ์การตลาดและ AI ที่ใช้ได้จริงสำหรับธุรกิจยุคใหม่',
+    image: speakerAn,
+    accent: 'from-rose-500 to-orange-400',
+  },
+  {
+    name: 'คุณ ศรัณย์ แบ่งกุศลจิต',
+    role: 'CEO UPPERCUZ',
+    bio: 'สาย TikTok การตลาดคอนเทนต์ และระบบปิดการขายที่โตไว',
+    image: speakerSaran,
+    accent: 'from-sky-500 to-cyan-400',
+  },
+  {
+    name: 'ดร.เกรียงไกร สัจจะหฤทัย',
+    role: 'คณบดีคณะการสร้างเจ้าของธุรกิจ ม.ศรีปทุม',
+    bio: 'ผสานมุมมองวิชาการกับการลงมือทำจริง ให้ธุรกิจขับเคลื่อนได้ต่อเนื่อง',
+    image: speakerKriengkrai,
+    accent: 'from-violet-500 to-fuchsia-400',
+  },
+];
+
 const speakers = [
   {
     name: 'คุณ ปฤณ จำเริญพานิช (อ้น)',
@@ -221,6 +245,7 @@ const sections = [
   { id: 'concept', label: 'เกี่ยวกับหลักสูตร R.U.N' },
   { id: 'problem', label: 'ทำไมต้อง R.U.N.' },
   { id: 'syllabus', label: 'Course Outline' },
+  { id: 'directors', label: 'Directors' },
   { id: 'speakers', label: 'วิทยากร' },
   { id: 'apply', label: 'การรับสมัคร' },
 ];
@@ -1005,8 +1030,24 @@ export default function App() {
         </div>
       </section>
 
-      <section id="speakers" className="py-20">
-        <SectionTitle title="DIRECTORS" subtitle="วิทยากรตัวจริงที่ลงสนามทุกวัน" />
+      <section id="directors" className="py-20 bg-[#f4f7ff] border-t border-slate-200/50">
+        <SectionTitle title="DIRECTORS" subtitle="ผู้กำกับดูแลและพัฒนาหลักสูตรตัวจริงที่ลงสนามทุกวัน" />
+        <div className="mx-auto mt-12 grid max-w-6xl gap-6 px-6 lg:grid-cols-3">
+          {directors.map((director) => (
+            <article key={director.name} className="group rounded-[2rem] border border-slate-200 bg-white p-4 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(244,63,94,0.12)]">
+              <SpeakerPortrait name={director.name} title={director.role} accent={director.accent} imageUrl={director.image} />
+              <div className="p-4 pt-5">
+                <h3 className="text-xl font-black text-slate-900 leading-tight">{director.name}</h3>
+                <p className="mt-2 text-sm font-bold uppercase tracking-wide text-rose-500">{director.role}</p>
+                <p className="mt-3 text-base leading-relaxed text-slate-500">{director.bio}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="speakers" className="py-20 border-t border-slate-200/50">
+        <SectionTitle title="SPEAKERS" subtitle="วิทยากรผู้เชี่ยวชาญระดับแนวหน้าที่จะมาร่วมถ่ายทอดประสบการณ์" />
         <div className="mx-auto mt-12 grid max-w-6xl gap-6 px-6 lg:grid-cols-3">
           {speakers.map((speaker) => (
             <article key={speaker.name} className="group rounded-[2rem] border border-slate-200 bg-white p-4 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(244,63,94,0.12)]">
