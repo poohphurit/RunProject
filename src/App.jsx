@@ -87,7 +87,7 @@ const syllabus = [
       {
         time: '10.00 - 12.00 น.',
         title: 'AI Graphic Design Mastery',
-        speaker: 'วิทยากร คุณนัทชา กาญจนจิตรา (ปอง)',
+        speaker: 'วิทยากร คุณนัชชา กาญจนจิตรา (ปอง)',
         company: 'บริษัท/แบรนด์ Enkay Studio',
         status: 'Confirmed',
         headline: 'สร้าง Visual Identity และภาพโฆษณาระดับสตูดิโอด้วย Midjourney, Nano Banana',
@@ -204,7 +204,7 @@ const speakers = [
     accent: 'from-emerald-500 to-teal-400',
   },
   {
-    name: 'คุณ นัทชา กาญจนจิตรา (ปอง)',
+    name: 'คุณ นัชชา กาญจนจิตรา (ปอง)',
     role: 'Enkay Studio',
     bio: 'ผู้เชี่ยวชาญการใช้ AI สร้างภาพโฆษณาระดับสตูดิโอและ Visual Identity',
     image: '/speakers/speaker-pong.png?v=4',
@@ -1188,9 +1188,6 @@ export default function App() {
             <div className="absolute -bottom-24 -right-24 w-48 h-48 bg-blue-100/30 rounded-full blur-3xl pointer-events-none" />
 
             <div className="relative z-10">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-50 border border-rose-100 text-rose-500 text-xs font-black uppercase tracking-wider mb-4">
-                Contact Us
-              </span>
               <h3 className="text-2xl sm:text-3xl font-black tracking-tight text-slate-900">สอบถามรายละเอียดเพิ่มเติม</h3>
 
 
@@ -1266,7 +1263,7 @@ export default function App() {
                   </a>
                 </div>
 
-                {/* 5. Line */}
+                {/* 5. Line & Socials */}
                 <div className="group/item flex flex-col items-center text-center p-6 rounded-3xl bg-slate-50/40 border border-slate-100 hover:bg-rose-50/30 hover:border-rose-100/80 hover:shadow-lg hover:shadow-rose-100/20 transition-all duration-300 h-full">
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-50 border border-rose-100/50 text-[#ff3b60] mb-4 shadow-sm transition-transform duration-300 group-hover/item:scale-110">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
@@ -1277,6 +1274,32 @@ export default function App() {
                   <a href="https://lin.ee/8I9yHV6" target="_blank" rel="noopener noreferrer" className="text-xs font-black text-slate-600 hover:text-[#ff3b60] transition-colors duration-200">
                     @runbyspu
                   </a>
+
+                  {/* Social Links (Facebook & Instagram) */}
+                  <div className="mt-4 flex items-center gap-3">
+                    <a
+                      href="https://facebook.com/runbyspu"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex h-9 w-9 items-center justify-center rounded-xl bg-white text-slate-600 border border-slate-200/60 shadow-sm transition hover:bg-blue-600 hover:text-white hover:border-blue-600 hover:scale-105 active:scale-95 duration-200"
+                      title="Facebook"
+                    >
+                      <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                        <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                      </svg>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/runbyspu/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex h-9 w-9 items-center justify-center rounded-xl bg-white text-slate-600 border border-slate-200/60 shadow-sm transition hover:bg-gradient-to-tr hover:from-amber-500 hover:via-rose-500 hover:to-purple-600 hover:text-white hover:border-transparent hover:scale-105 active:scale-95 duration-200"
+                      title="Instagram"
+                    >
+                      <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
