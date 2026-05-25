@@ -653,7 +653,7 @@ export default function App() {
       </section>
 
       <section id="problem" className="py-20">
-        <SectionTitle title="ทำไมต้องวิ่งตอนนี้?" subtitle="เพราะตลาดเปลี่ยนเร็ว ลูกค้าเปลี่ยนวิธีตัดสินใจ และการแข่งขันใหม่ไม่ได้วัดกันที่ความรู้เพียงอย่างเดียว" />
+        <SectionTitle title="ทำไมต้องวิ่งตอนนี้?" />
 
         {/* Why Run Now - Premium Card */}
         <div className="mx-auto mt-12 mb-16 max-w-4xl px-6">
@@ -663,21 +663,20 @@ export default function App() {
             <div className="absolute -bottom-12 -left-12 w-40 h-40 bg-slate-100/30 rounded-full blur-3xl" />
 
             {/* Quote Block */}
-            <div className="relative max-w-2xl mx-auto">
+            <div className="relative max-w-3xl mx-auto space-y-6">
               <span className="text-6xl font-serif text-rose-200/70 absolute -top-8 -left-4 select-none leading-none">“</span>
               <p className="text-xl sm:text-2xl font-black text-slate-900 leading-snug px-6 relative z-10">
-                ในขณะที่คุณยังเดินอยู่ โลกกำลังวิ่ง
+                ในขณะที่คุณยังเดินอยู่ <span className="text-rose-500 font-black">“โลกกำลังวิ่ง”</span>
+              </p>
+              
+              <p className="text-xl sm:text-2xl font-black text-slate-900 leading-relaxed px-6 relative z-10 mt-6">
+                เพราะตลาดเปลี่ยนเร็ว ลูกค้าเปลี่ยนวิธีตัดสินใจ และการแข่งขันใหม่ไม่ได้วัดกันที่ความรู้เพียงอย่างเดียว
               </p>
               <span className="text-6xl font-serif text-rose-200/70 absolute -bottom-12 -right-4 select-none leading-none">”</span>
             </div>
 
-            {/* Sub-quote */}
-            <p className="mt-6 text-base sm:text-lg font-extrabold text-slate-600 uppercase tracking-wide">
-              คู่แข่งจีน วิ่ง / AI วิ่ง / ลูกค้า วิ่ง / ตลาด วิ่ง
-            </p>
-
             {/* High Impact Warning Badge */}
-            <div className="mt-8 inline-block bg-rose-50 border border-rose-100 px-6 py-3 rounded-full shadow-sm shadow-rose-100/50 transition duration-300 hover:scale-105">
+            <div className="mt-10 inline-block bg-rose-50 border border-rose-100 px-6 py-3 rounded-full shadow-sm shadow-rose-100/50 transition duration-300 hover:scale-105">
               <p className="text-base sm:text-lg font-black text-rose-600">
                 ถ้าคุณไม่วิ่ง คุณไม่ได้แค่ช้า คุณกำลังถอยหลัง
               </p>
