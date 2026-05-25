@@ -2,6 +2,10 @@ import React from 'react';
 import speakerAn from './assets/speaker-an.png';
 import speakerKriengkrai from './assets/speaker-kriengkrai.png';
 import speakerSaran from './assets/speaker-saran.png';
+import syllabusDay1 from './assets/syllabus-day1.png';
+import syllabusDay2 from './assets/syllabus-day2.png';
+import syllabusDay3 from './assets/syllabus-day3.png';
+import syllabusDay4 from './assets/syllabus-day4.png';
 
 const syllabus = [
   {
@@ -1059,91 +1063,24 @@ export default function App() {
           }
           subtitle="แต่ละวันผสมกลยุทธ์ คอนเทนต์ และ AI เพื่อให้ผู้เรียนเห็นภาพรวมครบวงจร"
         />
-        <div className="mx-auto mt-12 max-w-5xl space-y-6 px-6">
-          {syllabus.map((day) => (
-            <section key={day.day} className="rounded-3xl border border-slate-200/80 bg-white p-5 shadow-sm transition duration-300 hover:shadow-lg md:p-6">
-              {/* Day Header */}
-              <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between border-b border-slate-100 pb-4 mb-4">
-                <div className="flex items-center gap-4">
-                  {/* Day block */}
-                  <div className="flex flex-col items-center justify-center text-center min-w-[3rem]">
-                    <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-rose-500 leading-none">DAY</span>
-                    <span className="text-4xl font-black text-rose-500 mt-1 leading-none">{day.day.replace('DAY ', '')}</span>
-                  </div>
-                  {/* Vertical Divider */}
-                  <div className="h-8 w-[1px] bg-slate-200 hidden sm:block" />
-                  {/* Theme & Sub-theme */}
-                  <div>
-                    <h3 className="text-lg font-black text-slate-900 sm:text-xl leading-tight">{day.theme}</h3>
-                    {day.subTheme && (
-                      <p className="text-xs font-semibold text-slate-400 mt-0.5 sm:text-sm">{day.subTheme}</p>
-                    )}
-                  </div>
-                </div>
-                {/* Date */}
-                <div className="text-xs font-semibold text-slate-400 self-end sm:self-center sm:text-sm">
-                  {day.date}
-                </div>
-              </div>
-              <div className="space-y-4">
-                {day.topics.map((topic, idx) => (
-                  <div key={idx} className="rounded-2xl border border-slate-200/60 bg-[#f8faff] p-5 transition duration-300 hover:border-rose-200 hover:bg-white hover:shadow-sm">
-                    {/* Time line */}
-                    {topic.time && (
-                      <div className="text-rose-600 text-sm sm:text-base font-black tracking-wide mb-1.5 flex items-center gap-1.5">
-                        <span className="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse" />
-                        {topic.time}
-                      </div>
-                    )}
-                    
-                    {/* Header: Title | Speaker + Company + Status */}
-                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1.5 text-base font-black text-slate-900 sm:text-lg">
-                      <span className="text-slate-900">{topic.title}</span>
-                      
-                      {topic.status === 'TBA' ? (
-                        <>
-                          <span className="text-slate-300 font-light hidden sm:inline">|</span>
-                          <span className="inline-flex items-center rounded-md bg-slate-100 border border-slate-200/60 px-2.5 py-0.5 text-xs font-bold text-slate-500">
-                            วิทยากร / บริษัท/แบรนด์ (อยู่ในระหว่างการเรียนเชิญ)
-                          </span>
-                        </>
-                      ) : (
-                        <>
-                          {topic.speaker && (
-                            <>
-                              <span className="text-slate-300 font-light hidden sm:inline">|</span>
-                              <span className="text-rose-600 font-extrabold text-sm sm:text-base">{topic.speaker}</span>
-                            </>
-                          )}
-                          {topic.company && (
-                            <span className="text-slate-500 font-bold text-xs sm:text-sm">
-                              {topic.company}
-                            </span>
-                          )}
-                          {topic.status === 'Confirmed' && (
-                            <span className="inline-flex items-center rounded-full bg-rose-50 border border-rose-100 px-2.5 py-0.5 text-[10px] font-extrabold text-rose-600 shadow-sm shrink-0">
-                              Confirmed
-                            </span>
-                          )}
-                        </>
-                      )}
-                    </div>
-                    
-                    {/* Headline */}
-                    <p className="mt-2 text-sm font-extrabold text-slate-800 sm:text-base leading-relaxed">
-                      {topic.headline}
-                    </p>
-                    
-                    {/* Detail */}
-                    {topic.detail && (
-                      <p className="mt-1 text-xs font-semibold text-slate-400 leading-relaxed sm:text-sm">
-                        {topic.detail}
-                      </p>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </section>
+        <div className="mx-auto mt-12 max-w-4xl space-y-8 px-6">
+          {[
+            { img: syllabusDay1, alt: "DAY 1 - Brand + Marketing + Personal Branding" },
+            { img: syllabusDay2, alt: "DAY 2 - Storytelling + Short-form Video + Live Commerce" },
+            { img: syllabusDay3, alt: "DAY 3 - AI Visual + AI Video + Agentic AI" },
+            { img: syllabusDay4, alt: "DAY 4 - New Product + AI Search + Sustain Marketing" },
+          ].map((day, idx) => (
+            <div 
+              key={idx} 
+              className="overflow-hidden rounded-3xl border border-slate-200/80 bg-white shadow-md transition-all duration-300 hover:scale-[1.01] hover:shadow-xl"
+            >
+              <img 
+                src={day.img} 
+                alt={day.alt} 
+                className="w-full h-auto block"
+                loading="lazy"
+              />
+            </div>
           ))}
         </div>
       </section>
