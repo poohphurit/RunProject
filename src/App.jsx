@@ -355,7 +355,7 @@ export default function App() {
           />
 
           {/* Interactive Absolute-Positioned Overlay Buttons */}
-          <div className="absolute left-1/2 -translate-x-1/2 bottom-[32%] sm:left-[32.4%] sm:-translate-x-1/2 sm:bottom-[20%] md:bottom-[21%] lg:bottom-[22%] flex gap-3.5 sm:gap-4.5 z-20 w-max">
+          <div className="absolute left-1/2 -translate-x-1/2 bottom-[29%] sm:left-[32.4%] sm:-translate-x-1/2 sm:bottom-[13%] md:bottom-[14%] lg:bottom-[15%] flex gap-3.5 sm:gap-4.5 z-20 w-max">
             <a
               href="#syllabus"
               className="rounded-full bg-[#0f172a] py-4 px-0 w-[155px] sm:w-auto sm:px-9 sm:py-4 md:px-11 md:py-4.5 lg:px-14 lg:py-5.5 text-[15px] sm:text-base md:text-lg lg:text-xl font-extrabold text-white shadow-[0_8px_30px_rgba(15,23,42,0.35)] transition duration-300 hover:scale-[1.05] hover:bg-[#1e293b] active:scale-[0.98] inline-flex items-center justify-center text-center"
