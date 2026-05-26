@@ -122,7 +122,7 @@ const syllabus = [
       {
         time: '10.00 - 12.00 น.',
         title: 'New Product Creation for New Market',
-        speaker: 'วิทยากร คุณพลภัทร ทรงรัตนจิตติ (ป๊อป)',
+        speaker: 'วิทยากร คุณพลภัทร ทรงธัมจิตติ (ป๊อป)',
         company: 'บริษัท/แบรนด์ Whale Ground',
         status: 'Confirmed',
         headline: 'ออกแบบ Product-Market Fit ปรับ Packaging ให้ตรงกลุ่มเป้าหมาย',
@@ -232,7 +232,7 @@ const speakers = [
     accent: 'from-amber-500 to-orange-500',
   },
   {
-    name: 'คุณ พลภัทร ทรงรัตนจิตติ (ป๊อป)',
+    name: 'คุณ พลภัทร ทรงธัมจิตติ (ป๊อป)',
     role: 'Whale Ground',
     bio: 'ผู้ออกแบบ Product-Market Fit และการปรับปรุงบรรจุภัณฑ์เพื่อเจาะกลุ่มตลาดใหม่',
     image: '/speakers/speaker-pop.png?v=20260526',
@@ -1008,7 +1008,7 @@ export default function App() {
             <>
               หลักสูตร 4 วัน ลงมือทำจริง
               <br />
-              เปลี่ยนจากเดินเป็นวิ่ง
+              เปลี่ยนจากเดินสู่การวิ่ง
             </>
           }
           subtitle="แต่ละวันผสมกลยุทธ์ คอนเทนต์ และ AI เพื่อให้ผู้เรียนเห็นภาพรวมครบวงจร"
