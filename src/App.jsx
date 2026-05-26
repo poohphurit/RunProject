@@ -1051,7 +1051,7 @@ export default function App() {
       </section>
 
       <section id="speakers" className="py-10 md:py-14 border-t border-slate-200/50">
-        <SectionTitle title="SPEAKERS" subtitle="วิทยากรผู้เชี่ยวชาญระดับแนวหน้าที่จะมาร่วมถ่ายทอดประสบการณ์" />
+        <SectionTitle title="SPEAKERS" subtitle="วิทยากรผู้เชี่ยวชาญระดับแนวหน้าที่จะมาร่วมถ่ายทอดประสบการณ์และส่งต่อความรู้ เพื่อให้เกิดความเปลี่ยนแปลงได้จริง" />
         <div className="mx-auto mt-12 grid max-w-6xl gap-6 px-6 lg:grid-cols-3">
           {speakers.map((speaker) => (
             <article key={speaker.name} className="group rounded-[2rem] border border-slate-200 bg-white p-4 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_80px_rgba(244,63,94,0.12)]">
