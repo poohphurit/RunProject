@@ -725,7 +725,8 @@ export default function App() {
             <div className="relative max-w-3xl mx-auto space-y-6">
               <span className="text-6xl font-serif text-rose-200/70 absolute -top-8 -left-4 select-none leading-none">“</span>
               <p className="text-xl sm:text-2xl font-black text-slate-900 leading-snug px-6 relative z-10">
-                ในขณะที่คุณยังเดินอยู่ <span className="text-rose-500 font-black">“โลกกำลังวิ่ง”</span>
+                ในขณะที่คุณยังเดินอยู่ <br />
+                <span className="text-rose-500 font-black">“โลกกำลังวิ่ง”</span>
               </p>
 
               <p className="text-xl sm:text-2xl font-black text-slate-900 leading-relaxed px-6 relative z-10 mt-6">
