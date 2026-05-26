@@ -197,18 +197,11 @@ const speakers = [
     accent: 'from-violet-500 to-fuchsia-400',
   },
   {
-    name: 'คุณ กฤษ โฮสถาเลิศ (กฤษ)',
-    role: 'Bigbrain & Marketmind',
-    bio: 'ผลิตคลิป Short-form ครบวงจรด้วย AI ลงทั้ง TikTok, Reels, Shorts',
-    image: '/speakers/speaker-kris.png?v=20260526',
-    accent: 'from-emerald-500 to-teal-400',
-  },
-  {
-    name: 'คุณ นัชชา กาญจนจิตรา (ปอง)',
-    role: 'Enkay Studio',
-    bio: 'ผู้เชี่ยวชาญการใช้ AI สร้างภาพโฆษณาระดับสตูดิโอและ Visual Identity',
-    image: '/speakers/speaker-pong.png?v=20260526',
-    accent: 'from-purple-500 to-pink-400',
+    name: 'คุณ พลภัทร ทรงธัมจิตติ (ป๊อป)',
+    role: 'Whale Ground',
+    bio: 'ผู้ออกแบบ Product-Market Fit และการปรับปรุงบรรจุภัณฑ์เพื่อเจาะกลุ่มตลาดใหม่',
+    image: '/speakers/speaker-pop.png?v=20260526',
+    accent: 'from-cyan-500 to-blue-500',
   },
   {
     name: 'คุณ ศิริพงษ์ กลิ่นขจร (ไอซ์)',
@@ -225,18 +218,25 @@ const speakers = [
     accent: 'from-rose-400 to-pink-500',
   },
   {
+    name: 'คุณ กฤษ โฮสถาเลิศ (กฤษ)',
+    role: 'Bigbrain & Marketmind',
+    bio: 'ผลิตคลิป Short-form ครบวงจรด้วย AI ลงทั้ง TikTok, Reels, Shorts',
+    image: '/speakers/speaker-kris.png?v=20260526',
+    accent: 'from-emerald-500 to-teal-400',
+  },
+  {
+    name: 'คุณ นัชชา กาญจนจิตรา (ปอง)',
+    role: 'Enkay Studio',
+    bio: 'ผู้เชี่ยวชาญการใช้ AI สร้างภาพโฆษณาระดับสตูดิโอและ Visual Identity',
+    image: '/speakers/speaker-pong.png?v=20260526',
+    accent: 'from-purple-500 to-pink-400',
+  },
+  {
     name: 'คุณ รพีพงศ์ ปัญจคุณาธร (ซัน)',
     role: 'ห้างสรรพสินค้า สหไทย การ์เด้น พลาซ่า',
     bio: 'ผู้บริหารห้างสรรพสินค้ายุคใหม่ ผู้นำนวัตกรรมการตลาดดิจิทัลสู่ต่างจังหวัด',
     image: '/speakers/speaker-sun.png?v=20260526',
     accent: 'from-amber-500 to-orange-500',
-  },
-  {
-    name: 'คุณ พลภัทร ทรงธัมจิตติ (ป๊อป)',
-    role: 'Whale Ground',
-    bio: 'ผู้ออกแบบ Product-Market Fit และการปรับปรุงบรรจุภัณฑ์เพื่อเจาะกลุ่มตลาดใหม่',
-    image: '/speakers/speaker-pop.png?v=20260526',
-    accent: 'from-cyan-500 to-blue-500',
   },
 ];
 
