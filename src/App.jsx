@@ -140,7 +140,7 @@ const syllabus = [
       {
         time: '15.30 - 17.30 น.',
         title: 'Makoto Marketing + New Human Value',
-        speaker: 'วิทยากร ดร.กฤตินี พงษ์ธนเลิศ (อ.เกด)',
+        speaker: 'วิทยากร ดร.กฤตินี เพิ่มทรัพย์ (อ.เกด)',
         company: 'บริษัท/แบรนด์ เกตุดี Marumura',
         status: 'Confirmed_NoBadge',
         headline: 'การตลาดเชิงคุณค่าที่มนุษย์และความไว้วางใจอยู่ตรงกลาง',
@@ -190,8 +190,8 @@ const speakers = [
     accent: 'from-sky-500 to-cyan-400',
   },
   {
-    name: 'ดร.กฤตินี พงษ์ธนเลิศ (อ.เกด)',
-    role: 'เกตุวดี Marumura',
+    name: 'ดร.กฤตินี เพิ่มทรัพย์ (อ.เกด)',
+    role: 'Content Creator เพจ เกตุวดี Marumura',
     bio: 'ปรัชญาการตลาดสไตล์ญี่ปุ่นที่เน้นความจริงใจ สร้างคุณค่าที่ยั่งยืน',
     image: '/speakers/speaker-kritinee.png?v=20260526',
     accent: 'from-violet-500 to-fuchsia-400',
