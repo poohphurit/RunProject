@@ -342,20 +342,20 @@ export default function App() {
           {/* Responsive Hero Banner Images */}
           {/* Desktop/Tablet Image */}
           <img
-            src="/hero-banner.jpg?v=20260526"
+            src="/hero-banner.jpg?v=20260526_v2"
             alt="R.U.N. by SPU - Revenue. Unlock. Now. รอด รวย เริ่ม เริศ"
             className="hidden sm:block w-full h-auto select-none pointer-events-none"
           />
 
           {/* Mobile Image */}
           <img
-            src="/hero-banner-mobile.jpg?v=20260526"
+            src="/hero-banner-mobile.jpg?v=20260526_v2"
             alt="R.U.N. by SPU - Revenue. Unlock. Now. รอด รวย เริ่ม เริศ"
             className="block sm:hidden w-full h-auto select-none pointer-events-none"
           />
 
           {/* Interactive Absolute-Positioned Overlay Buttons */}
-          <div className="absolute left-1/2 -translate-x-1/2 bottom-[34%] sm:left-[32.4%] sm:-translate-x-1/2 sm:bottom-[15%] md:bottom-[16%] lg:bottom-[17%] flex gap-3.5 sm:gap-4.5 z-20 w-max">
+          <div className="absolute left-1/2 -translate-x-1/2 bottom-[34%] sm:left-[32.4%] sm:-translate-x-1/2 sm:bottom-[24%] md:bottom-[25%] lg:bottom-[26%] flex gap-3.5 sm:gap-4.5 z-20 w-max">
             <a
               href="#syllabus"
               className="rounded-full bg-[#0f172a] py-4 px-0 w-[155px] sm:w-auto sm:px-9 sm:py-4 md:px-11 md:py-4.5 lg:px-14 lg:py-5.5 text-[15px] sm:text-base md:text-lg lg:text-xl font-extrabold text-white shadow-[0_8px_30px_rgba(15,23,42,0.35)] transition duration-300 hover:scale-[1.05] hover:bg-[#1e293b] active:scale-[0.98] inline-flex items-center justify-center text-center"
