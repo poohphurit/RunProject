@@ -26,7 +26,7 @@ const syllabus = [
       {
         time: '13.00 - 15.00 น.',
         title: 'CEO Branding - The Power of Personal Authority',
-        speaker: 'คุณแอ้ม ศรัณย์',
+        speaker: 'คุณแอ๊ม ศรัณย์',
         company: 'บริษัท/แบรนด์ Uppercuz Creative Agency',
         status: 'Confirmed',
         headline: 'วาง Positioning ผู้นำในยุคที่ลูกค้าไว้ใจ “คน” มากกว่า “ร้าน”',
@@ -70,7 +70,7 @@ const syllabus = [
       {
         time: '15.30 - 17.30 น.',
         title: 'Live Commerce Mastery',
-        speaker: 'คุณแอ้ม ศรัณย์',
+        speaker: 'คุณแอ๊ม ศรัณย์',
         company: 'บริษัท/แบรนด์ Uppercuz Creative Agency',
         status: 'Confirmed',
         headline: 'จิตวิทยาขายผ่านจอ สคริปต์ 3 จังหวะ Hook-Pitch-Close',
@@ -183,7 +183,7 @@ const speakers = [
     accent: 'from-rose-500 to-orange-400',
   },
   {
-    name: 'คุณ ศรัณย์ แบ่งกุศลจิต (แอ้ม)',
+    name: 'คุณ ศรัณย์ แบ่งกุศลจิต (แอ๊ม)',
     role: 'Uppercuz Creative',
     bio: 'สาย TikTok การตลาดคอนเทนต์ และระบบปิดการขายที่โตไว',
     image: '/speakers/speaker-saran.png?v=20260526',
@@ -1110,11 +1110,11 @@ export default function App() {
                 </div>
                 <span className="block text-lg font-black text-rose-500 mb-2">รุ่นที่ 2</span>
                 <span className="block text-base font-extrabold text-slate-800 leading-snug">
-                  เรียน <span className="text-rose-500 font-extrabold">เดือนสิงหาคม</span> 2569
+                  ติดตามการเปิดรับสมัคร <span className="text-rose-500 font-extrabold">เร็วๆ นี้</span>
                 </span>
               </div>
               <span className="block text-xs text-slate-400 font-extrabold mt-4">
-                ติดตามการเปิดรับสมัครเร็วๆ นี้
+                &nbsp;
               </span>
             </div>
 
