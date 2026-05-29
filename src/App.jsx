@@ -87,7 +87,7 @@ const syllabus = [
       {
         time: '10.00 - 12.00 น.',
         title: 'AI Graphic Design Mastery',
-        speaker: 'วิทยากร คุณนัชชา กาญจนจิตรา (ปอง)',
+        speaker: 'วิทยากร คุณนัทชา กาญจนจิตรา (ปอง)',
         company: 'บริษัท/แบรนด์ Enkay Studio',
         status: 'Confirmed',
         headline: 'สร้าง Visual Identity และภาพโฆษณาระดับสตูดิโอด้วย Midjourney, Nano Banana',
@@ -225,7 +225,7 @@ const speakers = [
     accent: 'from-emerald-500 to-teal-400',
   },
   {
-    name: 'คุณ นัชชา กาญจนจิตรา (ปอง)',
+    name: 'คุณ นัทชา กาญจนจิตรา (ปอง)',
     role: 'Enkay Studio',
     bio: 'ผู้เชี่ยวชาญการใช้ AI สร้างภาพโฆษณาระดับสตูดิโอและ Visual Identity',
     image: '/speakers/speaker-pong.png?v=20260526',
